@@ -370,8 +370,8 @@ tun:
   # 在 MacOS/Windows 无法自动劫持发往局域网的 dns 请求
   # 在 Android 如开启 私人dns 则无法自动劫持 dns 请求
   dns-hijack:
-    ##- any:53
-    ##- tcp://any:53
+    - any:53
+    - tcp://any:53
   #device: utun0 # 指定 tun 网卡名称，MacOS 设备只能使用 utun 开头的网卡名
   mtu: 9000 # 最大传输单元，会影响极限状态下的速率，一般用户默认即可。
   # 启用 auto-route 时执行严格的路由规则
