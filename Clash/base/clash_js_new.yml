@@ -359,7 +359,7 @@ tun:
   # MacOS: 一般无需配置，防火墙默认放行签名软件，如果遇到开启防火墙无法使用的情况，可以尝试放行：系统设置 -> 网络 -> 防火墙 -> 选项 -> 添加 mihomo app
   # Linux: 一般无需配置，防火墙默认不拦截应用，如果遇到开启防火墙无法使用的情况，可以尝试放行 TUN 网卡出站流量（假设 TUN 网卡为 Mihomo）: sudo iptables -A OUTPUT -o Mihomo -j ACCEPT
   stack: mixed
-  auto-route: true # 自动设置全局路由，可以自动将全局流量路由进入 tun 网卡。
+  auto-route: false # 自动设置全局路由，可以自动将全局流量路由进入 tun 网卡。
   # 仅支持 Linux，自动配置 iptables/nftables 以重定向 TCP 连接，需要auto-route已启用
   # 在 Android 中：仅转发本地 IPv4 连接。要通过热点或中继共享您的 VPN 连接，请使用 VPNHotspot。
   # 在 Linux 中：带有 auto-route 的 auto-redirect 现在可以在路由器上按预期工作，无需干预。
