@@ -150,7 +150,7 @@ geo-update-interval: 24
 
 # 自定全局 UA
 # 自定义外部资源下载时使用的的 UA，默认为 clash.meta
-#global-ua: clash.meta
+global-ua: clash.meta.fdByDX2LtYWvpKFjZhchE9vy7sLYF9XD
 
 # ETag 支持
 # 外部资源下载的 ETag 支持，默认为 true
