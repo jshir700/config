@@ -98,3 +98,5 @@ DOMAIN-SUFFIX,steamserver.net
 # > Wise银行账户
 DOMAIN,wise.com
 DOMAIN-SUFFIX,wise.com
+# > 可莉
+DOMAIN-SUFFIX,kelee.one
