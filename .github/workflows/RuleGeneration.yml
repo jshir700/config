@@ -25,6 +25,9 @@ jobs:
       - name: Generate Scholar.list
         run: |
           python scripts/Scholar.py
+      - name: Generate Speedtest.list
+        run: |
+          python scripts/Speedtest.py
       - uses: stefanzweifel/git-auto-commit-action@v4
         with:
           commit_message: Auto update rule lists
