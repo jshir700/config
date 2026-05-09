@@ -2,7 +2,7 @@
 # AUTHOR: jshir700
 # REPO: https://github.com/jshir700/config
 # REFERENCE: https://github.com/blackmatrix7/ios_rule_script, https://github.com/ACL4SSR/ACL4SSR
-# UPDATED: 2026-05-09 23:02:24
+# UPDATED: 2026-05-10 00:46:53
 # DOMAIN: 126
 # DOMAIN-SUFFIX: 113019
 # DOMAIN-KEYWORD: 23
@@ -125444,4 +125444,4 @@ PROCESS-NAME,com.jjwxc.reader
 PROCESS-NAME,com.qiyi.video
 PROCESS-NAME,com.taobao.taobao
 PROCESS-NAME,com.xiaomi.mibrain.speech
-PROCESS-NAME,–°√◊‘∆∑˛ŒÒ.exe
+PROCESS-NAME,Â∞èÁ±≥‰∫ëÊúçÂä°.exe

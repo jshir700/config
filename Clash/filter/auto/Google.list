@@ -2,7 +2,7 @@
 # AUTHOR: jshir700
 # REPO: https://github.com/jshir700/config
 # REFERENCE: https://github.com/blackmatrix7/ios_rule_script, https://github.com/Loyalsoldier/surge-rules, https://github.com/Loyalsoldier/clash-rules, https://github.com/sve1r/Rules-For-Quantumult-X, https://github.com/LM-Firefly/Rules, https://github.com/ACL4SSR/ACL4SSR
-# UPDATED: 2026-05-09 23:01:31
+# UPDATED: 2026-05-10 00:46:03
 # DOMAIN: 11
 # DOMAIN-SUFFIX: 1071
 # DOMAIN-KEYWORD: 6
@@ -583,7 +583,7 @@ DOMAIN-SUFFIX,googlevideo.com
 DOMAIN-SUFFIX,googlr.com
 DOMAIN-SUFFIX,goolge.com
 DOMAIN-SUFFIX,gooogle.com
-DOMAIN-SUFFIX,go¶œglß÷.com
+DOMAIN-SUFFIX,goŒøgl–µ.com
 DOMAIN-SUFFIX,gridaware.app
 DOMAIN-SUFFIX,gsrc.io
 DOMAIN-SUFFIX,gstatic-cn.com
@@ -607,8 +607,8 @@ DOMAIN-SUFFIX,gvt6.com
 DOMAIN-SUFFIX,gvt7.com
 DOMAIN-SUFFIX,gvt9.com
 DOMAIN-SUFFIX,gwtproject.org
-DOMAIN-SUFFIX,g¶œoglß÷.com
-DOMAIN-SUFFIX,gß‡ß‡gle.com
+DOMAIN-SUFFIX,gŒøogl–µ.com
+DOMAIN-SUFFIX,g–æ–ægle.com
 DOMAIN-SUFFIX,hangout
 DOMAIN-SUFFIX,hdrplusdata.org
 DOMAIN-SUFFIX,hey.gle
@@ -1094,10 +1094,10 @@ DOMAIN-SUFFIX,yt.be
 DOMAIN-SUFFIX,ytimg.com
 DOMAIN-SUFFIX,zukunftswerkstatt.de
 DOMAIN-SUFFIX,zynamics.com
-DOMAIN-SUFFIX,§œ§∏§·§Ë§¶.§ﬂ§Û§ 
-DOMAIN-SUFFIX,π≈≤©.com
-DOMAIN-SUFFIX,πæπ˚.com
-DOMAIN-SUFFIX,π»∏Ë.com
+DOMAIN-SUFFIX,„ÅØ„Åò„ÇÅ„Çà„ÅÜ.„Åø„Çì„Å™
+DOMAIN-SUFFIX,Âè§Âçö.com
+DOMAIN-SUFFIX,ÂíïÊûú.com
+DOMAIN-SUFFIX,Ë∞∑Ê≠å.com
 IP-CIDR,172.110.32.0/21,no-resolve
 IP-CIDR,173.194.0.0/16,no-resolve
 IP-CIDR,216.73.80.0/20,no-resolve

@@ -2,7 +2,7 @@
 # AUTHOR: jshir700
 # REPO: https://github.com/jshir700/config
 # REFERENCE: https://github.com/blackmatrix7/ios_rule_script, https://github.com/LM-Firefly/Rules, https://github.com/ACL4SSR/ACL4SSR, https://github.com/sve1r/Rules-For-Quantumult-X, https://github.com/zqzess/rule_for_quantumultX, https://ruleset.isagood.day
-# UPDATED: 2026-05-09 23:01:31
+# UPDATED: 2026-05-10 00:46:03
 # DOMAIN: 83
 # DOMAIN-SUFFIX: 278
 # DOMAIN-KEYWORD: 2
@@ -368,11 +368,11 @@ DOMAIN-SUFFIX,zmzapi.com
 DOMAIN-SUFFIX,zmzapi.net
 DOMAIN-SUFFIX,zmzfile.com
 DOMAIN-SUFFIX,zygbdszt.net.cn
-DOMAIN-SUFFIX,中国广播电视总台.cn
-DOMAIN-SUFFIX,中国广播电视总台.中国
-DOMAIN-SUFFIX,中央广播电视总台.cn
-DOMAIN-SUFFIX,国家广播电视总台.cn
-DOMAIN-SUFFIX,国家广播电视总台.中国
+DOMAIN-SUFFIX,涓浗骞挎挱鐢佃鎬诲彴.cn
+DOMAIN-SUFFIX,涓浗骞挎挱鐢佃鎬诲彴.涓浗
+DOMAIN-SUFFIX,涓ぎ骞挎挱鐢佃鎬诲彴.cn
+DOMAIN-SUFFIX,鍥藉骞挎挱鐢佃鎬诲彴.cn
+DOMAIN-SUFFIX,鍥藉骞挎挱鐢佃鎬诲彴.涓浗
 IP-CIDR,101.224.0.0/13,no-resolve
 IP-CIDR,101.71.154.241/32,no-resolve
 IP-CIDR,103.126.92.132/31,no-resolve
