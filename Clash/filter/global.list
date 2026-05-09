@@ -39,6 +39,5 @@ DOMAIN,ipapi.co
 # > IPTV研究所
 DOMAIN-SUFFIX,lioncdn.net
 DOMAIN-SUFFIX,passwdword.xyz
-# > Firebase
-#DOMAIN-SUFFIX,firebaselogging-pa.googleapis.com
-#DOMAIN-SUFFIX,firebase-settings.crashlytics.com
+# > Google Play
+DOMAIN-SUFFIX,ångströ.com
