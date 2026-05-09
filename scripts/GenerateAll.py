@@ -13,13 +13,14 @@ from datetime import datetime, timezone, timedelta
 import os
 import sys
 
-# Ensure common.py is importable (same directory)
+# Ensure common.py and ChinaASN.py are importable (same directory)
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 from common import (
     RULE_TYPES, LOON_HEADERS, DEFAULT_HEADERS,
     download_and_extract, write_rule_list, count_rules_by_type,
     remove_subsumed_rules,
 )
+from ChinaASN import generate_clash_asn
 
 # ---------------------------------------------------------------------------
 # Output directory
@@ -1044,6 +1045,11 @@ def generate_all():
     print("{:20s} -> {:>8,} rules  [{}]".format("China", total, type_summary))
 
     grand_total += total
+
+    # Step 4: Generate ChinaASN.list (scraped from bgp.he.net)
+    print("\n" + "-" * 40)
+    print("Generating ChinaASN.list (scraped from bgp.he.net)...")
+    generate_clash_asn()
 
     # Summary
     print("\n" + "=" * 60)
