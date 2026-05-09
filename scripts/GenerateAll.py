@@ -139,15 +139,11 @@ RULE_LISTS["Scholar"] = (
 # Speedtest
 # ---------------------------------------------------------------------------
 RULE_LISTS["Speedtest"] = (
-    "# REFERENCE: https://kelee.one, "
+    "# REFERENCE: "
     "https://github.com/blackmatrix7/ios_rule_script, "
     "https://github.com/GeQ1an/Rules, "
     "https://github.com/dler-io/Rules",
     [
-        ("https://kelee.one/Tool/Clash/Rule/SpeedtestChina.yaml",
-         "yaml", LOON_HEADERS),
-        ("https://kelee.one/Tool/Clash/Rule/SpeedtestInternational.yaml",
-         "yaml", LOON_HEADERS),
         ("https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/"
          "refs/heads/master/rule/Clash/Speedtest/Speedtest.list", "list", None),
         ("https://raw.githubusercontent.com/GeQ1an/Rules/master/"
