@@ -18,6 +18,7 @@ sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 from common import (
     RULE_TYPES, LOON_HEADERS, DEFAULT_HEADERS,
     download_and_extract, write_rule_list, count_rules_by_type,
+    remove_subsumed_rules,
 )
 
 # ---------------------------------------------------------------------------
@@ -36,6 +37,125 @@ OUTPUT_DIR = "Clash/filter/auto"
 # ---------------------------------------------------------------------------
 
 RULE_LISTS = {}
+
+# ---------------------------------------------------------------------------
+# BanAD (Ad blocking / Reject list)
+# ---------------------------------------------------------------------------
+RULE_LISTS["Reject"] = (
+    "# REFERENCE: https://github.com/ACL4SSR/ACL4SSR, "
+    "https://github.com/NobyDa/Script, "
+    "https://github.com/limbopro/Adblock4limbo, "
+    "https://github.com/blackmatrix7/ios_rule_script, "
+    "https://github.com/scomper/surge-list, "
+    "https://github.com/sve1r/Rules-For-Quantumult-X, "
+    "https://github.com/yjqiang/surge_scripts, "
+    "https://github.com/Loyalsoldier/clash-rules, "
+    "https://github.com/zqzess/rule_for_quantumultX",
+    [
+        ("https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/"
+         "Clash/BanProgramAD.list", "list", None),
+        ("https://raw.githubusercontent.com/NobyDa/Script/master/"
+         "Surge/AdRule.list", "list", None),
+        ("https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/"
+         "Clash/BanProgramAD.list", "list", None),
+        ("https://raw.githubusercontent.com/limbopro/Adblock4limbo/"
+         "refs/heads/main/Adblock4limbo_surge.list", "surge", None),
+        ("https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/"
+         "Clash/BanEasyList.list", "list", None),
+        ("https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/"
+         "Clash/BanEasyListChina.list", "list", None),
+        ("https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/"
+         "refs/heads/master/rule/Clash/Advertising/Advertising.list", "list", None),
+        ("https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/"
+         "refs/heads/master/rule/Clash/ZhihuAds/ZhihuAds.list", "list", None),
+        ("https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/"
+         "Clash/BanEasyPrivacy.list", "list", None),
+        ("https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/"
+         "refs/heads/master/rule/Clash/EasyPrivacy/EasyPrivacy.list", "list", None),
+        ("https://raw.githubusercontent.com/scomper/surge-list/"
+         "master/reject.list", "list", None),
+        ("https://raw.githubusercontent.com/scomper/surge-list/"
+         "master/adblock.list", "list", None),
+        ("https://raw.githubusercontent.com/sve1r/Rules-For-Quantumult-X/"
+         "develop/Rules/Advertising/AdReject.list", "surge", None),
+        ("https://raw.githubusercontent.com/sve1r/Rules-For-Quantumult-X/"
+         "develop/Rules/Advertising/Hijacking.list", "surge", None),
+        ("https://raw.githubusercontent.com/yjqiang/surge_scripts/"
+         "main/modules/hupu/hupu.sgmodule", "sgmodule", None),
+        ("https://raw.githubusercontent.com/Loyalsoldier/clash-rules/"
+         "release/reject.txt", "loyalsoldier", None),
+        ("https://raw.githubusercontent.com/zqzess/rule_for_quantumultX/"
+         "master/QuantumultX/rules/AdBlock.list", "surge", None),
+    ]
+)
+
+# ---------------------------------------------------------------------------
+# Binance
+# ---------------------------------------------------------------------------
+RULE_LISTS["Binance"] = (
+    "# REFERENCE: https://github.com/blackmatrix7/ios_rule_script, "
+    "https://github.com/ACL4SSR/ACL4SSR, "
+    "https://github.com/StricklandF/Filter",
+    [
+        ("https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/"
+         "refs/heads/master/rule/Clash/Binance/Binance.list", "list", None),
+        ("https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/"
+         "Clash/Ruleset/Binance.list", "list", None),
+        ("https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/"
+         "Clash/Providers/Ruleset/Binance.yaml", "yaml", None),
+        ("https://raw.githubusercontent.com/StricklandF/Filter/"
+         "main/Binance.list", "surge", None),
+    ]
+)
+
+# ---------------------------------------------------------------------------
+# Scholar
+# ---------------------------------------------------------------------------
+RULE_LISTS["Scholar"] = (
+    "# REFERENCE: https://github.com/ACL4SSR/ACL4SSR, "
+    "https://github.com/LM-Firefly/Rules, "
+    "https://github.com/dler-io/Rules, "
+    "https://github.com/ke1ewang/Profiles, "
+    "https://github.com/blackmatrix7/ios_rule_script",
+    [
+        ("https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/"
+         "Clash/Ruleset/Scholar.list", "list", None),
+        ("https://raw.githubusercontent.com/LM-Firefly/Rules/master/"
+         "PROXY/Scholar.list", "list", None),
+        ("https://raw.githubusercontent.com/dler-io/Rules/main/"
+         "Clash/Provider/Scholar.yaml", "yaml", None),
+        ("https://raw.githubusercontent.com/LM-Firefly/Rules/master/"
+         "Clash-RuleSet-Classical/PROXY/Scholar.yaml", "yaml", None),
+        ("https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/"
+         "Clash/Providers/Ruleset/Scholar.yaml", "yaml", None),
+        ("https://raw.githubusercontent.com/ke1ewang/Profiles/"
+         "refs/heads/main/Surge/Ruleset/Extra/Scholar.list", "list", None),
+        ("https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/"
+         "refs/heads/master/rule/Clash/Scholar/Scholar.list", "list", None),
+    ]
+)
+
+# ---------------------------------------------------------------------------
+# Speedtest
+# ---------------------------------------------------------------------------
+RULE_LISTS["Speedtest"] = (
+    "# REFERENCE: https://kelee.one, "
+    "https://github.com/blackmatrix7/ios_rule_script, "
+    "https://github.com/GeQ1an/Rules, "
+    "https://github.com/dler-io/Rules",
+    [
+        ("https://kelee.one/Tool/Clash/Rule/SpeedtestChina.yaml",
+         "yaml", LOON_HEADERS),
+        ("https://kelee.one/Tool/Clash/Rule/SpeedtestInternational.yaml",
+         "yaml", LOON_HEADERS),
+        ("https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/"
+         "refs/heads/master/rule/Clash/Speedtest/Speedtest.list", "list", None),
+        ("https://raw.githubusercontent.com/GeQ1an/Rules/master/"
+         "QuantumultX/Filter/Speedtest.list", "quantumultx", None),
+        ("https://raw.githubusercontent.com/dler-io/Rules/main/"
+         "Clash/Provider/Speedtest.yaml", "yaml", None),
+    ]
+)
 
 RULE_LISTS["SteamCN"] = (
     "# REFERENCE: https://github.com/blackmatrix7/ios_rule_script, "
@@ -823,19 +943,6 @@ CHINA_SOURCES = (
 
 
 # ---------------------------------------------------------------------------
-# Existing generation scripts (kept for reference, called from old workflows)
-# These are superseded by GenerateAll.py which handles ALL lists.
-# ---------------------------------------------------------------------------
-
-# Existing individual scripts are preserved at:
-#   scripts/ChinaASN.py
-#   scripts/Scholar.py
-#   scripts/Speedtest.py
-#   scripts/Binance.py
-#   scripts/BanAD.py
-
-
-# ---------------------------------------------------------------------------
 # Main generation
 # ---------------------------------------------------------------------------
 
@@ -926,9 +1033,9 @@ def generate_all():
         rules = download_and_extract(url, parser_type, headers)
         china_rules.update(rules)
 
-    # Apply exclusion
+    # Apply exclusion (exact match + subsumption)
     before = len(china_rules)
-    china_rules -= exclude_set
+    china_rules = remove_subsumed_rules(china_rules, exclude_set)
     after = len(china_rules)
     print("China.list: {} rules after excluding {} overlapped rules".format(after, before - after))
 

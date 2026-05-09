@@ -8,6 +8,7 @@ REPO: https://github.com/jshir700/config
 """
 
 import requests
+import ipaddress
 from datetime import datetime, timezone, timedelta
 import os
 
@@ -42,6 +43,17 @@ RULE_TYPES = [
 ]
 
 RULE_PREFIXES = tuple(t + "," for t in RULE_TYPES if t != "MATCH")
+
+
+# ---------------------------------------------------------------------------
+# Loon equivalent mapping (for rules that differ between mihomo and Loon)
+# ---------------------------------------------------------------------------
+
+LOON_EQUIVALENT = {
+    "DST-PORT": "DEST-PORT",
+    "NETWORK": "PROTOCOL",
+    "MATCH": "final",
+}
 
 
 # ---------------------------------------------------------------------------
@@ -97,6 +109,21 @@ def is_rule_line(line):
     return line.startswith(RULE_PREFIXES)
 
 
+def is_loon_rule_line(line):
+    """Check if a line is a valid Loon rule."""
+    line = line.strip()
+    if not line or line.startswith("#"):
+        return False
+    if line == "final":
+        return True
+    return line.startswith((
+        "DEST-PORT,", "PROTOCOL,",
+        "DOMAIN,", "DOMAIN-SUFFIX,", "DOMAIN-KEYWORD,", "DOMAIN-WILDCARD,", "DOMAIN-REGEX,",
+        "IP-CIDR,", "IP-CIDR6,", "GEOIP,", "IP-ASN,",
+        "USER-AGENT,", "URL-REGEX,",
+    ))
+
+
 def count_rules_by_type(rules):
     """Count occurrences of each rule type from a list of rule strings."""
     counts = {}
@@ -112,8 +139,21 @@ def count_rules_by_type(rules):
     return counts
 
 
+def get_loon_equivalent(rule):
+    """Return the Loon equivalent line for a mihomo rule, or None."""
+    rule = rule.strip()
+    if rule == "MATCH":
+        return "final"
+    for mihomo_type, loon_type in LOON_EQUIVALENT.items():
+        if mihomo_type == "MATCH":
+            continue
+        if rule.startswith(mihomo_type + ","):
+            return rule.replace(mihomo_type + ",", loon_type + ",", 1)
+    return None
+
+
 def write_rule_list(output_path, name, sorted_rules, ref_line=None):
-    """Write a .list file with header, type counts, and sorted rules."""
+    """Write a .list file with header, type counts, sorted rules, and Loon equivalents."""
     total = len(sorted_rules)
     type_counts = count_rules_by_type(sorted_rules)
 
@@ -134,9 +174,136 @@ def write_rule_list(output_path, name, sorted_rules, ref_line=None):
                 f.write("# {}: {}\n".format(t, type_counts[t]))
         f.write("# TOTAL: {}\n".format(total))
         for rule in sorted_rules:
+            # Write the mihomo rule
             f.write(rule + "\n")
+            # Write Loon equivalent if applicable
+            loon_line = get_loon_equivalent(rule)
+            if loon_line is not None:
+                f.write(loon_line + "\n")
 
     return total, type_counts
+
+
+# ---------------------------------------------------------------------------
+# Subsumption check for China.list exclusion
+# ---------------------------------------------------------------------------
+
+def is_subdomain(domain, suffix):
+    """Check if domain is a subdomain of or equal to suffix."""
+    return domain == suffix or domain.endswith("." + suffix)
+
+
+def remove_subsumed_rules(china_rules, exclude_set):
+    """Remove China rules that would be matched by broader rules in exclude_set.
+
+    Beyond exact-match removal, handles:
+      - DOMAIN-SUFFIX,domain: removes any China rule whose value is the domain
+        or a subdomain of that domain
+      - DOMAIN-KEYWORD,keyword: removes any China rule whose value contains keyword
+      - DOMAIN-WILDCARD,*.domain: removes any China rule whose value ends with .domain
+      - IP-CIDR/IP-CIDR6: removes China IPs falling within exclude CIDR ranges
+
+    Args:
+        china_rules: set of China rule strings
+        exclude_set: set of rule strings from other lists
+
+    Returns:
+        set of China rules with subsumed entries removed
+    """
+    # Step 1: Exact match removal
+    china_rules = china_rules - exclude_set
+
+    # Step 2: Build lookup structures for efficient subsumption checking
+    # DOMAIN-SUFFIX values for O(1) suffix lookup
+    exclude_suffixes = set()
+    exclude_cidr_networks = []  # (ip_network, type) pairs
+    for rule in exclude_set:
+        if rule.startswith("DOMAIN-SUFFIX,"):
+            exclude_suffixes.add(rule.split(",", 1)[1])
+        elif rule.startswith("IP-CIDR,"):
+            try:
+                exclude_cidr_networks.append(
+                    (ipaddress.ip_network(rule.split(",", 1)[1], strict=False), rule))
+            except ValueError:
+                pass
+        elif rule.startswith("IP-CIDR6,"):
+            try:
+                exclude_cidr_networks.append(
+                    (ipaddress.ip_network(rule.split(",", 1)[1], strict=False), rule))
+            except ValueError:
+                pass
+
+    # Step 3: Check each China rule for subsumption
+    rules_to_remove = set()
+
+    # Build DOMAIN-KEYWORD and DOMAIN-WILDCARD lists
+    exclude_keywords = []
+    exclude_wildcards = []
+    for rule in exclude_set:
+        if rule.startswith("DOMAIN-KEYWORD,"):
+            exclude_keywords.append(rule.split(",", 1)[1])
+        elif rule.startswith("DOMAIN-WILDCARD,"):
+            val = rule.split(",", 1)[1]
+            if val.startswith("*."):
+                exclude_wildcards.append(val[2:])
+
+    for china_rule in china_rules:
+        try:
+            c_type, c_value = china_rule.split(",", 1)
+        except ValueError:
+            # Handle standalone MATCH
+            continue
+
+        removed = False
+
+        # DOMAIN-SUFFIX subsumption: check if China value is a subdomain of any exclude suffix
+        if c_type in ("DOMAIN", "DOMAIN-SUFFIX") and exclude_suffixes:
+            parts = c_value.split(".")
+            for i in range(len(parts)):
+                suffix = ".".join(parts[i:])
+                if suffix in exclude_suffixes:
+                    rules_to_remove.add(china_rule)
+                    removed = True
+                    break
+
+        if removed:
+            continue
+
+        # DOMAIN-KEYWORD subsumption
+        if c_type in ("DOMAIN", "DOMAIN-SUFFIX") and exclude_keywords:
+            for kw in exclude_keywords:
+                if kw in c_value:
+                    rules_to_remove.add(china_rule)
+                    removed = True
+                    break
+
+        if removed:
+            continue
+
+        # DOMAIN-WILDCARD subsumption (*.domain → any subdomain)
+        if c_type in ("DOMAIN", "DOMAIN-SUFFIX") and exclude_wildcards:
+            for wild_domain in exclude_wildcards:
+                if c_value.endswith("." + wild_domain):
+                    rules_to_remove.add(china_rule)
+                    removed = True
+                    break
+
+        if removed:
+            continue
+
+        # IP-CIDR/IP-CIDR6 subsumption
+        if c_type in ("IP-CIDR", "IP-CIDR6") and exclude_cidr_networks:
+            try:
+                c_ip = ipaddress.ip_address(c_value.split("/")[0])
+                for net, _ in exclude_cidr_networks:
+                    if c_ip in net:
+                        rules_to_remove.add(china_rule)
+                        break
+            except ValueError:
+                pass
+
+    china_rules -= rules_to_remove
+    return china_rules
 
 
 # ---------------------------------------------------------------------------
