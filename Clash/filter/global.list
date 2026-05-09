@@ -41,3 +41,4 @@ DOMAIN-SUFFIX,lioncdn.net
 DOMAIN-SUFFIX,passwdword.xyz
 # > Firebase
 DOMAIN-SUFFIX,firebaselogging-pa.googleapis.com
+DOMAIN-SUFFIX,firebase-settings.crashlytics.com
