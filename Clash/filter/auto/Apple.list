@@ -2,15 +2,15 @@
 # AUTHOR: jshir700
 # REPO: https://github.com/jshir700/config
 # REFERENCE: https://github.com/blackmatrix7/ios_rule_script, https://github.com/Loyalsoldier/surge-rules, https://github.com/ACL4SSR/ACL4SSR, https://github.com/GeQ1an/Rules, https://github.com/sve1r/Rules-For-Quantumult-X, https://github.com/Hackl0us/SS-Rule-Snippet, https://github.com/Loyalsoldier/clash-rules, https://github.com/dler-io/Rules, https://github.com/LM-Firefly/Rules, https://github.com/zqzess/rule_for_quantumultX
-# UPDATED: 2026-05-09 22:50:23
+# UPDATED: 2026-05-09 23:01:31
 # DOMAIN: 272
 # DOMAIN-SUFFIX: 1756
 # DOMAIN-KEYWORD: 9
 # DOMAIN-WILDCARD: 15
-# IP-CIDR: 20
+# IP-CIDR: 10
 # IP-CIDR6: 3
 # PROCESS-NAME: 14
-# TOTAL: 2089
+# TOTAL: 2079
 DOMAIN,a1.mzstatic.com
 DOMAIN,a2.mzstatic.com
 DOMAIN,a3.mzstatic.com
@@ -2063,25 +2063,15 @@ DOMAIN-WILDCARD,ipod.*
 DOMAIN-WILDCARD,macbook.*
 DOMAIN-WILDCARD,macbookair.*
 DOMAIN-WILDCARD,macbookpro.*
-IP-CIDR,139.178.128.0/18
 IP-CIDR,139.178.128.0/18,no-resolve
-IP-CIDR,144.178.0.0/19
 IP-CIDR,144.178.0.0/19,no-resolve
-IP-CIDR,144.178.36.0/22
 IP-CIDR,144.178.36.0/22,no-resolve
-IP-CIDR,144.178.48.0/20
 IP-CIDR,144.178.48.0/20,no-resolve
-IP-CIDR,17.0.0.0/8
 IP-CIDR,17.0.0.0/8,no-resolve
-IP-CIDR,192.35.50.0/24
 IP-CIDR,192.35.50.0/24,no-resolve
-IP-CIDR,198.183.17.0/24
 IP-CIDR,198.183.17.0/24,no-resolve
-IP-CIDR,205.180.175.0/24
 IP-CIDR,205.180.175.0/24,no-resolve
-IP-CIDR,63.92.224.0/19
 IP-CIDR,63.92.224.0/19,no-resolve
-IP-CIDR,65.199.22.0/23
 IP-CIDR,65.199.22.0/23,no-resolve
 IP-CIDR6,2403:300::/32,no-resolve
 IP-CIDR6,2620:149::/32,no-resolve

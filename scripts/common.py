@@ -7,6 +7,7 @@ AUTHOR: jshir700
 REPO: https://github.com/jshir700/config
 """
 
+import re
 import requests
 import ipaddress
 from datetime import datetime, timezone, timedelta
@@ -154,6 +155,8 @@ def get_loon_equivalent(rule):
 
 def write_rule_list(output_path, name, sorted_rules, ref_line=None):
     """Write a .list file with header, type counts, sorted rules, and Loon equivalents."""
+    # Deduplicate IP-CIDR/IP-CIDR6 rules preferring no-resolve
+    sorted_rules = deduplicate_ip_cidr(sorted_rules)
     total = len(sorted_rules)
     type_counts = count_rules_by_type(sorted_rules)
 
@@ -185,23 +188,91 @@ def write_rule_list(output_path, name, sorted_rules, ref_line=None):
 
 
 # ---------------------------------------------------------------------------
+# IP-CIDR deduplication: prefer no-resolve variants
+# ---------------------------------------------------------------------------
+
+def deduplicate_ip_cidr(rules):
+    """Deduplicate IP-CIDR/IP-CIDR6 rules, preferring 'no-resolve' variants.
+
+    For duplicate CIDR rules (same type + same IP range), keeps the one with
+    'no-resolve'. If no variant has 'no-resolve', adds 'no-resolve' to the kept rule.
+
+    Args:
+        rules: iterable of rule strings (e.g., list or set).
+
+    Returns:
+        list of deduplicated rule strings.
+    """
+    result = set()
+    cidr_map = {}  # (rule_type, cidr_value) -> best_rule_string
+
+    for rule in rules:
+        if rule.startswith(("IP-CIDR,", "IP-CIDR6,")):
+            parts = rule.split(",")
+            rule_type = parts[0]  # IP-CIDR or IP-CIDR6
+            cidr_value = parts[1]  # e.g. "10.0.0.0/8"
+            has_no_resolve = "no-resolve" in parts
+
+            key = (rule_type, cidr_value)
+            if key in cidr_map:
+                existing = cidr_map[key]
+                existing_has_no_resolve = "no-resolve" in existing.split(",")
+                if has_no_resolve and not existing_has_no_resolve:
+                    cidr_map[key] = rule  # prefer no-resolve
+            else:
+                cidr_map[key] = rule
+        else:
+            result.add(rule)
+
+    for key, best_rule in cidr_map.items():
+        parts = best_rule.split(",")
+        has_no_resolve = "no-resolve" in parts
+        if not has_no_resolve:
+            best_rule += ",no-resolve"
+        result.add(best_rule)
+
+    return sorted(result)
+
+
+# ---------------------------------------------------------------------------
 # Subsumption check for China.list exclusion
 # ---------------------------------------------------------------------------
 
-def is_subdomain(domain, suffix):
-    """Check if domain is a subdomain of or equal to suffix."""
-    return domain == suffix or domain.endswith("." + suffix)
+def wildcard_to_regex(pattern):
+    """Convert a DOMAIN-WILDCARD pattern to a compiled regex.
+
+    Supports * (zero or more chars) and ? (exactly one char).
+    """
+    regex_parts = ["^"]
+    for c in pattern:
+        if c == "*":
+            regex_parts.append(".*")
+        elif c == "?":
+            regex_parts.append(".")
+        else:
+            regex_parts.append(re.escape(c))
+    regex_parts.append("$")
+    return re.compile("".join(regex_parts))
+
+
+def _extract_cidr_value(rule_str):
+    """Extract the pure CIDR value from a rule string, stripping ,no-resolve suffix."""
+    # rule_str is like "10.0.0.0/8,no-resolve" or just "10.0.0.0/8"
+    return rule_str.split(",")[0]
 
 
 def remove_subsumed_rules(china_rules, exclude_set):
     """Remove China rules that would be matched by broader rules in exclude_set.
 
     Beyond exact-match removal, handles:
-      - DOMAIN-SUFFIX,domain: removes any China rule whose value is the domain
-        or a subdomain of that domain
-      - DOMAIN-KEYWORD,keyword: removes any China rule whose value contains keyword
-      - DOMAIN-WILDCARD,*.domain: removes any China rule whose value ends with .domain
-      - IP-CIDR/IP-CIDR6: removes China IPs falling within exclude CIDR ranges
+      - DOMAIN-SUFFIX,domain: removes any China rule whose value is
+        a subdomain of or equal to that domain
+      - DOMAIN-KEYWORD,keyword: removes any China rule whose value
+        contains keyword
+      - DOMAIN-WILDCARD,pattern: removes any China rule whose value
+        matches the wildcard pattern (supports * and ?)
+      - IP-CIDR/IP-CIDR6: removes China CIDRs that fall within any
+        exclude CIDR range (using subnet_of)
 
     Args:
         china_rules: set of China rule strings
@@ -213,90 +284,97 @@ def remove_subsumed_rules(china_rules, exclude_set):
     # Step 1: Exact match removal
     china_rules = china_rules - exclude_set
 
-    # Step 2: Build lookup structures for efficient subsumption checking
-    # DOMAIN-SUFFIX values for O(1) suffix lookup
+    # Step 2: Build lookup structures
+    # All domain-based c_types in China that should be checked
+    DOMAIN_TYPES = ("DOMAIN", "DOMAIN-SUFFIX", "DOMAIN-KEYWORD", "DOMAIN-WILDCARD")
+
     exclude_suffixes = set()
-    exclude_cidr_networks = []  # (ip_network, type) pairs
+    exclude_cidr_v4 = []   # IPv4 networks
+    exclude_cidr_v6 = []   # IPv6 networks
+    exclude_keywords = []
+    exclude_wildcard_regexes = []  # (compiled_regex, raw_pattern)
+
     for rule in exclude_set:
         if rule.startswith("DOMAIN-SUFFIX,"):
             exclude_suffixes.add(rule.split(",", 1)[1])
-        elif rule.startswith("IP-CIDR,"):
+        elif rule.startswith("DOMAIN-KEYWORD,"):
+            exclude_keywords.append(rule.split(",", 1)[1])
+        elif rule.startswith("DOMAIN-WILDCARD,"):
+            pattern = rule.split(",", 1)[1]
+            exclude_wildcard_regexes.append((wildcard_to_regex(pattern), pattern))
+        elif rule.startswith(("IP-CIDR,", "IP-CIDR6,")):
             try:
-                exclude_cidr_networks.append(
-                    (ipaddress.ip_network(rule.split(",", 1)[1], strict=False), rule))
-            except ValueError:
-                pass
-        elif rule.startswith("IP-CIDR6,"):
-            try:
-                exclude_cidr_networks.append(
-                    (ipaddress.ip_network(rule.split(",", 1)[1], strict=False), rule))
+                cidr_str = _extract_cidr_value(rule.split(",", 1)[1])
+                net = ipaddress.ip_network(cidr_str, strict=False)
+                if isinstance(net, ipaddress.IPv4Network):
+                    exclude_cidr_v4.append(net)
+                else:
+                    exclude_cidr_v6.append(net)
             except ValueError:
                 pass
 
     # Step 3: Check each China rule for subsumption
     rules_to_remove = set()
 
-    # Build DOMAIN-KEYWORD and DOMAIN-WILDCARD lists
-    exclude_keywords = []
-    exclude_wildcards = []
-    for rule in exclude_set:
-        if rule.startswith("DOMAIN-KEYWORD,"):
-            exclude_keywords.append(rule.split(",", 1)[1])
-        elif rule.startswith("DOMAIN-WILDCARD,"):
-            val = rule.split(",", 1)[1]
-            if val.startswith("*."):
-                exclude_wildcards.append(val[2:])
-
     for china_rule in china_rules:
         try:
             c_type, c_value = china_rule.split(",", 1)
         except ValueError:
-            # Handle standalone MATCH
-            continue
+            continue  # standalone MATCH etc.
 
         removed = False
 
-        # DOMAIN-SUFFIX subsumption: check if China value is a subdomain of any exclude suffix
-        if c_type in ("DOMAIN", "DOMAIN-SUFFIX") and exclude_suffixes:
-            parts = c_value.split(".")
-            for i in range(len(parts)):
-                suffix = ".".join(parts[i:])
-                if suffix in exclude_suffixes:
-                    rules_to_remove.add(china_rule)
-                    removed = True
-                    break
+        if c_type not in DOMAIN_TYPES and c_type not in ("IP-CIDR", "IP-CIDR6"):
+            continue  # skip types we don't check
 
-        if removed:
-            continue
+        # --- Domain-based subsumption ---
+        if c_type in DOMAIN_TYPES:
 
-        # DOMAIN-KEYWORD subsumption
-        if c_type in ("DOMAIN", "DOMAIN-SUFFIX") and exclude_keywords:
-            for kw in exclude_keywords:
-                if kw in c_value:
-                    rules_to_remove.add(china_rule)
-                    removed = True
-                    break
+            # DOMAIN-SUFFIX subsumption: is China's value a subdomain of (or equal to)
+            # any exclude suffix?
+            if exclude_suffixes:
+                parts = c_value.split(".")
+                for i in range(len(parts)):
+                    suffix = ".".join(parts[i:])
+                    if suffix in exclude_suffixes:
+                        rules_to_remove.add(china_rule)
+                        removed = True
+                        break
 
-        if removed:
-            continue
+            if removed:
+                continue
 
-        # DOMAIN-WILDCARD subsumption (*.domain → any subdomain)
-        if c_type in ("DOMAIN", "DOMAIN-SUFFIX") and exclude_wildcards:
-            for wild_domain in exclude_wildcards:
-                if c_value.endswith("." + wild_domain):
-                    rules_to_remove.add(china_rule)
-                    removed = True
-                    break
+            # DOMAIN-KEYWORD subsumption: does China's value contain any exclude keyword?
+            if exclude_keywords:
+                for kw in exclude_keywords:
+                    if kw in c_value:
+                        rules_to_remove.add(china_rule)
+                        removed = True
+                        break
 
-        if removed:
-            continue
+            if removed:
+                continue
 
-        # IP-CIDR/IP-CIDR6 subsumption
-        if c_type in ("IP-CIDR", "IP-CIDR6") and exclude_cidr_networks:
+            # DOMAIN-WILDCARD subsumption: does China's value match any exclude wildcard?
+            if exclude_wildcard_regexes:
+                for regex, _ in exclude_wildcard_regexes:
+                    if regex.match(c_value):
+                        rules_to_remove.add(china_rule)
+                        removed = True
+                        break
+
+            if removed:
+                continue
+
+        # --- IP-CIDR / IP-CIDR6 subsumption ---
+        if c_type in ("IP-CIDR", "IP-CIDR6") and (exclude_cidr_v4 or exclude_cidr_v6):
             try:
-                c_ip = ipaddress.ip_address(c_value.split("/")[0])
-                for net, _ in exclude_cidr_networks:
-                    if c_ip in net:
+                cidr_str = _extract_cidr_value(c_value)
+                c_net = ipaddress.ip_network(cidr_str, strict=False)
+                # Only check against networks of the same IP version
+                networks_to_check = exclude_cidr_v4 if isinstance(c_net, ipaddress.IPv4Network) else exclude_cidr_v6
+                for net in networks_to_check:
+                    if c_net.subnet_of(net):
                         rules_to_remove.add(china_rule)
                         break
             except ValueError:
