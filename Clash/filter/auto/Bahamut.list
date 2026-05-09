@@ -1,0 +1,17 @@
+# NAME: Bahamut
+# AUTHOR: jshir700
+# REPO: https://github.com/jshir700/config
+# REFERENCE: https://github.com/blackmatrix7/ios_rule_script, https://github.com/LM-Firefly/Rules, https://github.com/ACL4SSR/ACL4SSR
+# UPDATED: 2026-05-09 22:30:51
+# DOMAIN: 3
+# DOMAIN-SUFFIX: 6
+# TOTAL: 9
+DOMAIN,bahamut.akamaized.net
+DOMAIN,gamer-cds.cdn.hinet.net
+DOMAIN,gamer2-cds.cdn.hinet.net
+DOMAIN-SUFFIX,bahamut.com.tw
+DOMAIN-SUFFIX,digicert.com
+DOMAIN-SUFFIX,gamer.com.tw
+DOMAIN-SUFFIX,gvt1.com
+DOMAIN-SUFFIX,hinet.net
+DOMAIN-SUFFIX,viblast.com

@@ -1,0 +1,46 @@
+# NAME: Download
+# AUTHOR: jshir700
+# REPO: https://github.com/jshir700/config
+# REFERENCE: https://github.com/blackmatrix7/ios_rule_script, https://github.com/ACL4SSR/ACL4SSR, https://github.com/LM-Firefly/Rules
+# UPDATED: 2026-05-09 22:30:52
+# DOMAIN-SUFFIX: 2
+# DOMAIN-KEYWORD: 5
+# PROCESS-NAME: 30
+# TOTAL: 37
+DOMAIN-KEYWORD,aria2
+DOMAIN-KEYWORD,thunder
+DOMAIN-KEYWORD,xlliveud
+DOMAIN-KEYWORD,xunlei
+DOMAIN-KEYWORD,yunpan
+DOMAIN-SUFFIX,qbittorrent.org
+DOMAIN-SUFFIX,smtp
+PROCESS-NAME,BitComet
+PROCESS-NAME,BitComet.exe
+PROCESS-NAME,BitComet_x64.exe
+PROCESS-NAME,DownloadService
+PROCESS-NAME,DownloadService.exe
+PROCESS-NAME,Folx
+PROCESS-NAME,Folx.exe
+PROCESS-NAME,NetTransport
+PROCESS-NAME,NetTransport.exe
+PROCESS-NAME,Thunder
+PROCESS-NAME,Thunder.exe
+PROCESS-NAME,Transmission
+PROCESS-NAME,Transmission.exe
+PROCESS-NAME,WebTorrent
+PROCESS-NAME,WebTorrent Helper
+PROCESS-NAME,WebTorrent Helper.exe
+PROCESS-NAME,WebTorrent.exe
+PROCESS-NAME,WebTorrentHelper
+PROCESS-NAME,WebTorrentHelper.exe
+PROCESS-NAME,Weiyun
+PROCESS-NAME,Weiyun.exe
+PROCESS-NAME,aria2c
+PROCESS-NAME,aria2c.exe
+PROCESS-NAME,baidunetdisk.exe
+PROCESS-NAME,fdm
+PROCESS-NAME,fdm.exe
+PROCESS-NAME,qbittorrent
+PROCESS-NAME,qbittorrent.exe
+PROCESS-NAME,uTorrent
+PROCESS-NAME,uTorrent.exe

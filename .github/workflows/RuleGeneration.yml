@@ -3,7 +3,8 @@ name: Auto Rule Generation
 on:
   workflow_dispatch:
   schedule:
-    - cron: "0 16 * * *"
+    # 04:00 UTC = 12:00 Beijing Time (UTC+8), GitHub low-traffic hours
+    - cron: "0 4 * * *"
 
 jobs:
   build:
@@ -19,21 +20,9 @@ jobs:
         run: |
           python -m pip install --upgrade pip
           pip install requests lxml pyyaml
-      - name: Generate ChinaASN.list
+      - name: Generate all rule lists (concurrent)
         run: |
-          python scripts/ChinaASN.py
-      - name: Generate Scholar.list
-        run: |
-          python scripts/Scholar.py
-      - name: Generate Speedtest.list
-        run: |
-          python scripts/Speedtest.py
-      - name: Generate Binance.list
-        run: |
-          python scripts/Binance.py
-      - name: Generate BanAD.list
-        run: |
-          python scripts/BanAD.py
+          python scripts/GenerateAll.py
       - uses: stefanzweifel/git-auto-commit-action@v4
         with:
-          commit_message: Auto update rule lists
+          commit_message: "Auto update rule lists\n\nchore: 自动更新规则列表"
