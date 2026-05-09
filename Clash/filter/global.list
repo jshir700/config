@@ -42,3 +42,6 @@ DOMAIN-SUFFIX,passwdword.xyz
 # > Google Play
 DOMAIN-SUFFIX,ångströ.com
 DOMAIN-SUFFIX,xn--ngstr-lra8j.com
+DOMAIN-SUFFIX,connectivitycheck.gstatic.com
+DOMAIN-SUFFIX,googlevideo.com
+DOMAIN-SUFFIX,googleapis.cn
