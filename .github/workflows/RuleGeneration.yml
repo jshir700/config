@@ -28,6 +28,12 @@ jobs:
       - name: Generate Speedtest.list
         run: |
           python scripts/Speedtest.py
+      - name: Generate Binance.list
+        run: |
+          python scripts/Binance.py
+      - name: Generate BanAD.list
+        run: |
+          python scripts/BanAD.py
       - uses: stefanzweifel/git-auto-commit-action@v4
         with:
           commit_message: Auto update rule lists
