@@ -198,8 +198,7 @@ RULE_LISTS["115"] = (
 
 RULE_LISTS["Bilibili"] = (
     "# REFERENCE: https://github.com/blackmatrix7/ios_rule_script, "
-    "https://github.com/LM-Firefly/Rules, https://github.com/ACL4SSR/ACL4SSR, "
-    "https://ruleset.isagood.day",
+    "https://github.com/LM-Firefly/Rules, https://github.com/ACL4SSR/ACL4SSR",
     [
         ("https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/"
          "refs/heads/master/rule/Clash/BiliBili/BiliBili.list", "list", None),
@@ -209,7 +208,6 @@ RULE_LISTS["Bilibili"] = (
          "Clash/Ruleset/Bilibili.list", "list", None),
         ("https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/"
          "Clash/Providers/Ruleset/Bilibili.yaml", "yaml", None),
-        ("https://ruleset.isagood.day/bilibili.conf", "list", None),
     ]
 )
 
@@ -297,7 +295,7 @@ RULE_LISTS["ChinaMedia"] = (
     "# REFERENCE: https://github.com/blackmatrix7/ios_rule_script, "
     "https://github.com/LM-Firefly/Rules, https://github.com/ACL4SSR/ACL4SSR, "
     "https://github.com/sve1r/Rules-For-Quantumult-X, "
-    "https://github.com/zqzess/rule_for_quantumultX, https://ruleset.isagood.day",
+    "https://github.com/zqzess/rule_for_quantumultX",
     [
         ("https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/"
          "refs/heads/master/rule/Clash/ChinaMedia/ChinaMedia.list", "list", None),
@@ -315,7 +313,6 @@ RULE_LISTS["ChinaMedia"] = (
          "Clash/Providers/Ruleset/Bilibili.yaml", "yaml", None),
         ("https://raw.githubusercontent.com/zqzess/rule_for_quantumultX/"
          "master/QuantumultX/rules/CMedia.list", "quantumultx", None),
-        ("https://ruleset.isagood.day/bilibili.conf", "list", None),
         ("https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/refs/heads/master/"
          "Clash/ChinaMedia.list", "list", None),
     ]
@@ -857,9 +854,9 @@ RULE_LISTS["GlobalMedia"] = (
     "https://github.com/zqzess/rule_for_quantumultX",
     [
         ("https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/"
-         "refs/heads/master/rule/Clash/GlobalMedia/GlobalMedia.list", "list", None),
+         "refs/heads/master/rule/Clash/GlobalMedia/GlobalMedia.yaml", "yaml", None),
         ("https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/"
-         "refs/heads/master/rule/Clash/GlobalMedia/GlobalMedia_Domain.list", "list", None),
+         "refs/heads/master/rule/Clash/GlobalMedia/GlobalMedia_Domain.yaml", "yaml", None),
         ("https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/"
          "Clash/Ruleset/YouTube.list", "list", None),
         ("https://raw.githubusercontent.com/GeQ1an/Rules/master/"
@@ -886,12 +883,12 @@ RULE_LISTS["Global"] = (
     "https://github.com/sve1r/Rules-For-Quantumult-X, https://github.com/ACL4SSR/ACL4SSR, "
     "https://github.com/Hackl0us/SS-Rule-Snippet, https://github.com/Loyalsoldier/surge-rules, "
     "https://github.com/GeQ1an/Rules, https://github.com/Loyalsoldier/clash-rules, "
-    "https://github.com/dler-io/Rules, https://ruleset.isagood.day",
+    "https://github.com/dler-io/Rules",
     [
         ("https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/"
-         "refs/heads/master/rule/Clash/Global/Global.list", "list", None),
+         "refs/heads/master/rule/Clash/Global/Global.yaml", "yaml", None),
         ("https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/"
-         "refs/heads/master/rule/Clash/Global/Global_Domain.list", "list", None),
+         "refs/heads/master/rule/Clash/Global/Global_Domain.yaml", "yaml", None),
         ("https://raw.githubusercontent.com/sve1r/Rules-For-Quantumult-X/"
          "develop/Rules/Region/Global.list", "surge", None),
         ("https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/"
@@ -920,7 +917,6 @@ RULE_LISTS["Global"] = (
          "release/proxy.txt", "loyalsoldier", None),
         ("https://raw.githubusercontent.com/dler-io/Rules/main/"
          "Clash/Provider/Proxy.yaml", "yaml", None),
-        ("https://ruleset.isagood.day/global_domain.conf", "list", None),
     ]
 )
 
@@ -933,7 +929,11 @@ CHINA_SOURCES = (
     "https://github.com/ACL4SSR/ACL4SSR",
     [
         ("https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/"
-         "refs/heads/master/rule/Clash/ChinaMax/ChinaMax.list", "list", None),
+         "refs/heads/master/rule/Clash/ChinaMax/ChinaMax.yaml", "yaml", None),
+        ("https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/"
+         "refs/heads/master/rule/Clash/ChinaMax/ChinaMax_Domain.yaml", "yaml", None),
+        ("https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/"
+         "refs/heads/master/rule/Clash/ChinaMax/ChinaMax_IP.yaml", "yaml", None),
         ("https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/"
          "Clash/ChinaCompanyIp.list", "list", None),
         ("https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/"
