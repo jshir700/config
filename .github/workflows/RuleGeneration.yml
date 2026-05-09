@@ -1,4 +1,4 @@
-name: 更新 ChinaASN 列表
+name: Auto Rule Generation
 
 on:
   workflow_dispatch:
@@ -11,17 +11,20 @@ jobs:
 
     steps:
       - uses: actions/checkout@v3
-      - name: 设置 Python 3.8
+      - name: Setup Python 3.8
         uses: actions/setup-python@v4
         with:
           python-version: 3.8
-      - name: 安装依赖
+      - name: Install dependencies
         run: |
           python -m pip install --upgrade pip
-          pip install requests lxml
-      - name: 生成 ChinaASN.list
+          pip install requests lxml pyyaml
+      - name: Generate ChinaASN.list
         run: |
           python scripts/ChinaASN.py
+      - name: Generate Scholar.list
+        run: |
+          python scripts/Scholar.py
       - uses: stefanzweifel/git-auto-commit-action@v4
         with:
-          commit_message: 更新 ChinaASN 列表
+          commit_message: Auto update rule lists
