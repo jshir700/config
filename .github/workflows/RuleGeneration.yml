@@ -6,8 +6,6 @@ on:
     # GitHub low-traffic hours (UTC 00:00~06:00), non-full-hour Beijing time
     # 04:17 UTC = 12:17 Beijing Time (UTC+8)
     - cron: "17 4 * * *"
-    # 05:23 UTC = 13:23 Beijing Time (UTC+8)
-    - cron: "23 5 * * *"
 
 jobs:
   build:
