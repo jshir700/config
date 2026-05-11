@@ -2,15 +2,15 @@
 # AUTHOR: jshir700
 # REPO: https://github.com/jshir700/config
 # REFERENCE: https://github.com/blackmatrix7/ios_rule_script, https://github.com/Loyalsoldier/surge-rules, https://github.com/ACL4SSR/ACL4SSR, https://github.com/GeQ1an/Rules, https://github.com/sve1r/Rules-For-Quantumult-X, https://github.com/Hackl0us/SS-Rule-Snippet, https://github.com/Loyalsoldier/clash-rules, https://github.com/dler-io/Rules, https://github.com/LM-Firefly/Rules, https://github.com/zqzess/rule_for_quantumultX
-# UPDATED: 2026-05-10 00:46:03
+# UPDATED: 2026-05-11 15:54:15
 # DOMAIN: 272
-# DOMAIN-SUFFIX: 1756
+# DOMAIN-SUFFIX: 1752
 # DOMAIN-KEYWORD: 9
 # DOMAIN-WILDCARD: 15
 # IP-CIDR: 10
 # IP-CIDR6: 3
 # PROCESS-NAME: 14
-# TOTAL: 2079
+# TOTAL: 2075
 DOMAIN,a1.mzstatic.com
 DOMAIN,a2.mzstatic.com
 DOMAIN,a3.mzstatic.com
@@ -1142,6 +1142,7 @@ DOMAIN-SUFFIX,cl1-cdn.origin-apple.com.akadns.net
 DOMAIN-SUFFIX,cl1.apple.com
 DOMAIN-SUFFIX,cl2-cn.apple.com
 DOMAIN-SUFFIX,cl2.apple.com
+DOMAIN-SUFFIX,cl2.apple.com.edgekey.net.globalredir.akadns.net
 DOMAIN-SUFFIX,cl3-cdn.origin-apple.com.akadns.net
 DOMAIN-SUFFIX,cl3.apple.com
 DOMAIN-SUFFIX,cl4-cdn.origin-apple.com.akadns.net
@@ -1317,6 +1318,7 @@ DOMAIN-SUFFIX,goodsdunk.net
 DOMAIN-SUFFIX,gs-loc-cn.apple.com
 DOMAIN-SUFFIX,gs-loc.apple.com
 DOMAIN-SUFFIX,gsp10-ssl-cn.ls.apple.com
+DOMAIN-SUFFIX,gsp11-cn.ls.apple.com
 DOMAIN-SUFFIX,gsp12-cn.ls.apple.com
 DOMAIN-SUFFIX,gsp13-cn.ls.apple.com
 DOMAIN-SUFFIX,gsp4-cn.ls.apple.com
@@ -1379,12 +1381,10 @@ DOMAIN-SUFFIX,ibookpartner.com
 DOMAIN-SUFFIX,ibooksauthor.com
 DOMAIN-SUFFIX,ichat.co.in
 DOMAIN-SUFFIX,icloud-apple.cn
-DOMAIN-SUFFIX,icloud-cdn.icloud.com.akadns.net
 DOMAIN-SUFFIX,icloud-content.com
 DOMAIN-SUFFIX,icloud-content.com.cn
 DOMAIN-SUFFIX,icloud-isupport.com
 DOMAIN-SUFFIX,icloud-sandbox.com
-DOMAIN-SUFFIX,icloud.cdn-apple.com
 DOMAIN-SUFFIX,icloud.ch
 DOMAIN-SUFFIX,icloud.cn
 DOMAIN-SUFFIX,icloud.com
@@ -1819,9 +1819,7 @@ DOMAIN-SUFFIX,newton.com
 DOMAIN-SUFFIX,next.com
 DOMAIN-SUFFIX,nflhotsalejerseys.com
 DOMAIN-SUFFIX,nicesshop.net
-DOMAIN-SUFFIX,ocsp-lb.apple.com.akadns.net
 DOMAIN-SUFFIX,ocsp.apple.com
-DOMAIN-SUFFIX,ocsp2-lb.apple.com.akadns.net
 DOMAIN-SUFFIX,ocsp2.apple.com
 DOMAIN-SUFFIX,offerairjordanlebron.com
 DOMAIN-SUFFIX,officialbeatsbydreshop.com
@@ -1844,7 +1842,6 @@ DOMAIN-SUFFIX,osxapps.itunes.g.aaplimg.com
 DOMAIN-SUFFIX,outletbeatsshop.com
 DOMAIN-SUFFIX,overapple.com
 DOMAIN-SUFFIX,pancake.apple.com
-DOMAIN-SUFFIX,pancake.cdn-apple.com.akadns.net
 DOMAIN-SUFFIX,pascherbeatsmonster.com
 DOMAIN-SUFFIX,paulsimon-music.com
 DOMAIN-SUFFIX,pba0.apple.com
@@ -1891,7 +1888,6 @@ DOMAIN-SUFFIX,researchkit.hk
 DOMAIN-SUFFIX,researchkit.net
 DOMAIN-SUFFIX,researchkit.org
 DOMAIN-SUFFIX,researchkit.tv
-DOMAIN-SUFFIX,reserve-prime.apple.com
 DOMAIN-SUFFIX,s.mzstatic.com
 DOMAIN-SUFFIX,safebrowsing.apple
 DOMAIN-SUFFIX,salebeatslasteststyle4you.com
