@@ -59,6 +59,7 @@ LOON_EQUIVALENT = {
     "DST-PORT": "DEST-PORT",
     "NETWORK": "PROTOCOL",
     "MATCH": "final",
+    "DOMAIN-REGEX": "URL-REGEX",
 }
 
 # Loon -> Clash (reverse mapping)
@@ -66,6 +67,7 @@ LOON_TO_CLASH = {
     "DEST-PORT": "DST-PORT",
     "PROTOCOL": "NETWORK",
     "final": "MATCH",
+    "URL-REGEX": "DOMAIN-REGEX",
 }
 
 
@@ -90,13 +92,11 @@ SURGE_TO_CLASH = {
     "geoip": "GEOIP",
     "ip-asn": "IP-ASN",
     "user-agent": "USER-AGENT",
-    "url-regex": "URL-REGEX",
+    "url-regex": "DOMAIN-REGEX",
     "src-ip-cidr": "SRC-IP-CIDR",
     "src-port": "SRC-PORT",
     "dst-port": "DST-PORT",
-    "url-regex": "URL-REGEX",
     "process-name": "PROCESS-NAME",
-    "user-agent": "USER-AGENT",
     "protocol": "NETWORK",
     # Loon type equivalents (for parsing Loon rules in sgmodule/surge sources)
     "dest-port": "DST-PORT",

@@ -28,7 +28,7 @@ from accessible_urls import ACCESSIBLE_URLS
 # Output directories
 # ---------------------------------------------------------------------------
 OUTPUT_DIR = "Clash/filter/auto"
-CHINA_OUTPUT_DIR = "Clash/auto"
+CHINA_OUTPUT_DIR = "Clash/filter/auto"
 
 
 # ---------------------------------------------------------------------------
@@ -93,8 +93,6 @@ RULE_LISTS["Reject"] = (
         # GMOogway shadowrocket reject module
         ("https://raw.githubusercontent.com/GMOogway/shadowrocket-rules/"
          "master/sr_reject_list.module", "sgmodule", None),
-        # adrules.top ad blocking list
-        ("https://adrules.top/adrules.list", "list", None),
     ]
 )
 
