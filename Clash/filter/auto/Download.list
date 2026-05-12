@@ -2,7 +2,7 @@
 # AUTHOR: jshir700
 # REPO: https://github.com/jshir700/config
 # REFERENCE: https://github.com/blackmatrix7/ios_rule_script, https://github.com/ACL4SSR/ACL4SSR, https://github.com/LM-Firefly/Rules
-# UPDATED: 2026-05-13 00:01:11
+# UPDATED: 2026-05-13 02:07:43
 # DOMAIN-SUFFIX: 2
 # DOMAIN-KEYWORD: 5
 # PROCESS-NAME: 30
@@ -46,9 +46,16 @@ PROCESS-NAME,qbittorrent.exe
 PROCESS-NAME,uTorrent
 PROCESS-NAME,uTorrent.exe
 URL-REGEX,(.+.)?(torrent|announce.php?passkey=|tracker|BitTorrent|bt_key|ed2k|find_node|get_peers|info_hash|magnet:|peer_id=|xunlei)(..+)?
+DOMAIN-REGEX,(.+.)?(torrent|announce.php?passkey=|tracker|BitTorrent|bt_key|ed2k|find_node|get_peers|info_hash|magnet:|peer_id=|xunlei)(..+)?
 URL-REGEX,(.+.|^)(360|so|qihoo|360safe|qhimg|360totalsecurity|yunpan).(cn|com)
+DOMAIN-REGEX,(.+.|^)(360|so|qihoo|360safe|qhimg|360totalsecurity|yunpan).(cn|com)
 URL-REGEX,(.+\.|^)(360|so)\.(cn|com)
+DOMAIN-REGEX,(.+\.|^)(360|so)\.(cn|com)
 URL-REGEX,(.?)(xunlei|sandai|Thunder|XLLiveUD)(.)
+DOMAIN-REGEX,(.?)(xunlei|sandai|Thunder|XLLiveUD)(.)
 URL-REGEX,(Subject|HELO|SMTP)
+DOMAIN-REGEX,(Subject|HELO|SMTP)
 URL-REGEX,(api|ps|sv|offnavi|newvector|ulog.imap|newloc)(.map|).(baidu|n.shifen).com
+DOMAIN-REGEX,(api|ps|sv|offnavi|newvector|ulog.imap|newloc)(.map|).(baidu|n.shifen).com
 URL-REGEX,assets\d+\.xboxlive\.(com|cn)
+DOMAIN-REGEX,assets\d+\.xboxlive\.(com|cn)

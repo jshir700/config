@@ -2,7 +2,7 @@
 # AUTHOR: jshir700
 # REPO: https://github.com/jshir700/config
 # REFERENCE: https://github.com/blackmatrix7/ios_rule_script, https://github.com/LM-Firefly/Rules, https://github.com/ACL4SSR/ACL4SSR, https://github.com/sve1r/Rules-For-Quantumult-X, https://github.com/zqzess/rule_for_quantumultX
-# UPDATED: 2026-05-13 00:01:11
+# UPDATED: 2026-05-13 02:07:43
 # DOMAIN: 83
 # DOMAIN-SUFFIX: 278
 # DOMAIN-KEYWORD: 2
@@ -473,6 +473,7 @@ PROCESS-NAME,com.bilibili.comic.intl
 PROCESS-NAME,tv.danmaku.bili
 PROCESS-NAME,tv.danmaku.bilibilihd
 URL-REGEX,^https?:\/\/int[\w-\.]+iqiyi\.com
+DOMAIN-REGEX,^https?:\/\/int[\w-\.]+iqiyi\.com
 USER-AGENT,%E4%BC%98%E9%85%B7*
 USER-AGENT,%E5%92%AA%E5%92%95%E8%A7%86%E9%A2%91
 USER-AGENT,%E7%BD%91%E6%98%93%E4%BA%91%E9%9F%B3%E4%B9%90
