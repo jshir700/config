@@ -2,7 +2,7 @@
 # AUTHOR: jshir700
 # REPO: https://github.com/jshir700/config
 # REFERENCE: https://github.com/blackmatrix7/ios_rule_script, https://github.com/sve1r/Rules-For-Quantumult-X, https://github.com/LM-Firefly/Rules, https://github.com/ACL4SSR/ACL4SSR, https://github.com/dler-io/Rules
-# UPDATED: 2026-05-12 20:56:44
+# UPDATED: 2026-05-13 00:01:11
 # DOMAIN: 12
 # DOMAIN-SUFFIX: 354
 # DOMAIN-KEYWORD: 4
@@ -376,8 +376,8 @@ DOMAIN-SUFFIX,xn--mts47c3w9b1qr.cn
 DOMAIN-SUFFIX,xn--mts47c3w9b1qr.net
 DOMAIN-SUFFIX,yoshisnewisland.com
 DOMAIN-SUFFIX,yourfantasybeginsnow.com
-DOMAIN-SUFFIX,…Ò∆Ê±¶±¥.cn
-DOMAIN-SUFFIX,…Ò∆Ê±¶±¥.net
+DOMAIN-SUFFIX,Á•ûÂ•áÂÆùË¥ù.cn
+DOMAIN-SUFFIX,Á•ûÂ•áÂÆùË¥ù.net
 IP-CIDR,103.4.114.233/32,no-resolve
 IP-CIDR,103.4.115.248/32,no-resolve
 IP-CIDR,137.221.105.2/32,no-resolve

@@ -2,9 +2,9 @@
 # AUTHOR: jshir700
 # REPO: https://github.com/jshir700/config
 # REFERENCE: https://github.com/blackmatrix7/ios_rule_script, https://github.com/ACL4SSR/ACL4SSR, https://github.com/GMOogway/shadowrocket-rules, https://github.com/LM-Firefly/Rules, https://github.com/Hackl0us/SS-Rule-Snippet, https://github.com/GeQ1an/Rules, https://github.com/sve1r/Rules-For-Quantumult-X, https://github.com/Loyalsoldier/clash-rules, https://github.com/gaoyifan/china-operator-ip, https://github.com/dler-io/Rules, https://github.com/zqzess/rule_for_quantumultX, https://github.com/misakaio/chnroutes2
-# UPDATED: 2026-05-12 20:59:26
+# UPDATED: 2026-05-13 00:03:19
 # DOMAIN: 146
-# DOMAIN-SUFFIX: 114665
+# DOMAIN-SUFFIX: 114728
 # DOMAIN-KEYWORD: 24
 # IP-CIDR: 29933
 # IP-CIDR6: 82
@@ -12,7 +12,7 @@
 # PROCESS-NAME: 5
 # USER-AGENT: 67
 # URL-REGEX: 11
-# TOTAL: 144934
+# TOTAL: 144997
 DOMAIN,1-fss24-s0.streamhoster.com
 DOMAIN,14033.live.streamtheworld.com
 DOMAIN,156zy.suyunbo.tv
@@ -6255,6 +6255,7 @@ DOMAIN-SUFFIX,52969.com
 DOMAIN-SUFFIX,52ai.com
 DOMAIN-SUFFIX,52ali88.com
 DOMAIN-SUFFIX,52alipay.com
+DOMAIN-SUFFIX,52aoteman.com
 DOMAIN-SUFFIX,52appok.com
 DOMAIN-SUFFIX,52asus.com
 DOMAIN-SUFFIX,52audio.com
@@ -7708,6 +7709,7 @@ DOMAIN-SUFFIX,699pic.com
 DOMAIN-SUFFIX,69fd4a3dbd02f66c.com
 DOMAIN-SUFFIX,69g.com
 DOMAIN-SUFFIX,69hr.com
+DOMAIN-SUFFIX,69mok.com
 DOMAIN-SUFFIX,69shu.org
 DOMAIN-SUFFIX,69shuba.cc
 DOMAIN-SUFFIX,69tianqi.com
@@ -7829,6 +7831,7 @@ DOMAIN-SUFFIX,6twrte12ft.com
 DOMAIN-SUFFIX,6u9muvn94m.com
 DOMAIN-SUFFIX,6uudy.com
 DOMAIN-SUFFIX,6v.com
+DOMAIN-SUFFIX,6v6.work
 DOMAIN-SUFFIX,6vdyg.com
 DOMAIN-SUFFIX,6wan.com
 DOMAIN-SUFFIX,6webimg.cn
@@ -8566,6 +8569,7 @@ DOMAIN-SUFFIX,81761.com
 DOMAIN-SUFFIX,818.com
 DOMAIN-SUFFIX,81813.com
 DOMAIN-SUFFIX,8181xw.com
+DOMAIN-SUFFIX,8181zx.com
 DOMAIN-SUFFIX,8185t.com
 DOMAIN-SUFFIX,8188.cc
 DOMAIN-SUFFIX,818it.com
@@ -8922,6 +8926,7 @@ DOMAIN-SUFFIX,88ipa.com
 DOMAIN-SUFFIX,88k.site
 DOMAIN-SUFFIX,88koo.com
 DOMAIN-SUFFIX,88la.cc
+DOMAIN-SUFFIX,88la.la
 DOMAIN-SUFFIX,88lan.com
 DOMAIN-SUFFIX,88laser.com
 DOMAIN-SUFFIX,88lmtupian.com
@@ -10769,6 +10774,7 @@ DOMAIN-SUFFIX,advanced-pneumatics.com
 DOMAIN-SUFFIX,adventsoft.org
 DOMAIN-SUFFIX,advich.com
 DOMAIN-SUFFIX,advisionhorizon.com
+DOMAIN-SUFFIX,advlion.com
 DOMAIN-SUFFIX,advuser.com
 DOMAIN-SUFFIX,adwanji.com
 DOMAIN-SUFFIX,adwebcloud.com
@@ -11665,6 +11671,7 @@ DOMAIN-SUFFIX,aiwan91.com
 DOMAIN-SUFFIX,aiwanba.net
 DOMAIN-SUFFIX,aiwebsec.com
 DOMAIN-SUFFIX,aiwei365.com.cn
+DOMAIN-SUFFIX,aiwei365.net
 DOMAIN-SUFFIX,aiwei365.net.cn
 DOMAIN-SUFFIX,aiweibang.com
 DOMAIN-SUFFIX,aiweibk.com
@@ -16157,6 +16164,7 @@ DOMAIN-SUFFIX,bianquzyk.com
 DOMAIN-SUFFIX,biantaishuo.com
 DOMAIN-SUFFIX,bianwa.com
 DOMAIN-SUFFIX,bianwanjia.com
+DOMAIN-SUFFIX,bianxian.com
 DOMAIN-SUFFIX,bianyifang.com
 DOMAIN-SUFFIX,bianyuandaigou.com
 DOMAIN-SUFFIX,bianzhia.com
@@ -16220,6 +16228,7 @@ DOMAIN-SUFFIX,bidianer.com
 DOMAIN-SUFFIX,bidingxing.com
 DOMAIN-SUFFIX,bidizhaobiao.com
 DOMAIN-SUFFIX,bidns.net
+DOMAIN-SUFFIX,bidtoolads.com
 DOMAIN-SUFFIX,biduo.cc
 DOMAIN-SUFFIX,biduobao.com
 DOMAIN-SUFFIX,biduoxs.com
@@ -16305,6 +16314,7 @@ DOMAIN-SUFFIX,bigwww.com
 DOMAIN-SUFFIX,bigxiao.com
 DOMAIN-SUFFIX,bigyulin.com
 DOMAIN-SUFFIX,bigzhong.com
+DOMAIN-SUFFIX,bihaipack.com
 DOMAIN-SUFFIX,bihe0832.com
 DOMAIN-SUFFIX,bihongbo.com
 DOMAIN-SUFFIX,bihoo.com
@@ -18100,6 +18110,7 @@ DOMAIN-SUFFIX,bsbkjt.com
 DOMAIN-SUFFIX,bsbydd.com
 DOMAIN-SUFFIX,bscabank.com
 DOMAIN-SUFFIX,bsccdn.com
+DOMAIN-SUFFIX,bsccdn.net
 DOMAIN-SUFFIX,bscdns.cn
 DOMAIN-SUFFIX,bscdns.com
 DOMAIN-SUFFIX,bscdnweb.com
@@ -22765,6 +22776,7 @@ DOMAIN-SUFFIX,chinayinyi.com
 DOMAIN-SUFFIX,chinayis.com
 DOMAIN-SUFFIX,chinayishuhua.com
 DOMAIN-SUFFIX,chinaymc.com
+DOMAIN-SUFFIX,chinayms.com
 DOMAIN-SUFFIX,chinayongfa.com
 DOMAIN-SUFFIX,chinayoubang.com
 DOMAIN-SUFFIX,chinayounao.com
@@ -22872,6 +22884,7 @@ DOMAIN-SUFFIX,chipsir.com
 DOMAIN-SUFFIX,chipup.com
 DOMAIN-SUFFIX,chipwing.com
 DOMAIN-SUFFIX,chipyun.com
+DOMAIN-SUFFIX,chiq-cloud.com
 DOMAIN-SUFFIX,chiralquest.com
 DOMAIN-SUFFIX,chisage.com
 DOMAIN-SUFFIX,chisai.tech
@@ -26821,6 +26834,7 @@ DOMAIN-SUFFIX,csjkjs.com
 DOMAIN-SUFFIX,csjkjt.com
 DOMAIN-SUFFIX,csjmould.com
 DOMAIN-SUFFIX,csjmzy.com
+DOMAIN-SUFFIX,csjplatform.com
 DOMAIN-SUFFIX,csjsdz.com
 DOMAIN-SUFFIX,csjtys.net
 DOMAIN-SUFFIX,csjtz.com
@@ -29385,6 +29399,7 @@ DOMAIN-SUFFIX,dfwl.net
 DOMAIN-SUFFIX,dfwlg.com
 DOMAIN-SUFFIX,dfxq.com
 DOMAIN-SUFFIX,dfxqc.com
+DOMAIN-SUFFIX,dfxwdc.com
 DOMAIN-SUFFIX,dfxy.net
 DOMAIN-SUFFIX,dfyanyi.com
 DOMAIN-SUFFIX,dfyapp.com
@@ -31257,6 +31272,7 @@ DOMAIN-SUFFIX,driverdevelop.com
 DOMAIN-SUFFIX,drivergenius.com
 DOMAIN-SUFFIX,driverzeng.com
 DOMAIN-SUFFIX,driverzj.com
+DOMAIN-SUFFIX,drivethelife.com
 DOMAIN-SUFFIX,drjou.cc
 DOMAIN-SUFFIX,drlai.com
 DOMAIN-SUFFIX,drli.group
@@ -31794,6 +31810,7 @@ DOMAIN-SUFFIX,dxnky.com
 DOMAIN-SUFFIX,dxnt.com
 DOMAIN-SUFFIX,dxnwyjw.com
 DOMAIN-SUFFIX,dxper.net
+DOMAIN-SUFFIX,dxqck.com
 DOMAIN-SUFFIX,dxqyy.com
 DOMAIN-SUFFIX,dxr.com
 DOMAIN-SUFFIX,dxrc.com
@@ -32906,6 +32923,7 @@ DOMAIN-SUFFIX,ef360.com
 DOMAIN-SUFFIX,ef360.net
 DOMAIN-SUFFIX,ef369594911012.beer
 DOMAIN-SUFFIX,efang.tv
+DOMAIN-SUFFIX,efangcdn.com
 DOMAIN-SUFFIX,efangwang.com
 DOMAIN-SUFFIX,efapiao.com
 DOMAIN-SUFFIX,efasco.com
@@ -32942,6 +32960,7 @@ DOMAIN-SUFFIX,efunchina.com
 DOMAIN-SUFFIX,efuncn.com
 DOMAIN-SUFFIX,efunent.com
 DOMAIN-SUFFIX,efunq.com
+DOMAIN-SUFFIX,efusc.com
 DOMAIN-SUFFIX,efwh.com
 DOMAIN-SUFFIX,efy-tech.com
 DOMAIN-SUFFIX,efzhou.com
@@ -36852,6 +36871,7 @@ DOMAIN-SUFFIX,fujianguofu.com
 DOMAIN-SUFFIX,fujianrc.com
 DOMAIN-SUFFIX,fujiansme.com
 DOMAIN-SUFFIX,fujianyinruan.com
+DOMAIN-SUFFIX,fujincenter.com
 DOMAIN-SUFFIX,fujinjiazheng.com
 DOMAIN-SUFFIX,fujinotrade.com
 DOMAIN-SUFFIX,fujutec.com
@@ -39801,6 +39821,7 @@ DOMAIN-SUFFIX,glvroc.com
 DOMAIN-SUFFIX,glvs.com
 DOMAIN-SUFFIX,glwangcheng.com
 DOMAIN-SUFFIX,glwuhong.com
+DOMAIN-SUFFIX,glwxw.net
 DOMAIN-SUFFIX,glwyhd.com
 DOMAIN-SUFFIX,glxcc.net
 DOMAIN-SUFFIX,glxcjt.com
@@ -40183,6 +40204,7 @@ DOMAIN-SUFFIX,gongsizhijia.com
 DOMAIN-SUFFIX,gongxiangcj.com
 DOMAIN-SUFFIX,gongxiao8.com
 DOMAIN-SUFFIX,gongxiaodaji.com
+DOMAIN-SUFFIX,gongxifc.com
 DOMAIN-SUFFIX,gongxuanwang.com
 DOMAIN-SUFFIX,gongxueyun.com
 DOMAIN-SUFFIX,gongye360.com
@@ -46739,6 +46761,7 @@ DOMAIN-SUFFIX,hi1718.com
 DOMAIN-SUFFIX,hi2000.com
 DOMAIN-SUFFIX,hi2000.net
 DOMAIN-SUFFIX,hi772.com
+DOMAIN-SUFFIX,hiaiabc.com
 DOMAIN-SUFFIX,hiao.com
 DOMAIN-SUFFIX,hiascend.cn
 DOMAIN-SUFFIX,hiascend.com
@@ -46934,6 +46957,7 @@ DOMAIN-SUFFIX,hinpy.com
 DOMAIN-SUFFIX,hinsyeow.org
 DOMAIN-SUFFIX,hintsnet.com
 DOMAIN-SUFFIX,hiofd.com
+DOMAIN-SUFFIX,hiooq0417.com
 DOMAIN-SUFFIX,hiosu.com
 DOMAIN-SUFFIX,hiparking.com
 DOMAIN-SUFFIX,hipc123.com
@@ -47567,6 +47591,7 @@ DOMAIN-SUFFIX,hnlens.com
 DOMAIN-SUFFIX,hnliangku.com
 DOMAIN-SUFFIX,hnlipu.com
 DOMAIN-SUFFIX,hnlshm.com
+DOMAIN-SUFFIX,hnltcw.com
 DOMAIN-SUFFIX,hnlxq.com
 DOMAIN-SUFFIX,hnlzhd.com
 DOMAIN-SUFFIX,hnlzw.net
@@ -51637,6 +51662,7 @@ DOMAIN-SUFFIX,idcwn.com
 DOMAIN-SUFFIX,idcwp.com
 DOMAIN-SUFFIX,idcys.com
 DOMAIN-SUFFIX,idcyunwei.org
+DOMAIN-SUFFIX,idd1.com
 DOMAIN-SUFFIX,idea123.cn
 DOMAIN-SUFFIX,ideabody.com
 DOMAIN-SUFFIX,ideacarbon.org
@@ -52468,6 +52494,7 @@ DOMAIN-SUFFIX,imkero.net
 DOMAIN-SUFFIX,imkevinyang.com
 DOMAIN-SUFFIX,imlaidian.com
 DOMAIN-SUFFIX,imlazy.ink
+DOMAIN-SUFFIX,imlb2c.com
 DOMAIN-SUFFIX,imlianai.com
 DOMAIN-SUFFIX,imlianpu.com
 DOMAIN-SUFFIX,imliuyi.com
@@ -59752,6 +59779,7 @@ DOMAIN-SUFFIX,kitstown.com
 DOMAIN-SUFFIX,kitty.su
 DOMAIN-SUFFIX,kituin.fun
 DOMAIN-SUFFIX,kivend.net
+DOMAIN-SUFFIX,kivo.fun
 DOMAIN-SUFFIX,kivo.wiki
 DOMAIN-SUFFIX,kiwa-tech.com
 DOMAIN-SUFFIX,kiwenlau.com
@@ -60680,6 +60708,7 @@ DOMAIN-SUFFIX,kuihuakeji.com
 DOMAIN-SUFFIX,kuihuayaoye.com
 DOMAIN-SUFFIX,kuihuo.com
 DOMAIN-SUFFIX,kuike.ltd
+DOMAIN-SUFFIX,kuiniuca.com
 DOMAIN-SUFFIX,kuishiba.com
 DOMAIN-SUFFIX,kujiale.com
 DOMAIN-SUFFIX,kujiang.com
@@ -62729,6 +62758,7 @@ DOMAIN-SUFFIX,liebao.org.cn
 DOMAIN-SUFFIX,liebaoh5.com
 DOMAIN-SUFFIX,liebaoidc.com
 DOMAIN-SUFFIX,liebaopay.com
+DOMAIN-SUFFIX,liebaovip.com
 DOMAIN-SUFFIX,liebiao.com
 DOMAIN-SUFFIX,liebigwatch.com
 DOMAIN-SUFFIX,liebo.com
@@ -63304,6 +63334,7 @@ DOMAIN-SUFFIX,lisz.me
 DOMAIN-SUFFIX,litangkj.com
 DOMAIN-SUFFIX,litaow.com
 DOMAIN-SUFFIX,litaparking.com
+DOMAIN-SUFFIX,litchiads.com
 DOMAIN-SUFFIX,litchon.com
 DOMAIN-SUFFIX,lite-miniprogram-1.com
 DOMAIN-SUFFIX,lite-miniprogram-5.com
@@ -63709,6 +63740,7 @@ DOMAIN-SUFFIX,llyyx.com
 DOMAIN-SUFFIX,llzg.com
 DOMAIN-SUFFIX,llzxedu.net
 DOMAIN-SUFFIX,lm263.com
+DOMAIN-SUFFIX,lm335.com
 DOMAIN-SUFFIX,lm9999.com
 DOMAIN-SUFFIX,lmacc.com
 DOMAIN-SUFFIX,lmanmo.com
@@ -67152,7 +67184,7 @@ DOMAIN-SUFFIX,mi-static.com
 DOMAIN-SUFFIX,mi.cn
 DOMAIN-SUFFIX,mi.com
 DOMAIN-SUFFIX,mi.com.cn
-DOMAIN-SUFFIX,mi.ÖĞ¹ú
+DOMAIN-SUFFIX,mi.ä¸­å›½
 DOMAIN-SUFFIX,mi0.cc
 DOMAIN-SUFFIX,mia.com
 DOMAIN-SUFFIX,miaibox.com
@@ -67238,6 +67270,7 @@ DOMAIN-SUFFIX,miaozhen.cn
 DOMAIN-SUFFIX,miaozhun.com
 DOMAIN-SUFFIX,miaozhunjing.net
 DOMAIN-SUFFIX,miaozuo.com
+DOMAIN-SUFFIX,miav-cse.avlyun.com
 DOMAIN-SUFFIX,miawycxs.com
 DOMAIN-SUFFIX,miaxis.com
 DOMAIN-SUFFIX,miaxis.net
@@ -67776,6 +67809,7 @@ DOMAIN-SUFFIX,mitvos.com
 DOMAIN-SUFFIX,mitvos.net
 DOMAIN-SUFFIX,miuapp.com.cn
 DOMAIN-SUFFIX,miued.com
+DOMAIN-SUFFIX,miui-fxcse.avlyun.com
 DOMAIN-SUFFIX,miui.cn
 DOMAIN-SUFFIX,miui.com
 DOMAIN-SUFFIX,miuiver.com
@@ -70638,6 +70672,7 @@ DOMAIN-SUFFIX,niiddm.com
 DOMAIN-SUFFIX,niimbot.com
 DOMAIN-SUFFIX,niiwoo.com
 DOMAIN-SUFFIX,nikanpian.com
+DOMAIN-SUFFIX,nike666.com
 DOMAIN-SUFFIX,nikefans.com
 DOMAIN-SUFFIX,nikkisoft.com
 DOMAIN-SUFFIX,nikkiup2u2.com
@@ -72789,6 +72824,7 @@ DOMAIN-SUFFIX,onethingcloud.cn
 DOMAIN-SUFFIX,onethingcloud.com
 DOMAIN-SUFFIX,onethingd.com
 DOMAIN-SUFFIX,onethingn.com
+DOMAIN-SUFFIX,onethingpcs.com
 DOMAIN-SUFFIX,onethingtech.com.cn
 DOMAIN-SUFFIX,onethingtech.net
 DOMAIN-SUFFIX,onetop.net
@@ -72850,6 +72886,7 @@ DOMAIN-SUFFIX,onlywem.com
 DOMAIN-SUFFIX,onnets1.xyz
 DOMAIN-SUFFIX,ono-bbb.com
 DOMAIN-SUFFIX,onochem.com
+DOMAIN-SUFFIX,onrunningshop.com
 DOMAIN-SUFFIX,onsiteclub.com
 DOMAIN-SUFFIX,ontall.com
 DOMAIN-SUFFIX,ontheroadstore.com
@@ -73498,6 +73535,7 @@ DOMAIN-SUFFIX,p0y.com
 DOMAIN-SUFFIX,p1.com
 DOMAIN-SUFFIX,p12345.com
 DOMAIN-SUFFIX,p24p75149p.com
+DOMAIN-SUFFIX,p2cdn.com
 DOMAIN-SUFFIX,p2hp.com
 DOMAIN-SUFFIX,p2p001.com
 DOMAIN-SUFFIX,p2pcq.com
@@ -73703,6 +73741,8 @@ DOMAIN-SUFFIX,pangmaovc.com
 DOMAIN-SUFFIX,pangod.com
 DOMAIN-SUFFIX,pangodsxbj.com
 DOMAIN-SUFFIX,pangoing.com
+DOMAIN-SUFFIX,pangolin-dsp-toutiao-b.com
+DOMAIN-SUFFIX,pangolin-dsp-toutiao.com
 DOMAIN-SUFFIX,pangomicro.com
 DOMAIN-SUFFIX,pangqiu.com
 DOMAIN-SUFFIX,pangshare.com
@@ -74763,6 +74803,7 @@ DOMAIN-SUFFIX,pki.plus
 DOMAIN-SUFFIX,pkm360.com
 DOMAIN-SUFFIX,pkma.cc
 DOMAIN-SUFFIX,pko123.com
+DOMAIN-SUFFIX,pkoplink.com
 DOMAIN-SUFFIX,pkpmjc.com
 DOMAIN-SUFFIX,pkpmsoft.com
 DOMAIN-SUFFIX,pkpuke.com
@@ -75913,7 +75954,7 @@ DOMAIN-SUFFIX,qcloudapps.com
 DOMAIN-SUFFIX,qcloudcdn.cn
 DOMAIN-SUFFIX,qcloudcdn.com
 DOMAIN-SUFFIX,qcloudcdn.com.cn
-DOMAIN-SUFFIX,qcloudcdn.ÖĞ¹ú
+DOMAIN-SUFFIX,qcloudcdn.ä¸­å›½
 DOMAIN-SUFFIX,qcloudcdnsrc.com
 DOMAIN-SUFFIX,qcloudcdntest.cn
 DOMAIN-SUFFIX,qcloudcjgj.cn
@@ -76574,6 +76615,7 @@ DOMAIN-SUFFIX,qichepeijian.com
 DOMAIN-SUFFIX,qichepinpai.com
 DOMAIN-SUFFIX,qicheq.com
 DOMAIN-SUFFIX,qichequan.net
+DOMAIN-SUFFIX,qichetansuo.com
 DOMAIN-SUFFIX,qichetong.com
 DOMAIN-SUFFIX,qichezhan.net
 DOMAIN-SUFFIX,qichuang.com
@@ -77130,6 +77172,7 @@ DOMAIN-SUFFIX,qiyeku.com
 DOMAIN-SUFFIX,qiyelipin.com
 DOMAIN-SUFFIX,qiyes.com
 DOMAIN-SUFFIX,qiyeshangpu.com
+DOMAIN-SUFFIX,qiyeshangpu.net
 DOMAIN-SUFFIX,qiyesou.com
 DOMAIN-SUFFIX,qiyetong.com
 DOMAIN-SUFFIX,qiyetoupiao.com
@@ -77407,7 +77450,7 @@ DOMAIN-SUFFIX,qq.travel
 DOMAIN-SUFFIX,qq.wang
 DOMAIN-SUFFIX,qq.xn--fiqs8s
 DOMAIN-SUFFIX,qq.zone
-DOMAIN-SUFFIX,qq.ÖĞ¹ú
+DOMAIN-SUFFIX,qq.ä¸­å›½
 DOMAIN-SUFFIX,qq11999.com
 DOMAIN-SUFFIX,qq123.xin
 DOMAIN-SUFFIX,qq1398.com
@@ -77591,7 +77634,7 @@ DOMAIN-SUFFIX,qqzmly.com
 DOMAIN-SUFFIX,qqzyw.com
 DOMAIN-SUFFIX,qqzywang.com
 DOMAIN-SUFFIX,qqzzz.net
-DOMAIN-SUFFIX,qqÓÊÏä.ÖĞ¹ú
+DOMAIN-SUFFIX,qqé‚®ç®±.ä¸­å›½
 DOMAIN-SUFFIX,qr-batch.com
 DOMAIN-SUFFIX,qr25.com
 DOMAIN-SUFFIX,qrcpu.com
@@ -80793,6 +80836,7 @@ DOMAIN-SUFFIX,sawenow.com
 DOMAIN-SUFFIX,sawuatsurgical.com
 DOMAIN-SUFFIX,saxydc.com
 DOMAIN-SUFFIX,saxyit.com
+DOMAIN-SUFFIX,saxysec.com
 DOMAIN-SUFFIX,sayabear.com
 DOMAIN-SUFFIX,sayatoo.com
 DOMAIN-SUFFIX,saylover.com
@@ -82023,6 +82067,7 @@ DOMAIN-SUFFIX,selgrospl.com
 DOMAIN-SUFFIX,selinuxplus.com
 DOMAIN-SUFFIX,sellerspace.com
 DOMAIN-SUFFIX,sellersprite.com
+DOMAIN-SUFFIX,sellfox.com
 DOMAIN-SUFFIX,sellingexpress.net
 DOMAIN-SUFFIX,selypan.com
 DOMAIN-SUFFIX,sem123.com
@@ -84667,6 +84712,7 @@ DOMAIN-SUFFIX,sigmachip.com
 DOMAIN-SUFFIX,sigmamed.net
 DOMAIN-SUFFIX,sigmastarsemi.com
 DOMAIN-SUFFIX,sigmcdn.com
+DOMAIN-SUFFIX,sigmob.com
 DOMAIN-SUFFIX,sigmoblive.com
 DOMAIN-SUFFIX,sign-say.com
 DOMAIN-SUFFIX,signage911.com
@@ -88434,6 +88480,7 @@ DOMAIN-SUFFIX,szbazx.com
 DOMAIN-SUFFIX,szbbs.org
 DOMAIN-SUFFIX,szbcase.com
 DOMAIN-SUFFIX,szbcfurniture.com
+DOMAIN-SUFFIX,szbdyd.com
 DOMAIN-SUFFIX,szbdzs.com
 DOMAIN-SUFFIX,szbeilu.com
 DOMAIN-SUFFIX,szbhwk.com
@@ -89319,7 +89366,7 @@ DOMAIN-SUFFIX,taikaihuanbao.com
 DOMAIN-SUFFIX,taikancnc.com
 DOMAIN-SUFFIX,taikang.com
 DOMAIN-SUFFIX,taikang.net.cn
-DOMAIN-SUFFIX,taikang.ÍøÖ·
+DOMAIN-SUFFIX,taikang.ç½‘å€
 DOMAIN-SUFFIX,taikangfoundation.org.cn
 DOMAIN-SUFFIX,taikanginv.com
 DOMAIN-SUFFIX,taikangjsnc.com
@@ -89703,6 +89750,7 @@ DOMAIN-SUFFIX,tapai.com
 DOMAIN-SUFFIX,tapaijiu.com
 DOMAIN-SUFFIX,tapapis.com
 DOMAIN-SUFFIX,tapapks.com
+DOMAIN-SUFFIX,tapas.net
 DOMAIN-SUFFIX,tapbooster.net
 DOMAIN-SUFFIX,tapd-app.com
 DOMAIN-SUFFIX,tapd-devops.cn
@@ -91677,7 +91725,7 @@ DOMAIN-SUFFIX,tiqiaa.com
 DOMAIN-SUFFIX,tiqianle.com
 DOMAIN-SUFFIX,tiquality.cn
 DOMAIN-SUFFIX,tiquality.com.cn
-DOMAIN-SUFFIX,tiquality.ÖĞ¹ú
+DOMAIN-SUFFIX,tiquality.ä¸­å›½
 DOMAIN-SUFFIX,tirechina.net
 DOMAIN-SUFFIX,tiremay.com
 DOMAIN-SUFFIX,tiscend.com
@@ -92944,7 +92992,7 @@ DOMAIN-SUFFIX,troxchina.com
 DOMAIN-SUFFIX,trpc.center
 DOMAIN-SUFFIX,trpc.group
 DOMAIN-SUFFIX,trpc.tech
-DOMAIN-SUFFIX,trpc.ÖĞ¹ú
+DOMAIN-SUFFIX,trpc.ä¸­å›½
 DOMAIN-SUFFIX,trpcdn.com
 DOMAIN-SUFFIX,trpcdn.net
 DOMAIN-SUFFIX,trs-logistics.com
@@ -93454,6 +93502,7 @@ DOMAIN-SUFFIX,tuniuins.com
 DOMAIN-SUFFIX,tuniuops.net
 DOMAIN-SUFFIX,tunynet.com
 DOMAIN-SUFFIX,tuo-pan.com
+DOMAIN-SUFFIX,tuobeng.net
 DOMAIN-SUFFIX,tuocad.com
 DOMAIN-SUFFIX,tuodan.tech
 DOMAIN-SUFFIX,tuodaneee.com
@@ -94277,6 +94326,7 @@ DOMAIN-SUFFIX,ugubl.net
 DOMAIN-SUFFIX,ugurl.cc
 DOMAIN-SUFFIX,ugurl.cn
 DOMAIN-SUFFIX,ugxsd.com
+DOMAIN-SUFFIX,uhabo.com
 DOMAIN-SUFFIX,uhaom.com
 DOMAIN-SUFFIX,uhaozu.com
 DOMAIN-SUFFIX,uhasadmin.com
@@ -99781,6 +99831,7 @@ DOMAIN-SUFFIX,wukongrom.com
 DOMAIN-SUFFIX,wukongsearch.com
 DOMAIN-SUFFIX,wukongshuo.com
 DOMAIN-SUFFIX,wukongtj.com
+DOMAIN-SUFFIX,wukongtongji.com
 DOMAIN-SUFFIX,wukongwenda.cn
 DOMAIN-SUFFIX,wukongwenda.com
 DOMAIN-SUFFIX,wukongyz.com
@@ -100490,6 +100541,7 @@ DOMAIN-SUFFIX,x1106y.mobi
 DOMAIN-SUFFIX,x11263.com
 DOMAIN-SUFFIX,x11296.com
 DOMAIN-SUFFIX,x118.net
+DOMAIN-SUFFIX,x1abo.com
 DOMAIN-SUFFIX,x23118.com
 DOMAIN-SUFFIX,x23119.com
 DOMAIN-SUFFIX,x23wxw.com
@@ -100651,6 +100703,7 @@ DOMAIN-SUFFIX,xaygddc.com
 DOMAIN-SUFFIX,xayhedu.com
 DOMAIN-SUFFIX,xayizhou.com
 DOMAIN-SUFFIX,xayzjc.com
+DOMAIN-SUFFIX,xazbts.com
 DOMAIN-SUFFIX,xazcit.com
 DOMAIN-SUFFIX,xazls.com
 DOMAIN-SUFFIX,xazmkm.com
@@ -101424,6 +101477,7 @@ DOMAIN-SUFFIX,xianyuwang.com
 DOMAIN-SUFFIX,xianyuyouxi.com
 DOMAIN-SUFFIX,xianzhanget.com
 DOMAIN-SUFFIX,xianzhi.net
+DOMAIN-SUFFIX,xianzhice.com
 DOMAIN-SUFFIX,xianzhid.com
 DOMAIN-SUFFIX,xianzhongwang.com
 DOMAIN-SUFFIX,xianzidaer.com
@@ -101510,6 +101564,7 @@ DOMAIN-SUFFIX,xiaodigu.com
 DOMAIN-SUFFIX,xiaoding110.com
 DOMAIN-SUFFIX,xiaodingchui.com
 DOMAIN-SUFFIX,xiaodiyouxi.com
+DOMAIN-SUFFIX,xiaodongrui.com
 DOMAIN-SUFFIX,xiaodongxier.com
 DOMAIN-SUFFIX,xiaodoubi.com
 DOMAIN-SUFFIX,xiaodoukj.com
@@ -103373,6 +103428,7 @@ DOMAIN-SUFFIX,xn--8y0a063a
 DOMAIN-SUFFIX,xn--91-y60d638c.xyz
 DOMAIN-SUFFIX,xn--9et52u
 DOMAIN-SUFFIX,xn--9kr72kqwe.com
+DOMAIN-SUFFIX,xn--9krv3x413bbyb.com
 DOMAIN-SUFFIX,xn--9myo55bi8l.com
 DOMAIN-SUFFIX,xn--9pr56vfna007k.com
 DOMAIN-SUFFIX,xn--9pry86bq5ex68c.org
@@ -103440,6 +103496,7 @@ DOMAIN-SUFFIX,xn--imr513n
 DOMAIN-SUFFIX,xn--io0a7i
 DOMAIN-SUFFIX,xn--it-if7c19g5s4bps5c.com
 DOMAIN-SUFFIX,xn--jh1a128b.com
+DOMAIN-SUFFIX,xn--jor0b302fdhgwnccw8g.com
 DOMAIN-SUFFIX,xn--jpr47zq87axwjc0d.com
 DOMAIN-SUFFIX,xn--jxuv1s.net
 DOMAIN-SUFFIX,xn--kivq8be3whsi.com
@@ -104490,6 +104547,7 @@ DOMAIN-SUFFIX,xycad.com
 DOMAIN-SUFFIX,xycaogen.com
 DOMAIN-SUFFIX,xycareer.com
 DOMAIN-SUFFIX,xycclass.com
+DOMAIN-SUFFIX,xycdn.com
 DOMAIN-SUFFIX,xycdn.net
 DOMAIN-SUFFIX,xycgd.com
 DOMAIN-SUFFIX,xychyy.com
@@ -106035,6 +106093,7 @@ DOMAIN-SUFFIX,yhxuexiao.com
 DOMAIN-SUFFIX,yhydl.com
 DOMAIN-SUFFIX,yhyhwy.com
 DOMAIN-SUFFIX,yhyyjk.com
+DOMAIN-SUFFIX,yhz18.com
 DOMAIN-SUFFIX,yhz2000.com
 DOMAIN-SUFFIX,yhz365.com
 DOMAIN-SUFFIX,yhz66.com
@@ -107749,6 +107808,7 @@ DOMAIN-SUFFIX,youngerfeel.com
 DOMAIN-SUFFIX,younggas.com
 DOMAIN-SUFFIX,youngjoygame.com
 DOMAIN-SUFFIX,youngle.site
+DOMAIN-SUFFIX,youngle.tech
 DOMAIN-SUFFIX,youngor.com
 DOMAIN-SUFFIX,youngsunpack.com
 DOMAIN-SUFFIX,youni.im
@@ -108992,6 +109052,7 @@ DOMAIN-SUFFIX,yunqiba.com
 DOMAIN-SUFFIX,yunqifly.com
 DOMAIN-SUFFIX,yunqiju.com
 DOMAIN-SUFFIX,yunqishi.net
+DOMAIN-SUFFIX,yunqishi8.com
 DOMAIN-SUFFIX,yunqishuju.com
 DOMAIN-SUFFIX,yunque360.com
 DOMAIN-SUFFIX,yunquna.com
@@ -109320,6 +109381,7 @@ DOMAIN-SUFFIX,ywshouyou.net
 DOMAIN-SUFFIX,ywsoftware.com
 DOMAIN-SUFFIX,ywstsb.com
 DOMAIN-SUFFIX,ywt.com
+DOMAIN-SUFFIX,ywtd.xyz
 DOMAIN-SUFFIX,ywtds.com
 DOMAIN-SUFFIX,ywurl.cn
 DOMAIN-SUFFIX,ywurl.com
@@ -110019,6 +110081,7 @@ DOMAIN-SUFFIX,zbgscm.com
 DOMAIN-SUFFIX,zbhbkj.com
 DOMAIN-SUFFIX,zbhot.com
 DOMAIN-SUFFIX,zbhouse.com
+DOMAIN-SUFFIX,zbhuafx.com
 DOMAIN-SUFFIX,zbii.com
 DOMAIN-SUFFIX,zbinfo.net
 DOMAIN-SUFFIX,zbintel.com
@@ -114729,125 +114792,125 @@ DOMAIN-SUFFIX,zzzyy.com
 DOMAIN-SUFFIX,zzzyyy.com
 DOMAIN-SUFFIX,zzzzaaaa.com
 DOMAIN-SUFFIX,zzzzzz.me
-DOMAIN-SUFFIX,ÍòÍø.cn
-DOMAIN-SUFFIX,ÍòÍø.ÖĞ¹ú
-DOMAIN-SUFFIX,ÖĞ¹úÍòÍø.cn
-DOMAIN-SUFFIX,ÖĞ¹úÍòÍø.ÖĞ¹ú
-DOMAIN-SUFFIX,ÖĞ¹ú»¥ÁªÍøÂçĞÅÏ¢ÖĞĞÄ.cn
-DOMAIN-SUFFIX,ÖĞ¹ú»¥ÁªÍøÂçĞÅÏ¢ÖĞĞÄ.ÖĞ¹ú
-DOMAIN-SUFFIX,ÖĞ¹ú·´µöÓãÍøÕ¾ÁªÃË.cn
-DOMAIN-SUFFIX,ÖĞ¹ú·´µöÓãÍøÕ¾ÁªÃË.ÖĞ¹ú
-DOMAIN-SUFFIX,ÀÖ²¥.com
-DOMAIN-SUFFIX,ÔÆÓÎÃ÷³¤³Ç.cn
-DOMAIN-SUFFIX,»¥ÁªÍø.ÖĞ¹ú
-DOMAIN-SUFFIX,»¥ÁªÍø.¹«Ë¾
-DOMAIN-SUFFIX,»¥ÁªÍø.ÍøÂç
-DOMAIN-SUFFIX,»¥ÁªÍø´ó½²ÌÃ.cn
-DOMAIN-SUFFIX,»¥ÁªÍø´óµ÷²é.ÖĞ¹ú
-DOMAIN-SUFFIX,»¥ÁªÍøÊı¾İ.ÖĞ¹ú
-DOMAIN-SUFFIX,»¥ÁªÍøÊı¾İÆ½Ì¨.ÖĞ¹ú
-DOMAIN-SUFFIX,»¥ÁªÍøÊı¾İ¿ª·ÅÆ½Ì¨.ÖĞ¹ú
-DOMAIN-SUFFIX,»¥ÁªÍø¼à²â.ÖĞ¹ú
-DOMAIN-SUFFIX,»¥ÁªÍøÍ³¼Æ.ÖĞ¹ú
-DOMAIN-SUFFIX,»¥ÁªÍøµ÷²é.ÖĞ¹ú
-DOMAIN-SUFFIX,½»Í¨¹¤¾ßÏÕ.ÍøÖ·
-DOMAIN-SUFFIX,ÑøÀÏ±£ÏÕ.ÍøÖ·
-DOMAIN-SUFFIX,ÑøÀÏÉçÇø.ÍøÖ·
-DOMAIN-SUFFIX,´ó»°Î÷ÓÎ.cn
-DOMAIN-SUFFIX,´ó»°Î÷ÓÎ.com
-DOMAIN-SUFFIX,´ó»°Î÷ÓÎ.net
-DOMAIN-SUFFIX,´ó»°Î÷ÓÎ.ÖĞ¹ú
-DOMAIN-SUFFIX,°²¾Ó¿Í.com
-DOMAIN-SUFFIX,µ¼º½.ÖĞ¹ú
-DOMAIN-SUFFIX,Ğ¡¹·µçÆ÷.cn
-DOMAIN-SUFFIX,Ğ¡¹·µçÆ÷.com
-DOMAIN-SUFFIX,Ğ¡¹·µçÆ÷.net
-DOMAIN-SUFFIX,Ğ¡¹·µçÆ÷.ÖĞ¹ú
-DOMAIN-SUFFIX,Ğ¡¹·µçÆ÷.¹«Ë¾
-DOMAIN-SUFFIX,Ğ¡¹·µçÆ÷.ÍøÂç
-DOMAIN-SUFFIX,Ğ¡Ã×¿Æ¼¼ÓĞÏŞÔğÈÎ¹«Ë¾.ÖĞ¹ú
-DOMAIN-SUFFIX,ÉÙ¶ù½ÌÓı½ğ.ÍøÖ·
-DOMAIN-SUFFIX,É½Áé.com
-DOMAIN-SUFFIX,É½ÁéÊıÂë.com
-DOMAIN-SUFFIX,É½ÁéÒôÏì.com
-DOMAIN-SUFFIX,Ó¦ÓÃÊ¾·¶.cn
-DOMAIN-SUFFIX,·¿²úµçÉÌ.com
-DOMAIN-SUFFIX,Í¶×ÊÀí²Æ.ÍøÖ·
-DOMAIN-SUFFIX,ĞÂÉú»î¹ã³¡.ÍøÖ·
-DOMAIN-SUFFIX,ÂÃÓÎÏÕ.ÍøÖ·
-DOMAIN-SUFFIX,ÔçĞĞ¿Í.com
-DOMAIN-SUFFIX,±©·ç.¹«Ë¾
-DOMAIN-SUFFIX,±©·ç.ÍøÂç
-DOMAIN-SUFFIX,±©·çÒ».ÖĞ¹ú
-DOMAIN-SUFFIX,±©·çÔÚÏß.ÖĞ¹ú
-DOMAIN-SUFFIX,±©·çÓ°Òô.¹«Ë¾
-DOMAIN-SUFFIX,±©·çÓ°Òô.ÍøÂç
-DOMAIN-SUFFIX,±©·çÓ°ÒôÔÚÏß.ÖĞ¹ú
-DOMAIN-SUFFIX,±©·çºĞ×Ó.ÖĞ¹ú
-DOMAIN-SUFFIX,ÃÎ»ÃÎ÷ÓÎ.cn
-DOMAIN-SUFFIX,ÃÎ»ÃÎ÷ÓÎ.com
-DOMAIN-SUFFIX,ÃÎ»ÃÎ÷ÓÎ.net
-DOMAIN-SUFFIX,ÃÎ»ÃÎ÷ÓÎ.ÖĞ¹ú
-DOMAIN-SUFFIX,Ì©¿µ²»¶¯²ú.ÍøÖ·
-DOMAIN-SUFFIX,Ì©¿µ²»¶¯²úÍ¶×Ê¹ÜÀí¹«Ë¾.ÍøÖ·
-DOMAIN-SUFFIX,Ì©¿µÖ®¼Ò.ÍøÖ·
-DOMAIN-SUFFIX,Ì©¿µÈËÊÙ±£ÏÕ.ÍøÖ·
-DOMAIN-SUFFIX,Ì©¿µÈËÊÙ±£ÏÕ¹É·İÓĞÏŞ¹«Ë¾.ÍøÖ·
-DOMAIN-SUFFIX,Ì©¿µ±£ÏÕ¼¯ÍÅ.ÍøÖ·
-DOMAIN-SUFFIX,Ì©¿µÑøÀÏÉçÇø.ÍøÖ·
-DOMAIN-SUFFIX,Ì©¿µÔÚÏß.ÍøÖ·
-DOMAIN-SUFFIX,Ì©¿µĞÂÉú»î.ÍøÖ·
-DOMAIN-SUFFIX,Ì©¿µĞÂÉú»î¹ã³¡.ÍøÖ·
-DOMAIN-SUFFIX,Ì©¿µ×Ê²ú.ÍøÖ·
-DOMAIN-SUFFIX,ÓÎÕ¾.com
-DOMAIN-SUFFIX,ÓÎÕ¾.net
-DOMAIN-SUFFIX,°®·¶¶ù.com
-DOMAIN-SUFFIX,Éç¼¯Íø.com
-DOMAIN-SUFFIX,Ç©Ö¤ÏÕ.ÍøÖ·
-DOMAIN-SUFFIX,ÁªÏëÖ°½Ì¼¯ÍÅ.cn
-DOMAIN-SUFFIX,ÁªÏëÖ°½Ì¼¯ÍÅ.com
-DOMAIN-SUFFIX,ÌÚÑ¶.ÖĞ¹ú
-DOMAIN-SUFFIX,º½ÒâÏÕ.ÍøÖ·
-DOMAIN-SUFFIX,ãyÂ“ëŠ×Ó.cn
-DOMAIN-SUFFIX,ãyÂ“ëŠ×Ó.ÖĞ¹ú
-DOMAIN-SUFFIX,ãyÂ“ëŠ×Ó.ÖĞ‡ø
-DOMAIN-SUFFIX,ãyÂ“ëŠ×Ó.¹«Ë¾
-DOMAIN-SUFFIX,ãyÂ“ëŠ×Ó.¹«Ë¾.cn
-DOMAIN-SUFFIX,ãyÂ“ëŠ×Ó.¾W½j.cn
-DOMAIN-SUFFIX,ãyÂ“ëŠ×Ó.ÍøÂç
-DOMAIN-SUFFIX,ãyÂ“ëŠ×Ó.ÍøÂç.cn
-DOMAIN-SUFFIX,ãyÂ“ëŠ×ÓÖ§¸¶.cn
-DOMAIN-SUFFIX,ãyÂ“ëŠ×ÓÖ§¸¶.ÖĞ¹ú
-DOMAIN-SUFFIX,ãyÂ“ëŠ×ÓÖ§¸¶.ÖĞ‡ø
-DOMAIN-SUFFIX,ãyÂ“ëŠ×ÓÖ§¸¶.¹«Ë¾
-DOMAIN-SUFFIX,ãyÂ“ëŠ×ÓÖ§¸¶.¹«Ë¾.cn
-DOMAIN-SUFFIX,ãyÂ“ëŠ×ÓÖ§¸¶.¾W½j.cn
-DOMAIN-SUFFIX,ãyÂ“ëŠ×ÓÖ§¸¶.ÍøÂç
-DOMAIN-SUFFIX,ãyÂ“ëŠ×ÓÖ§¸¶.ÍøÂç.cn
-DOMAIN-SUFFIX,ÒøÁªµç×Ó.biz
-DOMAIN-SUFFIX,ÒøÁªµç×Ó.com
-DOMAIN-SUFFIX,ÒøÁªµç×Ó.net
-DOMAIN-SUFFIX,ÒøÁªµç×Ó.ÖĞ‡ø
-DOMAIN-SUFFIX,ÒøÁªµç×Ó.¹«Ë¾
-DOMAIN-SUFFIX,ÒøÁªµç×Ó.¹«Ë¾.cn
-DOMAIN-SUFFIX,ÒøÁªµç×Ó.¾W½j.cn
-DOMAIN-SUFFIX,ÒøÁªµç×Ó.ÍøÂç
-DOMAIN-SUFFIX,ÒøÁªµç×Ó.ÍøÂç.cn
-DOMAIN-SUFFIX,ÒøÁªµç×ÓÖ§¸¶.biz
-DOMAIN-SUFFIX,ÒøÁªµç×ÓÖ§¸¶.cn
-DOMAIN-SUFFIX,ÒøÁªµç×ÓÖ§¸¶.com
-DOMAIN-SUFFIX,ÒøÁªµç×ÓÖ§¸¶.net
-DOMAIN-SUFFIX,ÒøÁªµç×ÓÖ§¸¶.ÖĞ¹ú
-DOMAIN-SUFFIX,ÒøÁªµç×ÓÖ§¸¶.ÖĞ‡ø
-DOMAIN-SUFFIX,ÒøÁªµç×ÓÖ§¸¶.¹«Ë¾
-DOMAIN-SUFFIX,ÒøÁªµç×ÓÖ§¸¶.¹«Ë¾.cn
-DOMAIN-SUFFIX,ÒøÁªµç×ÓÖ§¸¶.¾W½j.cn
-DOMAIN-SUFFIX,ÒøÁªµç×ÓÖ§¸¶.ÍøÂç
-DOMAIN-SUFFIX,ÒøÁªµç×ÓÖ§¸¶.ÍøÂç.cn
-DOMAIN-SUFFIX,·É·É.cn
-DOMAIN-SUFFIX,·É·É.com
-DOMAIN-SUFFIX,·É·É.net
-DOMAIN-SUFFIX,·É·É.ÖĞ¹ú
+DOMAIN-SUFFIX,ä¸‡ç½‘.cn
+DOMAIN-SUFFIX,ä¸‡ç½‘.ä¸­å›½
+DOMAIN-SUFFIX,ä¸­å›½ä¸‡ç½‘.cn
+DOMAIN-SUFFIX,ä¸­å›½ä¸‡ç½‘.ä¸­å›½
+DOMAIN-SUFFIX,ä¸­å›½äº’è”ç½‘ç»œä¿¡æ¯ä¸­å¿ƒ.cn
+DOMAIN-SUFFIX,ä¸­å›½äº’è”ç½‘ç»œä¿¡æ¯ä¸­å¿ƒ.ä¸­å›½
+DOMAIN-SUFFIX,ä¸­å›½åé’“é±¼ç½‘ç«™è”ç›Ÿ.cn
+DOMAIN-SUFFIX,ä¸­å›½åé’“é±¼ç½‘ç«™è”ç›Ÿ.ä¸­å›½
+DOMAIN-SUFFIX,ä¹æ’­.com
+DOMAIN-SUFFIX,äº‘æ¸¸æ˜é•¿åŸ.cn
+DOMAIN-SUFFIX,äº’è”ç½‘.ä¸­å›½
+DOMAIN-SUFFIX,äº’è”ç½‘.å…¬å¸
+DOMAIN-SUFFIX,äº’è”ç½‘.ç½‘ç»œ
+DOMAIN-SUFFIX,äº’è”ç½‘å¤§è®²å ‚.cn
+DOMAIN-SUFFIX,äº’è”ç½‘å¤§è°ƒæŸ¥.ä¸­å›½
+DOMAIN-SUFFIX,äº’è”ç½‘æ•°æ®.ä¸­å›½
+DOMAIN-SUFFIX,äº’è”ç½‘æ•°æ®å¹³å°.ä¸­å›½
+DOMAIN-SUFFIX,äº’è”ç½‘æ•°æ®å¼€æ”¾å¹³å°.ä¸­å›½
+DOMAIN-SUFFIX,äº’è”ç½‘ç›‘æµ‹.ä¸­å›½
+DOMAIN-SUFFIX,äº’è”ç½‘ç»Ÿè®¡.ä¸­å›½
+DOMAIN-SUFFIX,äº’è”ç½‘è°ƒæŸ¥.ä¸­å›½
+DOMAIN-SUFFIX,äº¤é€šå·¥å…·é™©.ç½‘å€
+DOMAIN-SUFFIX,å…»è€ä¿é™©.ç½‘å€
+DOMAIN-SUFFIX,å…»è€ç¤¾åŒº.ç½‘å€
+DOMAIN-SUFFIX,å¤§è¯è¥¿æ¸¸.cn
+DOMAIN-SUFFIX,å¤§è¯è¥¿æ¸¸.com
+DOMAIN-SUFFIX,å¤§è¯è¥¿æ¸¸.net
+DOMAIN-SUFFIX,å¤§è¯è¥¿æ¸¸.ä¸­å›½
+DOMAIN-SUFFIX,å®‰å±…å®¢.com
+DOMAIN-SUFFIX,å¯¼èˆª.ä¸­å›½
+DOMAIN-SUFFIX,å°ç‹—ç”µå™¨.cn
+DOMAIN-SUFFIX,å°ç‹—ç”µå™¨.com
+DOMAIN-SUFFIX,å°ç‹—ç”µå™¨.net
+DOMAIN-SUFFIX,å°ç‹—ç”µå™¨.ä¸­å›½
+DOMAIN-SUFFIX,å°ç‹—ç”µå™¨.å…¬å¸
+DOMAIN-SUFFIX,å°ç‹—ç”µå™¨.ç½‘ç»œ
+DOMAIN-SUFFIX,å°ç±³ç§‘æŠ€æœ‰é™è´£ä»»å…¬å¸.ä¸­å›½
+DOMAIN-SUFFIX,å°‘å„¿æ•™è‚²é‡‘.ç½‘å€
+DOMAIN-SUFFIX,å±±çµ.com
+DOMAIN-SUFFIX,å±±çµæ•°ç .com
+DOMAIN-SUFFIX,å±±çµéŸ³å“.com
+DOMAIN-SUFFIX,åº”ç”¨ç¤ºèŒƒ.cn
+DOMAIN-SUFFIX,æˆ¿äº§ç”µå•†.com
+DOMAIN-SUFFIX,æŠ•èµ„ç†è´¢.ç½‘å€
+DOMAIN-SUFFIX,æ–°ç”Ÿæ´»å¹¿åœº.ç½‘å€
+DOMAIN-SUFFIX,æ—…æ¸¸é™©.ç½‘å€
+DOMAIN-SUFFIX,æ—©è¡Œå®¢.com
+DOMAIN-SUFFIX,æš´é£.å…¬å¸
+DOMAIN-SUFFIX,æš´é£.ç½‘ç»œ
+DOMAIN-SUFFIX,æš´é£ä¸€.ä¸­å›½
+DOMAIN-SUFFIX,æš´é£åœ¨çº¿.ä¸­å›½
+DOMAIN-SUFFIX,æš´é£å½±éŸ³.å…¬å¸
+DOMAIN-SUFFIX,æš´é£å½±éŸ³.ç½‘ç»œ
+DOMAIN-SUFFIX,æš´é£å½±éŸ³åœ¨çº¿.ä¸­å›½
+DOMAIN-SUFFIX,æš´é£ç›’å­.ä¸­å›½
+DOMAIN-SUFFIX,æ¢¦å¹»è¥¿æ¸¸.cn
+DOMAIN-SUFFIX,æ¢¦å¹»è¥¿æ¸¸.com
+DOMAIN-SUFFIX,æ¢¦å¹»è¥¿æ¸¸.net
+DOMAIN-SUFFIX,æ¢¦å¹»è¥¿æ¸¸.ä¸­å›½
+DOMAIN-SUFFIX,æ³°åº·ä¸åŠ¨äº§.ç½‘å€
+DOMAIN-SUFFIX,æ³°åº·ä¸åŠ¨äº§æŠ•èµ„ç®¡ç†å…¬å¸.ç½‘å€
+DOMAIN-SUFFIX,æ³°åº·ä¹‹å®¶.ç½‘å€
+DOMAIN-SUFFIX,æ³°åº·äººå¯¿ä¿é™©.ç½‘å€
+DOMAIN-SUFFIX,æ³°åº·äººå¯¿ä¿é™©è‚¡ä»½æœ‰é™å…¬å¸.ç½‘å€
+DOMAIN-SUFFIX,æ³°åº·ä¿é™©é›†å›¢.ç½‘å€
+DOMAIN-SUFFIX,æ³°åº·å…»è€ç¤¾åŒº.ç½‘å€
+DOMAIN-SUFFIX,æ³°åº·åœ¨çº¿.ç½‘å€
+DOMAIN-SUFFIX,æ³°åº·æ–°ç”Ÿæ´».ç½‘å€
+DOMAIN-SUFFIX,æ³°åº·æ–°ç”Ÿæ´»å¹¿åœº.ç½‘å€
+DOMAIN-SUFFIX,æ³°åº·èµ„äº§.ç½‘å€
+DOMAIN-SUFFIX,æ¸¸ç«™.com
+DOMAIN-SUFFIX,æ¸¸ç«™.net
+DOMAIN-SUFFIX,çˆ±èŒƒå„¿.com
+DOMAIN-SUFFIX,ç¤¾é›†ç½‘.com
+DOMAIN-SUFFIX,ç­¾è¯é™©.ç½‘å€
+DOMAIN-SUFFIX,è”æƒ³èŒæ•™é›†å›¢.cn
+DOMAIN-SUFFIX,è”æƒ³èŒæ•™é›†å›¢.com
+DOMAIN-SUFFIX,è…¾è®¯.ä¸­å›½
+DOMAIN-SUFFIX,èˆªæ„é™©.ç½‘å€
+DOMAIN-SUFFIX,éŠ€è¯é›»å­.cn
+DOMAIN-SUFFIX,éŠ€è¯é›»å­.ä¸­å›½
+DOMAIN-SUFFIX,éŠ€è¯é›»å­.ä¸­åœ‹
+DOMAIN-SUFFIX,éŠ€è¯é›»å­.å…¬å¸
+DOMAIN-SUFFIX,éŠ€è¯é›»å­.å…¬å¸.cn
+DOMAIN-SUFFIX,éŠ€è¯é›»å­.ç¶²çµ¡.cn
+DOMAIN-SUFFIX,éŠ€è¯é›»å­.ç½‘ç»œ
+DOMAIN-SUFFIX,éŠ€è¯é›»å­.ç½‘ç»œ.cn
+DOMAIN-SUFFIX,éŠ€è¯é›»å­æ”¯ä»˜.cn
+DOMAIN-SUFFIX,éŠ€è¯é›»å­æ”¯ä»˜.ä¸­å›½
+DOMAIN-SUFFIX,éŠ€è¯é›»å­æ”¯ä»˜.ä¸­åœ‹
+DOMAIN-SUFFIX,éŠ€è¯é›»å­æ”¯ä»˜.å…¬å¸
+DOMAIN-SUFFIX,éŠ€è¯é›»å­æ”¯ä»˜.å…¬å¸.cn
+DOMAIN-SUFFIX,éŠ€è¯é›»å­æ”¯ä»˜.ç¶²çµ¡.cn
+DOMAIN-SUFFIX,éŠ€è¯é›»å­æ”¯ä»˜.ç½‘ç»œ
+DOMAIN-SUFFIX,éŠ€è¯é›»å­æ”¯ä»˜.ç½‘ç»œ.cn
+DOMAIN-SUFFIX,é“¶è”ç”µå­.biz
+DOMAIN-SUFFIX,é“¶è”ç”µå­.com
+DOMAIN-SUFFIX,é“¶è”ç”µå­.net
+DOMAIN-SUFFIX,é“¶è”ç”µå­.ä¸­åœ‹
+DOMAIN-SUFFIX,é“¶è”ç”µå­.å…¬å¸
+DOMAIN-SUFFIX,é“¶è”ç”µå­.å…¬å¸.cn
+DOMAIN-SUFFIX,é“¶è”ç”µå­.ç¶²çµ¡.cn
+DOMAIN-SUFFIX,é“¶è”ç”µå­.ç½‘ç»œ
+DOMAIN-SUFFIX,é“¶è”ç”µå­.ç½‘ç»œ.cn
+DOMAIN-SUFFIX,é“¶è”ç”µå­æ”¯ä»˜.biz
+DOMAIN-SUFFIX,é“¶è”ç”µå­æ”¯ä»˜.cn
+DOMAIN-SUFFIX,é“¶è”ç”µå­æ”¯ä»˜.com
+DOMAIN-SUFFIX,é“¶è”ç”µå­æ”¯ä»˜.net
+DOMAIN-SUFFIX,é“¶è”ç”µå­æ”¯ä»˜.ä¸­å›½
+DOMAIN-SUFFIX,é“¶è”ç”µå­æ”¯ä»˜.ä¸­åœ‹
+DOMAIN-SUFFIX,é“¶è”ç”µå­æ”¯ä»˜.å…¬å¸
+DOMAIN-SUFFIX,é“¶è”ç”µå­æ”¯ä»˜.å…¬å¸.cn
+DOMAIN-SUFFIX,é“¶è”ç”µå­æ”¯ä»˜.ç¶²çµ¡.cn
+DOMAIN-SUFFIX,é“¶è”ç”µå­æ”¯ä»˜.ç½‘ç»œ
+DOMAIN-SUFFIX,é“¶è”ç”µå­æ”¯ä»˜.ç½‘ç»œ.cn
+DOMAIN-SUFFIX,é£é£.cn
+DOMAIN-SUFFIX,é£é£.com
+DOMAIN-SUFFIX,é£é£.net
+DOMAIN-SUFFIX,é£é£.ä¸­å›½
 IP-ASN,AS132203
 IP-CIDR,1.0.1.0/24,no-resolve
 IP-CIDR,1.0.2.0/23,no-resolve
@@ -144868,7 +144931,7 @@ PROCESS-NAME,com.jjwxc.reader
 PROCESS-NAME,com.qiyi.video
 PROCESS-NAME,com.taobao.taobao
 PROCESS-NAME,com.xiaomi.mibrain.speech
-PROCESS-NAME,Ğ¡Ã×ÔÆ·şÎñ.exe
+PROCESS-NAME,å°ç±³äº‘æœåŠ¡.exe
 URL-REGEX,"^https?:\/\/(.+\.)*zh\.okaapps\.com.*$"
 URL-REGEX,"^https?:\/\/.+-mihayo\.akamaized\.net.*$"
 URL-REGEX,"^https?:\/\/.+\.awsdns-cn-[0-9][0-9]\.(biz|com|net|top).*$"
