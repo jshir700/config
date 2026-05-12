@@ -2,14 +2,15 @@
 # AUTHOR: jshir700
 # REPO: https://github.com/jshir700/config
 # REFERENCE: https://github.com/blackmatrix7/ios_rule_script, https://github.com/ACL4SSR/ACL4SSR, https://github.com/GeQ1an/Rules, https://github.com/LM-Firefly/Rules
-# UPDATED: 2026-05-12 14:50:04
+# UPDATED: 2026-05-12 20:56:48
 # DOMAIN: 3
 # DOMAIN-SUFFIX: 180
 # DOMAIN-KEYWORD: 1
 # DOMAIN-WILDCARD: 3
 # IP-CIDR: 2
 # IP-CIDR6: 1
-# TOTAL: 190
+# USER-AGENT: 6
+# TOTAL: 196
 DOMAIN,music.youtube.com
 DOMAIN,youtubei.googleapis.com
 DOMAIN,yt3.ggpht.com
@@ -200,3 +201,9 @@ DOMAIN-WILDCARD,youtube.com.*
 IP-CIDR,172.110.32.0/21,no-resolve
 IP-CIDR,216.73.80.0/20,no-resolve
 IP-CIDR6,2620:120:e000::/40,no-resolve
+USER-AGENT,*YouTubeMusic*
+USER-AGENT,*com.google.ios.youtubemusic*
+USER-AGENT,*youtube*
+USER-AGENT,YouTube*
+USER-AGENT,YouTubeMusic*
+USER-AGENT,com.google.ios.youtubemusic*

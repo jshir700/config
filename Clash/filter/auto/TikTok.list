@@ -2,12 +2,13 @@
 # AUTHOR: jshir700
 # REPO: https://github.com/jshir700/config
 # REFERENCE: https://github.com/blackmatrix7/ios_rule_script, https://github.com/ACL4SSR/ACL4SSR, https://github.com/LM-Firefly/Rules, https://github.com/Semporia/Quantumult-X
-# UPDATED: 2026-05-12 14:50:04
+# UPDATED: 2026-05-12 20:56:47
 # DOMAIN: 4
 # DOMAIN-SUFFIX: 25
-# DOMAIN-KEYWORD: 4
+# DOMAIN-KEYWORD: 5
 # PROCESS-NAME: 1
-# TOTAL: 34
+# USER-AGENT: 1
+# TOTAL: 36
 DOMAIN,lf16-effectcdn.byteeffecttos-g.com
 DOMAIN,lf16-pkgcdn.pitaya-clientai.com
 DOMAIN,p16-tiktokcdn-com.akamaized.net
@@ -16,6 +17,7 @@ DOMAIN-KEYWORD,-tiktokcdn-com
 DOMAIN-KEYWORD,musical.ly
 DOMAIN-KEYWORD,tiktok
 DOMAIN-KEYWORD,tiktokcdn
+DOMAIN-KEYWORD,tiktokv
 DOMAIN-SUFFIX,bytedapm.com
 DOMAIN-SUFFIX,bytegecko-i18n.com
 DOMAIN-SUFFIX,byteintlapi.com
@@ -42,3 +44,4 @@ DOMAIN-SUFFIX,tiktokv.us
 DOMAIN-SUFFIX,trae.ai
 DOMAIN-SUFFIX,ttwebview.com
 PROCESS-NAME,com.zhiliaoapp.musically
+USER-AGENT,TikTok*

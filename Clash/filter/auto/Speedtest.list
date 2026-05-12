@@ -2,14 +2,16 @@
 # AUTHOR: jshir700
 # REPO: https://github.com/jshir700/config
 # REFERENCE: https://github.com/blackmatrix7/ios_rule_script, https://github.com/GeQ1an/Rules, https://github.com/dler-io/Rules
-# UPDATED: 2026-05-12 14:50:04
+# UPDATED: 2026-05-12 20:56:47
 # DOMAIN: 1
 # DOMAIN-SUFFIX: 4
 # DOMAIN-KEYWORD: 1
-# TOTAL: 6
+# USER-AGENT: 1
+# TOTAL: 7
 DOMAIN,speed.dler.io
 DOMAIN-KEYWORD,speedtest
 DOMAIN-SUFFIX,fast.com
 DOMAIN-SUFFIX,ooklaserver.net
 DOMAIN-SUFFIX,speed.cloudflare.com
 DOMAIN-SUFFIX,speed.dler.io
+USER-AGENT,SpeedTest*

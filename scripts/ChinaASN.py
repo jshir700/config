@@ -108,7 +108,7 @@ def generate_clash_asn():
     # Ensure output directory exists
     output_dir = "Clash/filter/auto"
     os.makedirs(output_dir, exist_ok=True)
-    output_path = os.path.join(output_dir, "ChinaASN.list")
+    output_path = output_dir + "/" + "ChinaASN.list"
 
     with open(output_path, "w") as f:
         f.write("# NAME: ChinaASN\n")

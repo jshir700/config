@@ -18,14 +18,17 @@ sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 from common import (
     RULE_TYPES, LOON_HEADERS, DEFAULT_HEADERS,
     download_and_extract, write_rule_list, count_rules_by_type,
-    remove_subsumed_rules,
+    remove_subsumed_rules, _build_repo_filename_counts,
+    _display_name,
 )
 from ChinaASN import generate_clash_asn
+from accessible_urls import ACCESSIBLE_URLS
 
 # ---------------------------------------------------------------------------
-# Output directory
+# Output directories
 # ---------------------------------------------------------------------------
 OUTPUT_DIR = "Clash/filter/auto"
+CHINA_OUTPUT_DIR = "Clash/auto"
 
 
 # ---------------------------------------------------------------------------
@@ -87,6 +90,11 @@ RULE_LISTS["Reject"] = (
          "release/reject.txt", "loyalsoldier", None),
         ("https://raw.githubusercontent.com/zqzess/rule_for_quantumultX/"
          "master/QuantumultX/rules/AdBlock.list", "surge", None),
+        # GMOogway shadowrocket reject module
+        ("https://raw.githubusercontent.com/GMOogway/shadowrocket-rules/"
+         "master/sr_reject_list.module", "sgmodule", None),
+        # adrules.top ad blocking list
+        ("https://adrules.top/adrules.list", "list", None),
     ]
 )
 
@@ -715,7 +723,7 @@ RULE_LISTS["TikTok"] = (
         ("https://raw.githubusercontent.com/LM-Firefly/Rules/master/"
          "Global-Services/TikTok.list", "list", None),
         ("https://raw.githubusercontent.com/Semporia/Quantumult-X/"
-         "master/Filter/TikTok.list", "list", None),
+         "master/Filter/TikTok.list", "quantumultx", None),
         ("https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/"
          "Clash/Providers/Ruleset/TikTok.yaml", "yaml", None),
     ]
@@ -782,7 +790,7 @@ RULE_LISTS["Facebook"] = (
         ("https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/"
          "Clash/Ruleset/Facebook.list", "list", None),
         ("https://raw.githubusercontent.com/tkzc11/QX-Rules/main/"
-         "Meta.list", "list", None),
+         "Meta.list", "surge", None),
         ("https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/"
          "Clash/Providers/Ruleset/Facebook.yaml", "yaml", None),
     ]
@@ -899,7 +907,7 @@ RULE_LISTS["Global"] = (
         ("https://raw.githubusercontent.com/Hackl0us/SS-Rule-Snippet/"
          "master/Rulesets/Surge/Basic/Apple-proxy.list", "list", None),
         ("https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/"
-         "master/source/rule/Proxy/Proxy.list", "list", None),
+         "master/source/rule/Proxy/Proxy.list", "barelist", None),
         ("https://raw.githubusercontent.com/Loyalsoldier/surge-rules/"
          "release/ruleset/greatfire.txt", "list", None),
         ("https://raw.githubusercontent.com/Loyalsoldier/surge-rules/"
@@ -917,14 +925,49 @@ RULE_LISTS["Global"] = (
     ]
 )
 
+# ---------------------------------------------------------------------------
+# Proxy (Proxy list from GMOogway shadowrocket rules)
+# ---------------------------------------------------------------------------
+RULE_LISTS["Proxy"] = (
+    "# REFERENCE: https://github.com/GMOogway/shadowrocket-rules",
+    [
+        ("https://raw.githubusercontent.com/GMOogway/shadowrocket-rules/"
+         "master/sr_proxy_list.module", "sgmodule", None),
+    ]
+)
+
+# ---------------------------------------------------------------------------
+# HttpDNS (HTTPDNS block list from VirgilClyne/GetSomeFries)
+# ---------------------------------------------------------------------------
+RULE_LISTS["HttpDNS"] = (
+    "# REFERENCE: https://github.com/VirgilClyne/GetSomeFries",
+    [
+        ("https://raw.githubusercontent.com/VirgilClyne/GetSomeFries/"
+         "refs/heads/main/ruleset/HTTPDNS.Block.list", "list", None),
+        ("https://raw.githubusercontent.com/VirgilClyne/GetSomeFries/"
+         "refs/heads/main/ruleset/HTTPDNS.Block.yaml", "yaml", None),
+    ]
+)
+
 
 # ---------------------------------------------------------------------------
 # China.list (special: must exclude rules from ALL other auto lists)
 # ---------------------------------------------------------------------------
 CHINA_SOURCES = (
     "# REFERENCE: https://github.com/blackmatrix7/ios_rule_script, "
-    "https://github.com/ACL4SSR/ACL4SSR",
+    "https://github.com/ACL4SSR/ACL4SSR, "
+    "https://github.com/GMOogway/shadowrocket-rules, "
+    "https://github.com/LM-Firefly/Rules, "
+    "https://github.com/Hackl0us/SS-Rule-Snippet, "
+    "https://github.com/GeQ1an/Rules, "
+    "https://github.com/sve1r/Rules-For-Quantumult-X, "
+    "https://github.com/Loyalsoldier/clash-rules, "
+    "https://github.com/gaoyifan/china-operator-ip, "
+    "https://github.com/dler-io/Rules, "
+    "https://github.com/zqzess/rule_for_quantumultX, "
+    "https://github.com/misakaio/chnroutes2",
     [
+        # Original 6 sources
         ("https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/"
          "refs/heads/master/rule/Clash/ChinaMax/ChinaMax.yaml", "yaml", None),
         ("https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/"
@@ -935,7 +978,11 @@ CHINA_SOURCES = (
          "Clash/ChinaCompanyIp.list", "list", None),
         ("https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/"
          "Clash/ChinaDomain.list", "list", None),
-    ]
+        # GMOogway shadowrocket direct module
+        ("https://raw.githubusercontent.com/GMOogway/shadowrocket-rules/"
+         "master/sr_direct_list.module", "sgmodule", None),
+        # + 294 verified accessible URLs from verify_china_urls.py
+    ] + ACCESSIBLE_URLS
 )
 
 
@@ -957,6 +1004,10 @@ def download_all_sources():
             tasks.append((list_name, url, parser_type, headers))
 
     total_tasks = len(tasks)
+
+    # Pre-compute filename collision map for display disambiguation
+    _build_repo_filename_counts(tasks)
+
     print("=" * 60)
     print("Downloading {} sources across {} rule lists...".format(
         total_tasks, len(RULE_LISTS)))
@@ -975,7 +1026,7 @@ def download_all_sources():
                 rules = future.result()
                 all_rules[list_name].update(rules)
             except Exception as e:
-                print("  [EXCEPTION] {} - {}".format(url.split("/")[-1], e))
+                print("  [EXCEPTION] {} - {}".format(_display_name(url), e))
             completed += 1
             if completed % 20 == 0 or completed == total_tasks:
                 print("Progress: {}/{} sources processed".format(completed, total_tasks))
@@ -1022,13 +1073,28 @@ def generate_all():
     print("Exclusion set size: {:,} rules from {} other lists".format(
         len(exclude_set), len(RULE_LISTS) - 1))
 
-    # Download China sources
+    # Download China sources (use concurrent download)
     china_rules = set()
     china_ref, china_sources = CHINA_SOURCES
-    print("\nDownloading China sources...")
-    for url, parser_type, headers in china_sources:
-        rules = download_and_extract(url, parser_type, headers)
-        china_rules.update(rules)
+    total_china_src = len(china_sources)
+    print("\nDownloading {} China sources concurrently...".format(total_china_src))
+
+    with ThreadPoolExecutor(max_workers=20) as executor:
+        future_to_src = {
+            executor.submit(download_and_extract, url, parser_type, headers): (url, parser_type)
+            for url, parser_type, headers in china_sources
+        }
+        completed = 0
+        for future in as_completed(future_to_src):
+            url, parser_type = future_to_src[future]
+            try:
+                rules = future.result()
+                china_rules.update(rules)
+            except Exception as e:
+                print("  [EXCEPTION] {} - {}".format(_display_name(url), e))
+            completed += 1
+            if completed % 50 == 0 or completed == total_china_src:
+                print("  China sources: {}/{} processed".format(completed, total_china_src))
 
     # Apply exclusion (exact match + subsumption)
     before = len(china_rules)
@@ -1037,7 +1103,7 @@ def generate_all():
     print("China.list: {} rules after excluding {} overlapped rules".format(after, before - after))
 
     # Write China.list
-    output_path = os.path.join(OUTPUT_DIR, "China.list")
+    output_path = os.path.join(CHINA_OUTPUT_DIR, "China.list")
     total, type_counts = write_rule_list(output_path, "China", sorted(china_rules), china_ref)
     type_summary = ", ".join(
         "{}:{}".format(t, c) for t, c in type_counts.items()

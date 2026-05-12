@@ -40,20 +40,32 @@ RULE_TYPES = [
     "PROCESS-PATH", "PROCESS-PATH-WILDCARD", "PROCESS-PATH-REGEX",
     "PROCESS-NAME", "PROCESS-NAME-WILDCARD", "PROCESS-NAME-REGEX",
     "UID", "NETWORK", "DSCP", "RULE-SET", "AND", "OR", "NOT", "SUB-RULE",
+    "USER-AGENT", "URL-REGEX",
     "MATCH",
 ]
 
 RULE_PREFIXES = tuple(t + "," for t in RULE_TYPES if t != "MATCH")
+
+# Also accept Loon-specific prefixes during parsing
+LOON_PREFIXES = ("DEST-PORT,", "PROTOCOL,")
 
 
 # ---------------------------------------------------------------------------
 # Loon equivalent mapping (for rules that differ between mihomo and Loon)
 # ---------------------------------------------------------------------------
 
+# Clash -> Loon
 LOON_EQUIVALENT = {
     "DST-PORT": "DEST-PORT",
     "NETWORK": "PROTOCOL",
     "MATCH": "final",
+}
+
+# Loon -> Clash (reverse mapping)
+LOON_TO_CLASH = {
+    "DEST-PORT": "DST-PORT",
+    "PROTOCOL": "NETWORK",
+    "final": "MATCH",
 }
 
 
@@ -74,14 +86,20 @@ SURGE_TO_CLASH = {
     "domain-regex": "DOMAIN-REGEX",
     "ip-cidr": "IP-CIDR",
     "ip-cidr6": "IP-CIDR6",
+    "ip6-cidr": "IP-CIDR6",
     "geoip": "GEOIP",
     "ip-asn": "IP-ASN",
+    "user-agent": "USER-AGENT",
+    "url-regex": "URL-REGEX",
     "src-ip-cidr": "SRC-IP-CIDR",
     "src-port": "SRC-PORT",
     "dst-port": "DST-PORT",
     "url-regex": "URL-REGEX",
     "process-name": "PROCESS-NAME",
     "user-agent": "USER-AGENT",
+    "protocol": "NETWORK",
+    # Loon type equivalents (for parsing Loon rules in sgmodule/surge sources)
+    "dest-port": "DST-PORT",
 }
 
 QUANTUMULTX_TO_CLASH = {
@@ -92,7 +110,10 @@ QUANTUMULTX_TO_CLASH = {
     "HOST-REGEX": "DOMAIN-REGEX",
     "IP-CIDR": "IP-CIDR",
     "IP-CIDR6": "IP-CIDR6",
+    "IP6-CIDR": "IP-CIDR6",
     "GEOIP": "GEOIP",
+    "USER-AGENT": "USER-AGENT",
+    "URL-REGEX": "URL-REGEX",
 }
 
 
@@ -101,13 +122,13 @@ QUANTUMULTX_TO_CLASH = {
 # ---------------------------------------------------------------------------
 
 def is_rule_line(line):
-    """Check if a line is a valid Clash rule."""
+    """Check if a line is a valid Clash or Loon rule."""
     line = line.strip()
     if not line or line.startswith("#"):
         return False
-    if line == "MATCH":
+    if line in ("MATCH", "final"):
         return True
-    return line.startswith(RULE_PREFIXES)
+    return line.startswith(RULE_PREFIXES) or line.startswith(LOON_PREFIXES)
 
 
 def is_loon_rule_line(line):
@@ -141,7 +162,10 @@ def count_rules_by_type(rules):
 
 
 def get_loon_equivalent(rule):
-    """Return the Loon equivalent line for a mihomo rule, or None."""
+    """Return the Loon equivalent line for a mihomo (Clash) rule, or None.
+
+    Converts Clash-specific types (DST-PORT, NETWORK, MATCH) to Loon equivalents.
+    """
     rule = rule.strip()
     if rule == "MATCH":
         return "final"
@@ -153,10 +177,37 @@ def get_loon_equivalent(rule):
     return None
 
 
+def get_clash_equivalent(rule):
+    """Return the Clash equivalent line for a Loon-specific rule, or None.
+
+    Converts Loon-specific types (DEST-PORT, PROTOCOL, final) to Clash equivalents.
+    """
+    rule = rule.strip()
+    if rule == "final":
+        return "MATCH"
+    for loon_type, clash_type in LOON_TO_CLASH.items():
+        if loon_type == "final":
+            continue
+        if rule.startswith(loon_type + ","):
+            return rule.replace(loon_type + ",", clash_type + ",", 1)
+    return None
+
+
 def write_rule_list(output_path, name, sorted_rules, ref_line=None):
-    """Write a .list file with header, type counts, sorted rules, and Loon equivalents."""
+    """Write a .list file with header, type counts, sorted rules, and Loon equivalents.
+
+    For every Clash-specific rule (DST-PORT, NETWORK, MATCH), the Loon equivalent
+    is written on the next line. For every Loon-specific rule (DEST-PORT, PROTOCOL, final),
+    the Clash equivalent is written on the next line. This ensures bidirectional compatibility.
+
+    Duplicates are avoided: if an equivalent line already exists in sorted_rules (i.e.,
+    both the Clash rule and its Loon equivalent are independently present in the input
+    set), the equivalent is NOT written again, since the primary write of that line
+    already covers it.
+    """
     # Deduplicate IP-CIDR/IP-CIDR6 rules preferring no-resolve
     sorted_rules = deduplicate_ip_cidr(sorted_rules)
+    rules_set = set(sorted_rules)  # fast lookup for dedup
     total = len(sorted_rules)
     type_counts = count_rules_by_type(sorted_rules)
 
@@ -177,12 +228,21 @@ def write_rule_list(output_path, name, sorted_rules, ref_line=None):
                 f.write("# {}: {}\n".format(t, type_counts[t]))
         f.write("# TOTAL: {}\n".format(total))
         for rule in sorted_rules:
-            # Write the mihomo rule
+            # Write the rule itself
             f.write(rule + "\n")
-            # Write Loon equivalent if applicable
+            # Clash -> Loon: write Loon equivalent for Clash-specific types
             loon_line = get_loon_equivalent(rule)
             if loon_line is not None:
-                f.write(loon_line + "\n")
+                # Only write equivalent if it's not already in the input set
+                if loon_line not in rules_set:
+                    f.write(loon_line + "\n")
+            # Loon -> Clash: if this rule is already in Loon format,
+            # write the Clash equivalent on the next line too
+            else:
+                clash_line = get_clash_equivalent(rule)
+                if clash_line is not None:
+                    if clash_line not in rules_set:
+                        f.write(clash_line + "\n")
 
     return total, type_counts
 
@@ -385,21 +445,136 @@ def remove_subsumed_rules(china_rules, exclude_set):
 
 
 # ---------------------------------------------------------------------------
+# Universal fallback parser (second-pass detection)
+# ---------------------------------------------------------------------------
+
+def fallback_parse_line(line):
+    """Try to parse an unrecognized line via heuristic detection (second pass).
+
+    Tries, in order:
+      - Bare CIDR (e.g. '1.2.3.0/24')
+      - +.domain  (Loyalsoldier prefix → DOMAIN-SUFFIX)
+      - .domain   (Surge leading dot → DOMAIN-SUFFIX)
+      - Bare domain (contains a dot → DOMAIN)
+      - Bare AS number (e.g. 'AS1234')
+      - Bare IP address (no mask → IP-CIDR)
+
+    Returns:
+        Clash rule string, or None if nothing matched.
+    """
+    stripped = line.strip()
+    if not stripped or stripped.startswith("#"):
+        return None
+
+    # Bare CIDR (e.g. "1.2.3.0/24" or "2001::/32")
+    if "/" in stripped and "," not in stripped:
+        return "IP-CIDR,{}".format(stripped)
+
+    # Loyalsoldier-style: '+.domain.com' -> DOMAIN-SUFFIX,domain.com
+    if stripped.startswith("+."):
+        return "DOMAIN-SUFFIX,{}".format(stripped[2:])
+
+    # Surge-style leading dot: '.domain.com' -> DOMAIN-SUFFIX,domain.com
+    if stripped.startswith("."):
+        return "DOMAIN-SUFFIX,{}".format(stripped[1:])
+
+    # Bare domain (contains a dot, no comma)
+    if "." in stripped and "," not in stripped:
+        return "DOMAIN,{}".format(stripped)
+
+    # Bare AS number (with or without "AS" prefix)
+    upper = stripped.upper()
+    if upper.startswith("AS") and len(upper) > 2 and upper[2:].isdigit():
+        return "IP-ASN,{}".format(upper)
+    if stripped.isdigit() and len(stripped) <= 12:
+        # Plain numeric ASN (no "AS" prefix), e.g. "132203"
+        return "IP-ASN,AS{}".format(stripped)
+
+    # Bare IP address (single address, no mask)
+    try:
+        ipaddress.ip_address(stripped)
+        return "IP-CIDR,{}".format(stripped)
+    except ValueError:
+        pass
+
+    return None
+
+
+# ---------------------------------------------------------------------------
 # Format-specific parsers
+# Each returns (set_of_rules, unrecognized_count).
+# "unrecognized" = non-empty, non-comment lines that the primary parser
+#   AND fallback could NOT convert to a valid rule.
 # ---------------------------------------------------------------------------
 
 def parse_list_content(text):
-    """Parse Clash .list format (one rule per line)."""
+    """Parse Clash .list format (one rule per line), with fallback."""
     rules = set()
+    total_meaningful = 0
+    unrecognized = 0
     for line in text.splitlines():
-        if is_rule_line(line):
-            rules.add(line.strip())
-    return rules
+        stripped = line.strip()
+        if not stripped or stripped.startswith("#"):
+            continue
+        total_meaningful += 1
+        if is_rule_line(stripped):
+            rules.add(stripped)
+        else:
+            fb = fallback_parse_line(stripped)
+            if fb is not None and is_rule_line(fb):
+                rules.add(fb)
+            else:
+                unrecognized += 1
+    return rules, unrecognized
+
+
+def parse_bare_domain_list(text):
+    """Parse lists containing bare domain lines, with fallback.
+
+    Handles formats like:
+      - '.domain.tld' -> DOMAIN-SUFFIX,domain.tld
+      - 'domain.tld'  -> DOMAIN,domain.tld
+    """
+    rules = set()
+    total_meaningful = 0
+    unrecognized = 0
+    for line in text.splitlines():
+        stripped = line.strip()
+        if not stripped or stripped.startswith("#"):
+            continue
+        total_meaningful += 1
+        parsed = False
+        if stripped.startswith("."):
+            rule = "DOMAIN-SUFFIX,{}".format(stripped[1:])
+            if is_rule_line(rule):
+                rules.add(rule)
+                parsed = True
+        elif "." in stripped and "," not in stripped and "/" not in stripped:
+            rule = "DOMAIN,{}".format(stripped)
+            if is_rule_line(rule):
+                rules.add(rule)
+                parsed = True
+        if not parsed:
+            fb = fallback_parse_line(stripped)
+            if fb is not None and is_rule_line(fb):
+                rules.add(fb)
+            else:
+                unrecognized += 1
+    return rules, unrecognized
 
 
 def parse_yaml_content(text):
-    """Parse Clash .yaml payload section (lines starting with '- ')."""
+    """Parse Clash .yaml payload section, with fallback.
+
+    Handles:
+      - Standard Clash rules: '- DOMAIN,example.com'
+      - Bare domains: "- 'domain.com'" or "- domain.com" -> DOMAIN,domain.com
+      - +.prefixed: "- '+.domain.com'" or "- +.domain.com" -> DOMAIN-SUFFIX,domain.com
+      - Bare CIDRs: "- '1.0.0.0/24'" or "- 1.0.0.0/24" -> IP-CIDR,1.0.0.0/24
+    """
     rules = set()
+    total_meaningful = 0
+    unrecognized = 0
     in_payload = False
     for line in text.splitlines():
         stripped = line.strip()
@@ -408,47 +583,89 @@ def parse_yaml_content(text):
             continue
         if in_payload:
             if stripped.startswith("- "):
-                rule = stripped[2:].strip()
-                if rule.startswith("#") or rule.startswith("- #"):
+                entry = stripped[2:].strip()
+                # Remove surrounding quotes
+                if entry.startswith("'") and entry.endswith("'"):
+                    entry = entry[1:-1]
+                elif entry.startswith('"') and entry.endswith('"'):
+                    entry = entry[1:-1]
+                if entry.startswith("#") or entry.startswith("- #"):
                     continue
-                if "#" in rule:
-                    rule = rule.split("#")[0].strip()
-                if is_rule_line(rule):
-                    rules.add(rule)
+                total_meaningful += 1
+                if "#" in entry:
+                    entry = entry.split("#")[0].strip()
+                parsed = False
+                # Standard Clash rule
+                if is_rule_line(entry):
+                    rules.add(entry)
+                    parsed = True
+                elif "/" not in entry and "," not in entry and "." in entry:
+                    # Bare domain
+                    if entry.startswith("+."):
+                        rule = "DOMAIN-SUFFIX,{}".format(entry[2:])
+                    else:
+                        rule = "DOMAIN,{}".format(entry)
+                    if is_rule_line(rule):
+                        rules.add(rule)
+                        parsed = True
+                elif "/" in entry and "," not in entry:
+                    # Bare CIDR
+                    rule = "IP-CIDR,{}".format(entry)
+                    if is_rule_line(rule):
+                        rules.add(rule)
+                        parsed = True
+                if not parsed:
+                    fb = fallback_parse_line(entry)
+                    if fb is not None and is_rule_line(fb):
+                        rules.add(fb)
+                    else:
+                        unrecognized += 1
             elif stripped.startswith("#") or stripped == "":
                 continue
             else:
                 break
-    return rules
+    return rules, unrecognized
 
 
 def parse_surge_content(text):
-    """Parse Surge/Quantumult X format (type,value,policy), lowercased."""
+    """Parse Surge format (type,value,policy), lowercased, with fallback."""
     rules = set()
+    total_meaningful = 0
+    unrecognized = 0
     for line in text.splitlines():
         stripped = line.strip()
-        if not stripped or stripped.startswith("#") or stripped.startswith("//"):
+        if not stripped or stripped.startswith("#") or stripped.startswith("//") or stripped.startswith(";"):
             continue
         if stripped.startswith("/*") or stripped.startswith("*/"):
             continue
         if stripped.startswith("[") and stripped.endswith("]"):
             continue
+        total_meaningful += 1
         parts = stripped.split(",")
-        if len(parts) < 2:
-            continue
-        raw_type = parts[0].strip().lower()
-        if raw_type in SURGE_TO_CLASH:
-            clash_type = SURGE_TO_CLASH[raw_type]
-            value = parts[1].strip()
-            clash_rule = "{},{}".format(clash_type, value)
-            if is_rule_line(clash_rule):
-                rules.add(clash_rule)
-    return rules
+        parsed = False
+        if len(parts) >= 2:
+            raw_type = parts[0].strip().lower()
+            if raw_type in SURGE_TO_CLASH:
+                clash_type = SURGE_TO_CLASH[raw_type]
+                value = parts[1].strip()
+                clash_rule = "{},{}".format(clash_type, value)
+                if is_rule_line(clash_rule):
+                    rules.add(clash_rule)
+                    parsed = True
+        if not parsed:
+            fb = fallback_parse_line(stripped)
+            if fb is not None and is_rule_line(fb):
+                rules.add(fb)
+            else:
+                unrecognized += 1
+    return rules, unrecognized
 
 
 def parse_sgmodule_content(text):
-    """Parse Surge module (.sgmodule/.plugin), extracting [Rule] section."""
+    """Parse Surge module (.sgmodule/.plugin), [Rule] section, with fallback."""
     rules = set()
+    total_meaningful = 0
+    unrecognized = 0
     in_rule_section = False
     for line in text.splitlines():
         stripped = line.strip()
@@ -458,46 +675,78 @@ def parse_sgmodule_content(text):
             continue
         if not in_rule_section:
             continue
-        if not stripped or stripped.startswith("#") or stripped.startswith("//"):
+        if not stripped or stripped.startswith("#") or stripped.startswith("//") or stripped.startswith(";"):
             continue
         if stripped.startswith("/*") or stripped.startswith("*/"):
             continue
+        total_meaningful += 1
         parts = stripped.split(",")
-        if len(parts) < 2:
-            continue
-        raw_type = parts[0].strip().lower()
-        if raw_type in SURGE_TO_CLASH:
-            clash_type = SURGE_TO_CLASH[raw_type]
-            value = parts[1].strip()
-            clash_rule = "{},{}".format(clash_type, value)
-            if is_rule_line(clash_rule):
-                rules.add(clash_rule)
-    return rules
+        parsed = False
+        if len(parts) >= 2:
+            raw_type = parts[0].strip().lower()
+            if raw_type in SURGE_TO_CLASH:
+                clash_type = SURGE_TO_CLASH[raw_type]
+                value = parts[1].strip()
+                clash_rule = "{},{}".format(clash_type, value)
+                if is_rule_line(clash_rule):
+                    rules.add(clash_rule)
+                    parsed = True
+        if not parsed:
+            fb = fallback_parse_line(stripped)
+            if fb is not None and is_rule_line(fb):
+                rules.add(fb)
+            else:
+                unrecognized += 1
+    return rules, unrecognized
 
 
 def parse_quantumultx_content(text):
-    """Parse Quantumult X format (TYPE,value,policy) and convert to Clash."""
+    """Parse Quantumult X format (TYPE,value,policy), with fallback.
+
+    Also handles pre-converted Clash-format rules (TYPE,value) that may
+    appear mixed in with QX-format rules, including those with a 3rd
+    column (policy) that should be ignored.
+    """
     rules = set()
+    total_meaningful = 0
+    unrecognized = 0
     for line in text.splitlines():
         stripped = line.strip()
         if not stripped or stripped.startswith("#"):
             continue
+        total_meaningful += 1
         parts = stripped.split(",")
-        if len(parts) < 2:
-            continue
-        qx_type = parts[0].strip()
-        if qx_type in QUANTUMULTX_TO_CLASH:
-            clash_type = QUANTUMULTX_TO_CLASH[qx_type]
-            value = parts[1].strip()
-            clash_rule = "{},{}".format(clash_type, value)
-            if is_rule_line(clash_rule):
-                rules.add(clash_rule)
-    return rules
+        parsed = False
+        if len(parts) >= 2:
+            qx_type = parts[0].strip()
+            if qx_type in QUANTUMULTX_TO_CLASH:
+                clash_type = QUANTUMULTX_TO_CLASH[qx_type]
+                value = parts[1].strip()
+                clash_rule = "{},{}".format(clash_type, value)
+                if is_rule_line(clash_rule):
+                    rules.add(clash_rule)
+                    parsed = True
+            # Also try as a pre-converted Clash rule (e.g. DOMAIN-SUFFIX,domain,policy)
+            if not parsed:
+                # Try with first 2 parts (TYPE,value)
+                clash_rule = "{},{}".format(parts[0].strip(), parts[1].strip())
+                if is_rule_line(clash_rule):
+                    rules.add(clash_rule)
+                    parsed = True
+        if not parsed:
+            fb = fallback_parse_line(stripped)
+            if fb is not None and is_rule_line(fb):
+                rules.add(fb)
+            else:
+                unrecognized += 1
+    return rules, unrecognized
 
 
 def parse_loyalsoldier_content(text):
-    """Parse Loyalsoldier reject.txt format ('+.domain' -> DOMAIN-SUFFIX,domain)."""
+    """Parse Loyalsoldier format ('+.domain' -> DOMAIN-SUFFIX), with fallback."""
     rules = set()
+    total_meaningful = 0
+    unrecognized = 0
     in_payload = False
     for line in text.splitlines():
         stripped = line.strip()
@@ -509,45 +758,79 @@ def parse_loyalsoldier_content(text):
                 entry = stripped[2:].strip()
                 if entry.startswith("'") and entry.endswith("'"):
                     entry = entry[1:-1]
+                total_meaningful += 1
+                parsed = False
                 if entry.startswith("+."):
                     domain = entry[2:]
                     rule = "DOMAIN-SUFFIX,{}".format(domain)
                     if is_rule_line(rule):
                         rules.add(rule)
+                        parsed = True
                 elif is_rule_line(entry):
                     rules.add(entry)
+                    parsed = True
+                if not parsed:
+                    fb = fallback_parse_line(entry)
+                    if fb is not None and is_rule_line(fb):
+                        rules.add(fb)
+                    else:
+                        unrecognized += 1
             elif stripped.startswith("#") or stripped == "":
                 continue
             else:
                 break
-    return rules
+    return rules, unrecognized
 
 
 def parse_plain_text(text):
-    """Parse plain text lines as DOMAIN-SUFFIX rules (one per line)."""
+    """Parse plain text lines as DOMAIN-SUFFIX rules, with fallback."""
     rules = set()
+    total_meaningful = 0
+    unrecognized = 0
     for line in text.splitlines():
         stripped = line.strip()
         if not stripped or stripped.startswith("#"):
             continue
+        total_meaningful += 1
         rule = "DOMAIN-SUFFIX,{}".format(stripped)
         if is_rule_line(rule):
             rules.add(rule)
-    return rules
+        else:
+            fb = fallback_parse_line(stripped)
+            if fb is not None and is_rule_line(fb):
+                rules.add(fb)
+            else:
+                unrecognized += 1
+    return rules, unrecognized
 
 
 def parse_plain_cidr(text):
-    """Parse plain CIDR lines (one IP-CIDR per line)."""
+    """Parse plain CIDR lines (one IP-CIDR per line), with fallback."""
     rules = set()
+    total_meaningful = 0
+    unrecognized = 0
     for line in text.splitlines():
         stripped = line.strip()
         if not stripped or stripped.startswith("#"):
             continue
+        total_meaningful += 1
         if "/" in stripped:
             rule = "IP-CIDR,{}".format(stripped)
             if is_rule_line(rule):
                 rules.add(rule)
-    return rules
+            else:
+                fb = fallback_parse_line(stripped)
+                if fb is not None and is_rule_line(fb):
+                    rules.add(fb)
+                else:
+                    unrecognized += 1
+        else:
+            fb = fallback_parse_line(stripped)
+            if fb is not None and is_rule_line(fb):
+                rules.add(fb)
+            else:
+                unrecognized += 1
+    return rules, unrecognized
 
 
 # ---------------------------------------------------------------------------
@@ -563,7 +846,65 @@ PARSER_MAP = {
     "loyalsoldier": parse_loyalsoldier_content,
     "plaintext": parse_plain_text,
     "plaincidr": parse_plain_cidr,
+    "barelist": parse_bare_domain_list,
 }
+
+
+# ---------------------------------------------------------------------------
+# Display name helpers (always show filename, disambiguate collisions)
+# ---------------------------------------------------------------------------
+
+# Map (repo, filename) -> count, populated before download phase
+_REPO_FILENAME_COUNTS = {}
+
+
+def _get_url_meta(url):
+    """Parse a URL and return (repo, filename).
+
+    Returns:
+        (repo, filename) tuple. 'repo' is 'owner/repo' for github URLs,
+        or the hostname for non-github URLs.
+    """
+    parts = url.split("/")
+    filename = parts[-1] if parts[-1] else parts[-2]
+    if "raw.githubusercontent.com" in url and len(parts) >= 5:
+        repo = "{}/{}".format(parts[3], parts[4])
+    elif "github.com" in url and len(parts) >= 5:
+        repo = "{}/{}".format(parts[3], parts[4])
+    else:
+        repo = parts[2] if len(parts) > 2 else url
+    return repo, filename
+
+
+def _build_repo_filename_counts(tasks):
+    """Pre-compute filename collision map from the task list.
+
+    Args:
+        tasks: list of (list_name, url, parser_type, headers)
+    """
+    counts = {}
+    for _, url, _, _ in tasks:
+        repo, filename = _get_url_meta(url)
+        key = (repo, filename)
+        counts[key] = counts.get(key, 0) + 1
+    _REPO_FILENAME_COUNTS.clear()
+    _REPO_FILENAME_COUNTS.update(counts)
+
+
+def _display_name(url):
+    """Return just the filename for a URL, with repo disambiguation if needed.
+
+    If the same filename appears from multiple repos, appends ' (owner/repo)'.
+    """
+    repo, filename = _get_url_meta(url)
+    # Check if this filename appears from multiple repos
+    other_repos = set()
+    for (r, fn), count in _REPO_FILENAME_COUNTS.items():
+        if fn == filename and r != repo:
+            other_repos.add(r)
+    if other_repos:
+        return "{} ({})".format(filename, repo)
+    return filename
 
 
 # ---------------------------------------------------------------------------
@@ -588,10 +929,14 @@ def download_and_extract(url, parser_type, headers=None):
         r.raise_for_status()
         text = r.text
         parser = PARSER_MAP.get(parser_type, parse_list_content)
-        rules = parser(text)
-        print("  [OK] {} ({:,} bytes, {:,} rules)".format(
-            url.split("/")[-1], len(text), len(rules)))
+        rules, unrecognized = parser(text)
+        if unrecognized > 0:
+            print("  [OK] {} ({:,} bytes, {:,} rules, {:,} unrecognized)".format(
+                _display_name(url), len(text), len(rules), unrecognized))
+        else:
+            print("  [OK] {} ({:,} bytes, {:,} rules)".format(
+                _display_name(url), len(text), len(rules)))
         return rules
     except Exception as e:
-        print("  [FAIL] {} - {}".format(url.split("/")[-1], e))
+        print("  [FAIL] {} - {}".format(_display_name(url), e))
         return set()

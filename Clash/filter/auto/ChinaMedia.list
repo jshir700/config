@@ -2,14 +2,16 @@
 # AUTHOR: jshir700
 # REPO: https://github.com/jshir700/config
 # REFERENCE: https://github.com/blackmatrix7/ios_rule_script, https://github.com/LM-Firefly/Rules, https://github.com/ACL4SSR/ACL4SSR, https://github.com/sve1r/Rules-For-Quantumult-X, https://github.com/zqzess/rule_for_quantumultX
-# UPDATED: 2026-05-12 14:50:04
+# UPDATED: 2026-05-12 20:56:44
 # DOMAIN: 83
 # DOMAIN-SUFFIX: 278
 # DOMAIN-KEYWORD: 2
 # IP-CIDR: 62
 # IP-CIDR6: 29
 # PROCESS-NAME: 6
-# TOTAL: 460
+# USER-AGENT: 36
+# URL-REGEX: 1
+# TOTAL: 497
 DOMAIN,00713915daab0be43def5c338c02c80b.dlied1.cdntips.net
 DOMAIN,0gr4uqmtt8y41hcjsgrzdrc31.ourdvsss.com
 DOMAIN,0gr4uqmtt8y41hcjsgrzdrc3s.ourdvsss.com
@@ -368,11 +370,11 @@ DOMAIN-SUFFIX,zmzapi.com
 DOMAIN-SUFFIX,zmzapi.net
 DOMAIN-SUFFIX,zmzfile.com
 DOMAIN-SUFFIX,zygbdszt.net.cn
-DOMAIN-SUFFIX,涓浗骞挎挱鐢佃鎬诲彴.cn
-DOMAIN-SUFFIX,涓浗骞挎挱鐢佃鎬诲彴.涓浗
-DOMAIN-SUFFIX,涓ぎ骞挎挱鐢佃鎬诲彴.cn
-DOMAIN-SUFFIX,鍥藉骞挎挱鐢佃鎬诲彴.cn
-DOMAIN-SUFFIX,鍥藉骞挎挱鐢佃鎬诲彴.涓浗
+DOMAIN-SUFFIX,中国广播电视总台.cn
+DOMAIN-SUFFIX,中国广播电视总台.中国
+DOMAIN-SUFFIX,中央广播电视总台.cn
+DOMAIN-SUFFIX,国家广播电视总台.cn
+DOMAIN-SUFFIX,国家广播电视总台.中国
 IP-CIDR,101.224.0.0/13,no-resolve
 IP-CIDR,101.71.154.241/32,no-resolve
 IP-CIDR,103.126.92.132/31,no-resolve
@@ -470,3 +472,40 @@ PROCESS-NAME,com.bilibili.comic
 PROCESS-NAME,com.bilibili.comic.intl
 PROCESS-NAME,tv.danmaku.bili
 PROCESS-NAME,tv.danmaku.bilibilihd
+URL-REGEX,^https?:\/\/int[\w-\.]+iqiyi\.com
+USER-AGENT,%E4%BC%98%E9%85%B7*
+USER-AGENT,%E5%92%AA%E5%92%95%E8%A7%86%E9%A2%91
+USER-AGENT,%E7%BD%91%E6%98%93%E4%BA%91%E9%9F%B3%E4%B9%90
+USER-AGENT,%E7%BD%91%E6%98%93%E4%BA%91%E9%9F%B3%E4%B9%90*
+USER-AGENT,%E9%85%B7%E6%88%91%E9%9F%B3%E4%B9%90*
+USER-AGENT,*QIYI*
+USER-AGENT,*bili*
+USER-AGENT,AcFun*
+USER-AGENT,Bilibili*
+USER-AGENT,Domestic Media*
+USER-AGENT,DomesticMedia*
+USER-AGENT,MGTV*
+USER-AGENT,MOO%E9%9F%B3%E4%B9%90*
+USER-AGENT,MOO*
+USER-AGENT,MiguVideo*
+USER-AGENT,NeteaseMusic*
+USER-AGENT,PPStream*
+USER-AGENT,QIYI*
+USER-AGENT,QQ%E9%9F%B3%E4%B9%90
+USER-AGENT,QQ%e9%9f%b3%e4%b9%90*
+USER-AGENT,QQMusic*
+USER-AGENT,QYPlayer*
+USER-AGENT,TencentMidasConnect*
+USER-AGENT,YYeTs*
+USER-AGENT,Youku*
+USER-AGENT,baiduyinyue
+USER-AGENT,bili*
+USER-AGENT,bili-inter*
+USER-AGENT,bilibili*
+USER-AGENT,iQiYi*
+USER-AGENT,iQiyi*
+USER-AGENT,live4iphone*
+USER-AGENT,qqlive4iphone*
+USER-AGENT,walkman*
+USER-AGENT,xiami*
+USER-AGENT,youku*

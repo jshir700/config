@@ -2,10 +2,11 @@
 # AUTHOR: jshir700
 # REPO: https://github.com/jshir700/config
 # REFERENCE: https://github.com/blackmatrix7/ios_rule_script, https://github.com/LM-Firefly/Rules
-# UPDATED: 2026-05-12 14:50:04
+# UPDATED: 2026-05-12 20:56:44
 # DOMAIN-SUFFIX: 176
 # PROCESS-NAME: 2
-# TOTAL: 178
+# USER-AGENT: 1
+# TOTAL: 179
 DOMAIN-SUFFIX,20thcenturystudios.com.au
 DOMAIN-SUFFIX,20thcenturystudios.com.br
 DOMAIN-SUFFIX,20thcenturystudios.jp
@@ -184,3 +185,4 @@ DOMAIN-SUFFIX,watchdisneyfe.com
 DOMAIN-SUFFIX,watchespn.com
 PROCESS-NAME,com.disney.datg.videoplatforms.android.abc
 PROCESS-NAME,com.disney.disneyplus
+USER-AGENT,Disney+*

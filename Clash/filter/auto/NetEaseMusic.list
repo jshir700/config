@@ -2,11 +2,12 @@
 # AUTHOR: jshir700
 # REPO: https://github.com/jshir700/config
 # REFERENCE: https://github.com/blackmatrix7/ios_rule_script, https://github.com/ACL4SSR/ACL4SSR, https://github.com/LM-Firefly/Rules
-# UPDATED: 2026-05-12 14:50:04
+# UPDATED: 2026-05-12 20:56:45
 # DOMAIN: 1
 # DOMAIN-SUFFIX: 13
 # IP-CIDR: 35
-# TOTAL: 49
+# USER-AGENT: 2
+# TOTAL: 51
 DOMAIN,netease.ugcvideoss.ourdvs.com
 DOMAIN-SUFFIX,163yun.com
 DOMAIN-SUFFIX,api.iplay.163.com
@@ -56,3 +57,5 @@ IP-CIDR,59.111.181.60/32,no-resolve
 IP-CIDR,59.111.19.33/32,no-resolve
 IP-CIDR,59.111.21.14/31,no-resolve
 IP-CIDR,59.111.238.29/32,no-resolve
+USER-AGENT,%E7%BD%91%E6%98%93%E4%BA%91%E9%9F%B3%E4%B9%90*
+USER-AGENT,NeteaseMusic*

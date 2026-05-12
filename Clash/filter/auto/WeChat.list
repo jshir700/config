@@ -2,12 +2,13 @@
 # AUTHOR: jshir700
 # REPO: https://github.com/jshir700/config
 # REFERENCE: https://github.com/blackmatrix7/ios_rule_script, https://github.com/ACL4SSR/ACL4SSR
-# UPDATED: 2026-05-12 14:50:04
+# UPDATED: 2026-05-12 20:56:47
 # DOMAIN: 8
 # DOMAIN-SUFFIX: 22
 # IP-CIDR: 9
 # IP-ASN: 1
-# TOTAL: 40
+# USER-AGENT: 2
+# TOTAL: 42
 DOMAIN,apd-pcdnwxlogin.teg.tencent-cloud.net
 DOMAIN,btrace.qq.com
 DOMAIN,dldir1.qq.com
@@ -48,3 +49,5 @@ IP-CIDR,101.32.133.209/32,no-resolve
 IP-CIDR,101.32.133.53/32,no-resolve
 IP-CIDR,129.226.107.244/32,no-resolve
 IP-CIDR,129.226.3.47/32,no-resolve
+USER-AGENT,MicroMessenger*
+USER-AGENT,WeChat*
