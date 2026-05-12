@@ -2,14 +2,14 @@
 # AUTHOR: jshir700
 # REPO: https://github.com/jshir700/config
 # REFERENCE: https://github.com/blackmatrix7/ios_rule_script, https://github.com/Loyalsoldier/surge-rules, https://github.com/Loyalsoldier/clash-rules, https://github.com/sve1r/Rules-For-Quantumult-X, https://github.com/LM-Firefly/Rules, https://github.com/ACL4SSR/ACL4SSR
-# UPDATED: 2026-05-11 15:54:15
+# UPDATED: 2026-05-12 14:50:04
 # DOMAIN: 11
-# DOMAIN-SUFFIX: 1049
+# DOMAIN-SUFFIX: 1042
 # DOMAIN-KEYWORD: 6
 # IP-CIDR: 4
 # IP-CIDR6: 1
 # PROCESS-NAME: 8
-# TOTAL: 1079
+# TOTAL: 1072
 DOMAIN,clientservices.googleapis.com
 DOMAIN,crl.pki.goog
 DOMAIN,fonts.googleapis.com
@@ -254,7 +254,6 @@ DOMAIN-SUFFIX,doubleclick-cn.net
 DOMAIN-SUFFIX,doubleclick.com
 DOMAIN-SUFFIX,doubleclick.net
 DOMAIN-SUFFIX,download.mlcc.google.com
-DOMAIN-SUFFIX,download.qatp1.net
 DOMAIN-SUFFIX,download.tensorflow.google.com
 DOMAIN-SUFFIX,ec
 DOMAIN-SUFFIX,eg
@@ -636,7 +635,6 @@ DOMAIN-SUFFIX,mdialog.com
 DOMAIN-SUFFIX,meet.new
 DOMAIN-SUFFIX,mfg-inspector.com
 DOMAIN-SUFFIX,mobileview.page
-DOMAIN-SUFFIX,monitoring.qpdp1.net
 DOMAIN-SUFFIX,moodstocks.com
 DOMAIN-SUFFIX,mx
 DOMAIN-SUFFIX,my
@@ -695,12 +693,8 @@ DOMAIN-SUFFIX,projectara.com
 DOMAIN-SUFFIX,projectbaseline.com
 DOMAIN-SUFFIX,publishproxy.com
 DOMAIN-SUFFIX,py
-DOMAIN-SUFFIX,qagpublic.qatp1.net
-DOMAIN-SUFFIX,qgadmin.qcpp1.net
 DOMAIN-SUFFIX,qiao-cn.com
 DOMAIN-SUFFIX,qpx.googleflights.net
-DOMAIN-SUFFIX,qualysapi.qatp1.net
-DOMAIN-SUFFIX,qualysguard.qpdp1.net
 DOMAIN-SUFFIX,questvisual.com
 DOMAIN-SUFFIX,quickoffice.com
 DOMAIN-SUFFIX,quiksee.com
@@ -726,7 +720,6 @@ DOMAIN-SUFFIX,safebrowsing-cache.google.com
 DOMAIN-SUFFIX,safebrowsing.googleapis.com
 DOMAIN-SUFFIX,savethedate.foo
 DOMAIN-SUFFIX,saynow.com
-DOMAIN-SUFFIX,scanservice1.qcpp1.net
 DOMAIN-SUFFIX,schema.org
 DOMAIN-SUFFIX,schemer.com
 DOMAIN-SUFFIX,scholar.google.ae
