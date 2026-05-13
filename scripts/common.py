@@ -619,8 +619,8 @@ def parse_yaml_content(text):
                         # Loyalsoldier-style: +.domain -> DOMAIN-SUFFIX,domain
                         rule = "DOMAIN-SUFFIX,{}".format(entry[2:])
                     elif entry.startswith("*."):
-                        # Domain wildcard: *.domain -> DOMAIN-SUFFIX,domain
-                        rule = "DOMAIN-SUFFIX,{}".format(entry[2:])
+                        # YAML follows Clash convention: *.domain -> DOMAIN-WILDCARD,*.domain
+                        rule = "DOMAIN-WILDCARD,{}".format(entry)
                     else:
                         rule = "DOMAIN,{}".format(entry)
                     if is_rule_line(rule):
