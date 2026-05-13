@@ -475,11 +475,11 @@ def fallback_parse_line(line):
     if stripped.startswith("+."):
         return "DOMAIN-SUFFIX,{}".format(stripped[2:])
 
-    # Bare domain wildcard: '*.domain.com' -> DOMAIN-WILDCARD,*.domain.com
-    # Uses Clash DOMAIN-WILDCARD rule type, where * matches zero+ characters.
-    # This is the closest rule-type match for Clash domain-wildcard patterns.
+    # Bare domain wildcard: '*.domain.com' -> DOMAIN-SUFFIX,domain.com
+    # Output .list files follow Surge convention, where *.domain means
+    # "match domain and all subdomains" (equivalent to DOMAIN-SUFFIX).
     if stripped.startswith("*."):
-        return "DOMAIN-WILDCARD,{}".format(stripped)
+        return "DOMAIN-SUFFIX,{}".format(stripped[2:])
 
     # Surge-style leading dot: '.domain.com' -> DOMAIN-SUFFIX,domain.com
     if stripped.startswith("."):
@@ -553,8 +553,8 @@ def parse_bare_domain_list(text):
         total_meaningful += 1
         parsed = False
         if stripped.startswith("*."):
-            # Domain wildcard: *.domain.com -> DOMAIN-WILDCARD,*.domain.com
-            rule = "DOMAIN-WILDCARD,{}".format(stripped)
+            # Domain wildcard: *.domain.com -> DOMAIN-SUFFIX,domain.com
+            rule = "DOMAIN-SUFFIX,{}".format(stripped[2:])
             if is_rule_line(rule):
                 rules.add(rule)
                 parsed = True
@@ -619,8 +619,8 @@ def parse_yaml_content(text):
                         # Loyalsoldier-style: +.domain -> DOMAIN-SUFFIX,domain
                         rule = "DOMAIN-SUFFIX,{}".format(entry[2:])
                     elif entry.startswith("*."):
-                        # Domain wildcard: *.domain -> DOMAIN-WILDCARD,*.domain
-                        rule = "DOMAIN-WILDCARD,{}".format(entry)
+                        # Domain wildcard: *.domain -> DOMAIN-SUFFIX,domain
+                        rule = "DOMAIN-SUFFIX,{}".format(entry[2:])
                     else:
                         rule = "DOMAIN,{}".format(entry)
                     if is_rule_line(rule):
@@ -785,8 +785,8 @@ def parse_loyalsoldier_content(text):
                         rules.add(rule)
                         parsed = True
                 elif entry.startswith("*."):
-                    # Domain wildcard: *.domain -> DOMAIN-WILDCARD,*.domain
-                    rule = "DOMAIN-WILDCARD,{}".format(entry)
+                    # Domain wildcard: *.domain -> DOMAIN-SUFFIX,domain
+                    rule = "DOMAIN-SUFFIX,{}".format(entry[2:])
                     if is_rule_line(rule):
                         rules.add(rule)
                         parsed = True
