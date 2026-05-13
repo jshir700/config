@@ -454,6 +454,7 @@ def fallback_parse_line(line):
     Tries, in order:
       - Bare CIDR (e.g. '1.2.3.0/24')
       - +.domain  (Loyalsoldier prefix → DOMAIN-SUFFIX)
+      - *.domain  (Domain wildcard → DOMAIN-SUFFIX)
       - .domain   (Surge leading dot → DOMAIN-SUFFIX)
       - Bare domain (contains a dot → DOMAIN)
       - Bare AS number (e.g. 'AS1234')
@@ -472,6 +473,12 @@ def fallback_parse_line(line):
 
     # Loyalsoldier-style: '+.domain.com' -> DOMAIN-SUFFIX,domain.com
     if stripped.startswith("+."):
+        return "DOMAIN-SUFFIX,{}".format(stripped[2:])
+
+    # Domain wildcard: '*.domain.com' -> DOMAIN-SUFFIX,domain.com
+    # Clash/mihomo domain wildcard * matches exactly one subdomain level,
+    # which is equivalent to DOMAIN-SUFFIX behavior
+    if stripped.startswith("*."):
         return "DOMAIN-SUFFIX,{}".format(stripped[2:])
 
     # Surge-style leading dot: '.domain.com' -> DOMAIN-SUFFIX,domain.com
@@ -533,6 +540,7 @@ def parse_bare_domain_list(text):
 
     Handles formats like:
       - '.domain.tld' -> DOMAIN-SUFFIX,domain.tld
+      - '*.domain.tld' -> DOMAIN-SUFFIX,domain.tld (domain wildcard)
       - 'domain.tld'  -> DOMAIN,domain.tld
     """
     rules = set()
@@ -544,7 +552,13 @@ def parse_bare_domain_list(text):
             continue
         total_meaningful += 1
         parsed = False
-        if stripped.startswith("."):
+        if stripped.startswith("*."):
+            # Domain wildcard: *.domain.com -> DOMAIN-SUFFIX,domain.com
+            rule = "DOMAIN-SUFFIX,{}".format(stripped[2:])
+            if is_rule_line(rule):
+                rules.add(rule)
+                parsed = True
+        elif stripped.startswith("."):
             rule = "DOMAIN-SUFFIX,{}".format(stripped[1:])
             if is_rule_line(rule):
                 rules.add(rule)
@@ -602,6 +616,10 @@ def parse_yaml_content(text):
                 elif "/" not in entry and "," not in entry and "." in entry:
                     # Bare domain
                     if entry.startswith("+."):
+                        # Loyalsoldier-style: +.domain -> DOMAIN-SUFFIX,domain
+                        rule = "DOMAIN-SUFFIX,{}".format(entry[2:])
+                    elif entry.startswith("*."):
+                        # Domain wildcard: *.domain -> DOMAIN-SUFFIX,domain
                         rule = "DOMAIN-SUFFIX,{}".format(entry[2:])
                     else:
                         rule = "DOMAIN,{}".format(entry)
@@ -761,6 +779,13 @@ def parse_loyalsoldier_content(text):
                 total_meaningful += 1
                 parsed = False
                 if entry.startswith("+."):
+                    domain = entry[2:]
+                    rule = "DOMAIN-SUFFIX,{}".format(domain)
+                    if is_rule_line(rule):
+                        rules.add(rule)
+                        parsed = True
+                elif entry.startswith("*."):
+                    # Domain wildcard: *.domain -> DOMAIN-SUFFIX,domain
                     domain = entry[2:]
                     rule = "DOMAIN-SUFFIX,{}".format(domain)
                     if is_rule_line(rule):
