@@ -619,8 +619,9 @@ def parse_yaml_content(text):
                         # Loyalsoldier-style: +.domain -> DOMAIN-SUFFIX,domain
                         rule = "DOMAIN-SUFFIX,{}".format(entry[2:])
                     elif entry.startswith("*."):
-                        # YAML follows Clash convention: *.domain -> DOMAIN-WILDCARD,*.domain
-                        rule = "DOMAIN-WILDCARD,{}".format(entry)
+                        # YAML follows Clash convention, but DOMAIN-WILDCARD is not
+                        # supported in Loon. Use DOMAIN-SUFFIX (supported by both).
+                        rule = "DOMAIN-SUFFIX,{}".format(entry[2:])
                     else:
                         rule = "DOMAIN,{}".format(entry)
                     if is_rule_line(rule):
