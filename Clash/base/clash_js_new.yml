@@ -323,13 +323,13 @@ sniffer:
       ports: [443, 8443]
     QUIC:
       ports: [443, 8443]
-  force-domain: # 强制进行嗅探的域名列表，使用域名通配
+  ##force-domain: # 强制进行嗅探的域名列表，使用域名通配
     #- +.v2ex.com
-  skip-domain: # 跳过嗅探的域名列表，使用域名通配
+  ##skip-domain: # 跳过嗅探的域名列表，使用域名通配
     #- Mijia Cloud
-  skip-src-address: # 跳过嗅探的来源 IP 段列表
+  ##skip-src-address: # 跳过嗅探的来源 IP 段列表
     #- 192.168.0.3/32
-  skip-dst-address: # 跳过嗅探的目标 IP 段列表
+  ##skip-dst-address: # 跳过嗅探的目标 IP 段列表
     #- 192.168.0.3/32
 
 # 入站
