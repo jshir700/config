@@ -2,14 +2,14 @@
 # AUTHOR: jshir700
 # REPO: https://github.com/jshir700/config
 # REFERENCE: https://github.com/GMOogway/shadowrocket-rules
-# UPDATED: 2026-05-13 15:27:27
+# UPDATED: 2026-05-14 15:22:17
 # DOMAIN: 720
-# DOMAIN-SUFFIX: 25601
+# DOMAIN-SUFFIX: 25602
 # DOMAIN-KEYWORD: 12
 # DOMAIN-REGEX: 151
 # IP-CIDR: 15
 # USER-AGENT: 1
-# TOTAL: 26500
+# TOTAL: 26501
 DOMAIN,1password.drift.click
 DOMAIN,3dns-1.adobe.com
 DOMAIN,3dns-2.adobe.com
@@ -6355,6 +6355,7 @@ DOMAIN-SUFFIX,chocam.com
 DOMAIN-SUFFIX,chocolatey.org
 DOMAIN-SUFFIX,choicereviews.org
 DOMAIN-SUFFIX,chomp.com
+DOMAIN-SUFFIX,chonglangtv.org
 DOMAIN-SUFFIX,chrdnet.com
 DOMAIN-SUFFIX,christianfreedom.org
 DOMAIN-SUFFIX,christianstudy.com
