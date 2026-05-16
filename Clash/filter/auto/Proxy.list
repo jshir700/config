@@ -2,14 +2,14 @@
 # AUTHOR: jshir700
 # REPO: https://github.com/jshir700/config
 # REFERENCE: https://github.com/GMOogway/shadowrocket-rules
-# UPDATED: 2026-05-15 15:33:20
+# UPDATED: 2026-05-16 14:34:57
 # DOMAIN: 720
-# DOMAIN-SUFFIX: 25602
+# DOMAIN-SUFFIX: 25603
 # DOMAIN-KEYWORD: 12
 # DOMAIN-REGEX: 151
 # IP-CIDR: 15
 # USER-AGENT: 1
-# TOTAL: 26501
+# TOTAL: 26502
 DOMAIN,1password.drift.click
 DOMAIN,3dns-1.adobe.com
 DOMAIN,3dns-2.adobe.com
@@ -24562,6 +24562,7 @@ DOMAIN-SUFFIX,vulgarx.com
 DOMAIN-SUFFIX,vultr.com
 DOMAIN-SUFFIX,vultryhw.com
 DOMAIN-SUFFIX,vuvuzela.io
+DOMAIN-SUFFIX,vv1865.com
 DOMAIN-SUFFIX,vzw.com
 DOMAIN-SUFFIX,w-mt.co
 DOMAIN-SUFFIX,w-pool.com
