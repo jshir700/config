@@ -593,3 +593,5 @@ DOMAIN,mtrace.ysp.cctv.cn
 # > Tidb片头片尾探测
 DOMAIN-SUFFIX,theintrodb.org
 DOMAIN,theintrodb.org
+# > Bilibili
+DOMAIN-SUFFIX,dataflow.biliapi.com
