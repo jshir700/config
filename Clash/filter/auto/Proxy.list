@@ -2,14 +2,14 @@
 # AUTHOR: jshir700
 # REPO: https://github.com/jshir700/config
 # REFERENCE: https://github.com/GMOogway/shadowrocket-rules
-# UPDATED: 2026-05-17 15:14:00
+# UPDATED: 2026-05-18 16:15:46
 # DOMAIN: 720
-# DOMAIN-SUFFIX: 25604
+# DOMAIN-SUFFIX: 25606
 # DOMAIN-KEYWORD: 12
 # DOMAIN-REGEX: 151
 # IP-CIDR: 15
 # USER-AGENT: 1
-# TOTAL: 26503
+# TOTAL: 26505
 DOMAIN,1password.drift.click
 DOMAIN,3dns-1.adobe.com
 DOMAIN,3dns-2.adobe.com
@@ -21055,6 +21055,7 @@ DOMAIN-SUFFIX,shywifeswap.com
 DOMAIN-SUFFIX,siam.org
 DOMAIN-SUFFIX,sibreal.org
 DOMAIN-SUFFIX,sidelinesnews.com
+DOMAIN-SUFFIX,sider.ai
 DOMAIN-SUFFIX,siege-amazon.com
 DOMAIN-SUFFIX,sifangclub.com
 DOMAIN-SUFFIX,sigcomm.org
@@ -26515,6 +26516,7 @@ DOMAIN-SUFFIX,zhainanjidi.xyz
 DOMAIN-SUFFIX,zhainanjidid.top
 DOMAIN-SUFFIX,zhangboz1.xyz
 DOMAIN-SUFFIX,zhangtianliang.com
+DOMAIN-SUFFIX,zhangzhehan.net
 DOMAIN-SUFFIX,zhanlve.org
 DOMAIN-SUFFIX,zhao.1984.city
 DOMAIN-SUFFIX,zhengjian.org
