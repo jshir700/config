@@ -2,15 +2,15 @@
 # AUTHOR: jshir700
 # REPO: https://github.com/jshir700/config
 # REFERENCE: https://github.com/blackmatrix7/ios_rule_script, https://github.com/sve1r/Rules-For-Quantumult-X, https://github.com/ACL4SSR/ACL4SSR, https://github.com/Hackl0us/SS-Rule-Snippet, https://github.com/Loyalsoldier/surge-rules, https://github.com/GeQ1an/Rules, https://github.com/Loyalsoldier/clash-rules, https://github.com/dler-io/Rules
-# UPDATED: 2026-05-18 16:15:46
+# UPDATED: 2026-05-19 15:57:10
 # DOMAIN: 731
-# DOMAIN-SUFFIX: 34838
+# DOMAIN-SUFFIX: 34858
 # DOMAIN-KEYWORD: 39
 # IP-CIDR: 138
 # IP-CIDR6: 5
 # PROCESS-NAME: 1
 # USER-AGENT: 9
-# TOTAL: 35761
+# TOTAL: 35781
 DOMAIN,1password.drift.click
 DOMAIN,3dns-1.adobe.com
 DOMAIN,3dns-2.adobe.com
@@ -1257,6 +1257,7 @@ DOMAIN-SUFFIX,54647.org
 DOMAIN-SUFFIX,55dndn.com
 DOMAIN-SUFFIX,567321.online
 DOMAIN-SUFFIX,568xe.com
+DOMAIN-SUFFIX,573.jp
 DOMAIN-SUFFIX,58avgo.com
 DOMAIN-SUFFIX,592r.com
 DOMAIN-SUFFIX,59mvmv.com
@@ -18368,6 +18369,7 @@ DOMAIN-SUFFIX,keytransparency.com
 DOMAIN-SUFFIX,keytransparency.foo
 DOMAIN-SUFFIX,keytransparency.org
 DOMAIN-SUFFIX,kfs.io
+DOMAIN-SUFFIX,kgisystems.com
 DOMAIN-SUFFIX,kgslb.com
 DOMAIN-SUFFIX,kgv.ac.uk
 DOMAIN-SUFFIX,khabdha.org
@@ -18491,6 +18493,7 @@ DOMAIN-SUFFIX,kissjav.com
 DOMAIN-SUFFIX,kissjav.li
 DOMAIN-SUFFIX,kitakyushubank.co.jp
 DOMAIN-SUFFIX,kitts.ac.uk
+DOMAIN-SUFFIX,kiwi.jp
 DOMAIN-SUFFIX,kiwi.kz
 DOMAIN-SUFFIX,kiwibrowser.com
 DOMAIN-SUFFIX,kiyobank.co.jp
@@ -18543,6 +18546,20 @@ DOMAIN-SUFFIX,kompozer.net
 DOMAIN-SUFFIX,konachan.com
 DOMAIN-SUFFIX,konachan.net
 DOMAIN-SUFFIX,konachan.wjcodes.com
+DOMAIN-SUFFIX,konami
+DOMAIN-SUFFIX,konami-igaming.online
+DOMAIN-SUFFIX,konami.co.jp
+DOMAIN-SUFFIX,konami.com
+DOMAIN-SUFFIX,konami.net
+DOMAIN-SUFFIX,konami.org
+DOMAIN-SUFFIX,konamicrossmedia.com
+DOMAIN-SUFFIX,konamigaming.com
+DOMAIN-SUFFIX,konamigaming.net
+DOMAIN-SUFFIX,konamigaming.online
+DOMAIN-SUFFIX,konamionline.com
+DOMAIN-SUFFIX,konamiopen.jp
+DOMAIN-SUFFIX,konamisportsclub.jp
+DOMAIN-SUFFIX,konamistyle.jp
 DOMAIN-SUFFIX,kone.com
 DOMAIN-SUFFIX,koolsolutions.com
 DOMAIN-SUFFIX,koornk.com
@@ -26395,6 +26412,8 @@ DOMAIN-SUFFIX,researchkit.org
 DOMAIN-SUFFIX,researchkit.tv
 DOMAIN-SUFFIX,researchscotland.ac.uk
 DOMAIN-SUFFIX,researchwales.ac.uk
+DOMAIN-SUFFIX,resella.jp
+DOMAIN-SUFFIX,resellablue.com
 DOMAIN-SUFFIX,resilient-decarbonised-energy-cdt.ac.uk
 DOMAIN-SUFFIX,resilient-decarbonised-energy-dtc.ac.uk
 DOMAIN-SUFFIX,resilio.com
@@ -35317,6 +35336,7 @@ DOMAIN-SUFFIX,yuanming.net
 DOMAIN-SUFFIX,yuanzhengtang.org
 DOMAIN-SUFFIX,yuenuge113.xyz
 DOMAIN-SUFFIX,yuenuge18.cc
+DOMAIN-SUFFIX,yugioh-card.com
 DOMAIN-SUFFIX,yulghun.com
 DOMAIN-SUFFIX,yuming.qxbbs.org
 DOMAIN-SUFFIX,yunchao.net
