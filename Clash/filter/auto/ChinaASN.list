@@ -2,7 +2,7 @@
 # AUTHOR: jshir700
 # REPO: https://github.com/jshir700/config
 # REFERENCE: https://github.com/missuo/ASN-China
-# UPDATED: 2026-05-24 15:32:54
+# UPDATED: 2026-05-25 16:42:16
 # IP-ASN: 5225
 # TOTAL: 5225
 IP-ASN,24429,no-resolve
@@ -10,8 +10,8 @@ IP-ASN,4134,no-resolve
 IP-ASN,132203,no-resolve
 IP-ASN,45102,no-resolve
 IP-ASN,55967,no-resolve
-IP-ASN,4837,no-resolve
 IP-ASN,146762,no-resolve
+IP-ASN,4837,no-resolve
 IP-ASN,4809,no-resolve
 IP-ASN,10111,no-resolve
 IP-ASN,213605,no-resolve
@@ -30,9 +30,9 @@ IP-ASN,142111,no-resolve
 IP-ASN,56040,no-resolve
 IP-ASN,146788,no-resolve
 IP-ASN,7497,no-resolve
+IP-ASN,202782,no-resolve
 IP-ASN,137753,no-resolve
 IP-ASN,9929,no-resolve
-IP-ASN,202782,no-resolve
 IP-ASN,134578,no-resolve
 IP-ASN,4842,no-resolve
 IP-ASN,146834,no-resolve
@@ -75,7 +75,6 @@ IP-ASN,24489,no-resolve
 IP-ASN,24444,no-resolve
 IP-ASN,23848,no-resolve
 IP-ASN,212237,no-resolve
-IP-ASN,210352,no-resolve
 IP-ASN,17623,no-resolve
 IP-ASN,17622,no-resolve
 IP-ASN,17428,no-resolve
@@ -93,6 +92,7 @@ IP-ASN,37965,no-resolve
 IP-ASN,24413,no-resolve
 IP-ASN,23911,no-resolve
 IP-ASN,23650,no-resolve
+IP-ASN,210352,no-resolve
 IP-ASN,138538,no-resolve
 IP-ASN,137735,no-resolve
 IP-ASN,136237,no-resolve
@@ -107,6 +107,7 @@ IP-ASN,45110,no-resolve
 IP-ASN,38019,no-resolve
 IP-ASN,24133,no-resolve
 IP-ASN,214848,no-resolve
+IP-ASN,201674,no-resolve
 IP-ASN,154648,no-resolve
 IP-ASN,153726,no-resolve
 IP-ASN,151397,no-resolve
@@ -142,7 +143,6 @@ IP-ASN,24430,no-resolve
 IP-ASN,24424,no-resolve
 IP-ASN,23853,no-resolve
 IP-ASN,23844,no-resolve
-IP-ASN,201674,no-resolve
 IP-ASN,18241,no-resolve
 IP-ASN,18239,no-resolve
 IP-ASN,18118,no-resolve
