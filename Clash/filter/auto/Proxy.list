@@ -2,14 +2,14 @@
 # AUTHOR: jshir700
 # REPO: https://github.com/jshir700/config
 # REFERENCE: https://github.com/GMOogway/shadowrocket-rules
-# UPDATED: 2026-05-25 16:40:11
+# UPDATED: 2026-05-26 16:01:10
 # DOMAIN: 725
-# DOMAIN-SUFFIX: 25642
+# DOMAIN-SUFFIX: 25643
 # DOMAIN-KEYWORD: 12
 # DOMAIN-REGEX: 151
 # IP-CIDR: 15
 # USER-AGENT: 1
-# TOTAL: 26546
+# TOTAL: 26547
 DOMAIN,1password.drift.click
 DOMAIN,3dns-1.adobe.com
 DOMAIN,3dns-2.adobe.com
@@ -15807,6 +15807,7 @@ DOMAIN-SUFFIX,microvpn.com
 DOMAIN-SUFFIX,micstl.com
 DOMAIN-SUFFIX,midatlanticbmwmotorcycles.com
 DOMAIN-SUFFIX,midentsolutions.com
+DOMAIN-SUFFIX,midjourney.com
 DOMAIN-SUFFIX,midoushe.com
 DOMAIN-SUFFIX,mie.co.jp
 DOMAIN-SUFFIX,miexnoviadesnuda.com

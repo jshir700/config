@@ -2,15 +2,15 @@
 # AUTHOR: jshir700
 # REPO: https://github.com/jshir700/config
 # REFERENCE: https://github.com/blackmatrix7/ios_rule_script, https://github.com/sve1r/Rules-For-Quantumult-X, https://github.com/ACL4SSR/ACL4SSR, https://github.com/Hackl0us/SS-Rule-Snippet, https://github.com/Loyalsoldier/surge-rules, https://github.com/GeQ1an/Rules, https://github.com/Loyalsoldier/clash-rules, https://github.com/dler-io/Rules
-# UPDATED: 2026-05-25 16:40:10
+# UPDATED: 2026-05-26 16:01:10
 # DOMAIN: 736
-# DOMAIN-SUFFIX: 34873
+# DOMAIN-SUFFIX: 34874
 # DOMAIN-KEYWORD: 39
 # IP-CIDR: 138
 # IP-CIDR6: 5
 # PROCESS-NAME: 1
 # USER-AGENT: 9
-# TOTAL: 35801
+# TOTAL: 35802
 DOMAIN,1password.drift.click
 DOMAIN,3dns-1.adobe.com
 DOMAIN,3dns-2.adobe.com
@@ -20623,6 +20623,7 @@ DOMAIN-SUFFIX,middlesex.ac.uk
 DOMAIN-SUFFIX,midentsolutions.com
 DOMAIN-SUFFIX,midfife.ac.uk
 DOMAIN-SUFFIX,midhurst.ac.uk
+DOMAIN-SUFFIX,midjourney.com
 DOMAIN-SUFFIX,midkent.ac.uk
 DOMAIN-SUFFIX,midlands3cities.ac.uk
 DOMAIN-SUFFIX,midlands4cities.ac.uk
