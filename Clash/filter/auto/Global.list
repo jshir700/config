@@ -2,15 +2,15 @@
 # AUTHOR: jshir700
 # REPO: https://github.com/jshir700/config
 # REFERENCE: https://github.com/blackmatrix7/ios_rule_script, https://github.com/sve1r/Rules-For-Quantumult-X, https://github.com/ACL4SSR/ACL4SSR, https://github.com/Hackl0us/SS-Rule-Snippet, https://github.com/Loyalsoldier/surge-rules, https://github.com/GeQ1an/Rules, https://github.com/Loyalsoldier/clash-rules, https://github.com/dler-io/Rules
-# UPDATED: 2026-05-29 16:09:40
+# UPDATED: 2026-05-30 15:19:52
 # DOMAIN: 736
-# DOMAIN-SUFFIX: 34907
+# DOMAIN-SUFFIX: 34910
 # DOMAIN-KEYWORD: 39
 # IP-CIDR: 138
 # IP-CIDR6: 5
 # PROCESS-NAME: 1
 # USER-AGENT: 9
-# TOTAL: 35835
+# TOTAL: 35838
 DOMAIN,1password.drift.click
 DOMAIN,3dns-1.adobe.com
 DOMAIN,3dns-2.adobe.com
@@ -3562,6 +3562,7 @@ DOMAIN-SUFFIX,arweave.org
 DOMAIN-SUFFIX,arxiv.org
 DOMAIN-SUFFIX,arzon.jp
 DOMAIN-SUFFIX,as-hp.ca
+DOMAIN-SUFFIX,as.mr
 DOMAIN-SUFFIX,asacp.org
 DOMAIN-SUFFIX,asagaku.com
 DOMAIN-SUFFIX,asahi.com
@@ -13400,6 +13401,7 @@ DOMAIN-SUFFIX,gemfury.com
 DOMAIN-SUFFIX,gemini.com
 DOMAIN-SUFFIX,gen.lib.rus.ec
 DOMAIN-SUFFIX,gen2.ac.uk
+DOMAIN-SUFFIX,gencraft.com
 DOMAIN-SUFFIX,gendai.net
 DOMAIN-SUFFIX,generated.photos
 DOMAIN-SUFFIX,generationpup.ac.uk
@@ -32109,6 +32111,7 @@ DOMAIN-SUFFIX,vdoav.com
 DOMAIN-SUFFIX,vds.rightster.com
 DOMAIN-SUFFIX,vecchiescopate.casa
 DOMAIN-SUFFIX,vector.im
+DOMAIN-SUFFIX,veed.io
 DOMAIN-SUFFIX,veet.at
 DOMAIN-SUFFIX,veet.be
 DOMAIN-SUFFIX,veet.ca
