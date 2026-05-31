@@ -2,14 +2,14 @@
 # AUTHOR: jshir700
 # REPO: https://github.com/jshir700/config
 # REFERENCE: https://github.com/GMOogway/shadowrocket-rules
-# UPDATED: 2026-05-30 15:19:52
+# UPDATED: 2026-05-31 15:52:53
 # DOMAIN: 725
-# DOMAIN-SUFFIX: 25678
+# DOMAIN-SUFFIX: 25680
 # DOMAIN-KEYWORD: 12
 # DOMAIN-REGEX: 151
 # IP-CIDR: 15
 # USER-AGENT: 1
-# TOTAL: 26582
+# TOTAL: 26584
 DOMAIN,1password.drift.click
 DOMAIN,3dns-1.adobe.com
 DOMAIN,3dns-2.adobe.com
@@ -14855,6 +14855,7 @@ DOMAIN-SUFFIX,livevideo.com
 DOMAIN-SUFFIX,livexxx.me
 DOMAIN-SUFFIX,livingstream.com
 DOMAIN-SUFFIX,livingyourambition.com
+DOMAIN-SUFFIX,livinno.org
 DOMAIN-SUFFIX,livrariart.com.br
 DOMAIN-SUFFIX,lizardporn.com
 DOMAIN-SUFFIX,lizol.co.in
@@ -18037,6 +18038,7 @@ DOMAIN-SUFFIX,ooni.org
 DOMAIN-SUFFIX,ootbstudio.co.kr
 DOMAIN-SUFFIX,op.gg
 DOMAIN-SUFFIX,op7979.com
+DOMAIN-SUFFIX,opac-project.eu
 DOMAIN-SUFFIX,open.firstory.me
 DOMAIN-SUFFIX,openai.com
 DOMAIN-SUFFIX,openaiapi-site.azureedge.net
