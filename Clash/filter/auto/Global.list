@@ -2,15 +2,15 @@
 # AUTHOR: jshir700
 # REPO: https://github.com/jshir700/config
 # REFERENCE: https://github.com/blackmatrix7/ios_rule_script, https://github.com/sve1r/Rules-For-Quantumult-X, https://github.com/ACL4SSR/ACL4SSR, https://github.com/Hackl0us/SS-Rule-Snippet, https://github.com/Loyalsoldier/surge-rules, https://github.com/GeQ1an/Rules, https://github.com/Loyalsoldier/clash-rules, https://github.com/dler-io/Rules
-# UPDATED: 2026-05-31 15:52:53
-# DOMAIN: 736
-# DOMAIN-SUFFIX: 34912
+# UPDATED: 2026-06-01 17:35:58
+# DOMAIN: 737
+# DOMAIN-SUFFIX: 34915
 # DOMAIN-KEYWORD: 39
 # IP-CIDR: 138
 # IP-CIDR6: 5
 # PROCESS-NAME: 1
 # USER-AGENT: 9
-# TOTAL: 35840
+# TOTAL: 35844
 DOMAIN,1password.drift.click
 DOMAIN,3dns-1.adobe.com
 DOMAIN,3dns-2.adobe.com
@@ -289,6 +289,7 @@ DOMAIN,media-rockstargames-com.akamaized.net
 DOMAIN,medone-education.thieme.com
 DOMAIN,misa-prod.s3.ap-northeast-1.amazonaws.com
 DOMAIN,mobilelive-hamivideo.cdn.hinet.net
+DOMAIN,mozilla-ohttp.fastly-edge.com
 DOMAIN,mscrl.microsoft.com
 DOMAIN,msh.amazon.co.uk
 DOMAIN,mtalk-dev.google.com
@@ -34191,8 +34192,11 @@ DOMAIN-SUFFIX,xhamster2.com
 DOMAIN-SUFFIX,xhamster3.com
 DOMAIN-SUFFIX,xhamsterlive.com
 DOMAIN-SUFFIX,xhcdn.com
+DOMAIN-SUFFIX,xhnews.live
 DOMAIN-SUFFIX,xhot.pro
+DOMAIN-SUFFIX,xhpingcdn.com
 DOMAIN-SUFFIX,xhpjc6-cdn-settings.appsflyersdk.com
+DOMAIN-SUFFIX,xhreal5.com
 DOMAIN-SUFFIX,xhub.tv
 DOMAIN-SUFFIX,xianba.net
 DOMAIN-SUFFIX,xianchawang.net
