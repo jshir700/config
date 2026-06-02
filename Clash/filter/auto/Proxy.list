@@ -2,14 +2,14 @@
 # AUTHOR: jshir700
 # REPO: https://github.com/jshir700/config
 # REFERENCE: https://github.com/GMOogway/shadowrocket-rules
-# UPDATED: 2026-06-01 17:35:58
+# UPDATED: 2026-06-02 16:46:41
 # DOMAIN: 726
-# DOMAIN-SUFFIX: 25685
+# DOMAIN-SUFFIX: 25687
 # DOMAIN-KEYWORD: 12
 # DOMAIN-REGEX: 151
 # IP-CIDR: 15
 # USER-AGENT: 1
-# TOTAL: 26590
+# TOTAL: 26592
 DOMAIN,1password.drift.click
 DOMAIN,3dns-1.adobe.com
 DOMAIN,3dns-2.adobe.com
@@ -10624,6 +10624,7 @@ DOMAIN-SUFFIX,getmalus.com
 DOMAIN-SUFFIX,getmdl.io
 DOMAIN-SUFFIX,getnews.jp
 DOMAIN-SUFFIX,getoutline.org
+DOMAIN-SUFFIX,getpaint.net
 DOMAIN-SUFFIX,getpocket.com
 DOMAIN-SUFFIX,getporn.tv
 DOMAIN-SUFFIX,getprintersupports.com
@@ -18281,6 +18282,7 @@ DOMAIN-SUFFIX,paily.org
 DOMAIN-SUFFIX,paimon.moe
 DOMAIN-SUFFIX,painfulpussytortures.com
 DOMAIN-SUFFIX,painnovel.com
+DOMAIN-SUFFIX,paint.net
 DOMAIN-SUFFIX,paipal.com
 DOMAIN-SUFFIX,paipancon.com
 DOMAIN-SUFFIX,paisapay.cc
