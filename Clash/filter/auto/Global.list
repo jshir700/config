@@ -2,15 +2,15 @@
 # AUTHOR: jshir700
 # REPO: https://github.com/jshir700/config
 # REFERENCE: https://github.com/blackmatrix7/ios_rule_script, https://github.com/sve1r/Rules-For-Quantumult-X, https://github.com/ACL4SSR/ACL4SSR, https://github.com/Hackl0us/SS-Rule-Snippet, https://github.com/Loyalsoldier/surge-rules, https://github.com/GeQ1an/Rules, https://github.com/Loyalsoldier/clash-rules, https://github.com/dler-io/Rules
-# UPDATED: 2026-06-05 16:16:38
-# DOMAIN: 737
+# UPDATED: 2026-06-06 15:24:57
+# DOMAIN: 738
 # DOMAIN-SUFFIX: 35095
 # DOMAIN-KEYWORD: 39
 # IP-CIDR: 138
 # IP-CIDR6: 5
 # PROCESS-NAME: 1
 # USER-AGENT: 9
-# TOTAL: 36024
+# TOTAL: 36025
 DOMAIN,1password.drift.click
 DOMAIN,3dns-1.adobe.com
 DOMAIN,3dns-2.adobe.com
@@ -744,6 +744,7 @@ DOMAIN,wwis-dubc1-vip97.adobe.com
 DOMAIN,wwis-dubc1-vip98.adobe.com
 DOMAIN,wwis-dubc1-vip99.adobe.com
 DOMAIN,www-cdn.icloud.com.akadns.net
+DOMAIN,www.quora.com.cdn.cloudflare.net
 DOMAIN,yangzhi.app
 DOMAIN,yt3.googleusercontent.com
 DOMAIN,zeenews-fonts.s3.amazonaws.com
@@ -7867,6 +7868,7 @@ DOMAIN-SUFFIX,clau.de
 DOMAIN-SUFFIX,claude.ai
 DOMAIN-SUFFIX,claude.com
 DOMAIN-SUFFIX,claudemcpclient.com
+DOMAIN-SUFFIX,claudemcpcontent.com
 DOMAIN-SUFFIX,claudeusercontent.com
 DOMAIN-SUFFIX,clawhub.ai
 DOMAIN-SUFFIX,clb.org.hk
@@ -9411,7 +9413,6 @@ DOMAIN-SUFFIX,dev.to
 DOMAIN-SUFFIX,devcon.org
 DOMAIN-SUFFIX,developebp.ac.uk
 DOMAIN-SUFFIX,developer-advisor.com
-DOMAIN-SUFFIX,developer.allizom.org
 DOMAIN-SUFFIX,developers.box.net
 DOMAIN-SUFFIX,developria.com
 DOMAIN-SUFFIX,deviantart.com
@@ -20318,9 +20319,7 @@ DOMAIN-SUFFIX,md-t.org
 DOMAIN-SUFFIX,mdbankpublic.com
 DOMAIN-SUFFIX,mdhcdn.com
 DOMAIN-SUFFIX,mdialog.com
-DOMAIN-SUFFIX,mdn.allizom.net
 DOMAIN-SUFFIX,mdn.dev
-DOMAIN-SUFFIX,mdn.mozit.cloud
 DOMAIN-SUFFIX,mdnkids.com
 DOMAIN-SUFFIX,mdnplay.dev
 DOMAIN-SUFFIX,mdnyalp.dev
@@ -29716,6 +29715,7 @@ DOMAIN-SUFFIX,suttoncollege.ac.uk
 DOMAIN-SUFFIX,suxib.com
 DOMAIN-SUFFIX,suxiebu.com
 DOMAIN-SUFFIX,suyangg.com
+DOMAIN-SUFFIX,suyingtv.com
 DOMAIN-SUFFIX,suzuri.jp
 DOMAIN-SUFFIX,svaboda.org
 DOMAIN-SUFFIX,svc.ms
@@ -34084,6 +34084,7 @@ DOMAIN-SUFFIX,wozy.in
 DOMAIN-SUFFIX,wp-themes.com
 DOMAIN-SUFFIX,wp.com
 DOMAIN-SUFFIX,wpewebkit.org
+DOMAIN-SUFFIX,wplace.live
 DOMAIN-SUFFIX,wpoforum.com
 DOMAIN-SUFFIX,wpvip.com
 DOMAIN-SUFFIX,wqe.ac.uk
