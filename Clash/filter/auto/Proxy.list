@@ -2,14 +2,14 @@
 # AUTHOR: jshir700
 # REPO: https://github.com/jshir700/config
 # REFERENCE: https://github.com/GMOogway/shadowrocket-rules
-# UPDATED: 2026-06-21 16:41:15
-# DOMAIN: 741
-# DOMAIN-SUFFIX: 26080
+# UPDATED: 2026-06-22 18:15:36
+# DOMAIN: 742
+# DOMAIN-SUFFIX: 26082
 # DOMAIN-KEYWORD: 12
 # DOMAIN-REGEX: 151
 # IP-CIDR: 15
 # USER-AGENT: 1
-# TOTAL: 27000
+# TOTAL: 27003
 DOMAIN,1password.drift.click
 DOMAIN,3dns-1.adobe.com
 DOMAIN,3dns-2.adobe.com
@@ -745,6 +745,7 @@ DOMAIN,wwis-dubc1-vip98.adobe.com
 DOMAIN,wwis-dubc1-vip99.adobe.com
 DOMAIN,www-cdn.icloud.com.akadns.net
 DOMAIN,www.bing.com
+DOMAIN,www.microsoft.com
 DOMAIN,www.quora.com.cdn.cloudflare.net
 DOMAIN,yangzhi.app
 DOMAIN,yt3.googleusercontent.com
@@ -11062,8 +11063,10 @@ DOMAIN-SUFFIX,gofile.me
 DOMAIN-SUFFIX,gofucker.com
 DOMAIN-SUFFIX,gofuckmenow.com
 DOMAIN-SUFFIX,gofundme.com
+DOMAIN-SUFFIX,gog-services.com
 DOMAIN-SUFFIX,gog-statics.com
 DOMAIN-SUFFIX,gog.com
+DOMAIN-SUFFIX,gogalaxy.com
 DOMAIN-SUFFIX,gogettaxi.org
 DOMAIN-SUFFIX,gogle.com
 DOMAIN-SUFFIX,gogo-load.com
