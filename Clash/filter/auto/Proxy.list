@@ -2,9 +2,9 @@
 # AUTHOR: jshir700
 # REPO: https://github.com/jshir700/config
 # REFERENCE: https://github.com/GMOogway/shadowrocket-rules
-# UPDATED: 2026-06-25 15:54:22
-# DOMAIN: 742
-# DOMAIN-SUFFIX: 26094
+# UPDATED: 2026-06-26 16:03:13
+# DOMAIN: 741
+# DOMAIN-SUFFIX: 26095
 # DOMAIN-KEYWORD: 12
 # DOMAIN-REGEX: 151
 # IP-CIDR: 15
@@ -167,7 +167,6 @@ DOMAIN,dlmobilegarena-a.akamaihd.net
 DOMAIN,dmqdd6hw24ucf.cloudfront.net
 DOMAIN,docker-images-prod.6aa30f8b08e16409b46e0173d6de2f56.r2.cloudflarestorage.com
 DOMAIN,docker-pinata-support.s3.amazonaws.com
-DOMAIN,download.visualstudio.microsoft.com
 DOMAIN,dqd0jw5gvbchn.cloudfront.net
 DOMAIN,dqrpb9wgowsf5.cloudfront.net
 DOMAIN,ds-linear-abematv.akamaized.net
@@ -6980,6 +6979,7 @@ DOMAIN-SUFFIX,crazyxxx3dworld.org
 DOMAIN-SUFFIX,crazyxxxworld.com
 DOMAIN-SUFFIX,crbug.com
 DOMAIN-SUFFIX,crchina.org
+DOMAIN-SUFFIX,creader.com
 DOMAIN-SUFFIX,creaders.net
 DOMAIN-SUFFIX,creamasia.com
 DOMAIN-SUFFIX,creamlemon.info
