@@ -2,15 +2,15 @@
 # AUTHOR: jshir700
 # REPO: https://github.com/jshir700/config
 # REFERENCE: https://github.com/blackmatrix7/ios_rule_script, https://github.com/sve1r/Rules-For-Quantumult-X, https://github.com/ACL4SSR/ACL4SSR, https://github.com/Hackl0us/SS-Rule-Snippet, https://github.com/Loyalsoldier/surge-rules, https://github.com/GeQ1an/Rules, https://github.com/Loyalsoldier/clash-rules, https://github.com/dler-io/Rules
-# UPDATED: 2026-06-29 17:07:25
+# UPDATED: 2026-06-30 16:02:07
 # DOMAIN: 752
-# DOMAIN-SUFFIX: 35363
+# DOMAIN-SUFFIX: 35364
 # DOMAIN-KEYWORD: 39
 # IP-CIDR: 138
 # IP-CIDR6: 5
 # PROCESS-NAME: 1
 # USER-AGENT: 9
-# TOTAL: 36307
+# TOTAL: 36308
 DOMAIN,1password.drift.click
 DOMAIN,3dns-1.adobe.com
 DOMAIN,3dns-2.adobe.com
@@ -11597,6 +11597,7 @@ DOMAIN-SUFFIX,explorespanking.com
 DOMAIN-SUFFIX,expofutures.com
 DOMAIN-SUFFIX,exporntoons.net
 DOMAIN-SUFFIX,exposedlatinas.com
+DOMAIN-SUFFIX,expressnews.com
 DOMAIN-SUFFIX,expressvpn.com
 DOMAIN-SUFFIX,expresswifi.com
 DOMAIN-SUFFIX,exrates.me

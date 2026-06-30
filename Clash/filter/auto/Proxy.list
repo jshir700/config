@@ -2,14 +2,14 @@
 # AUTHOR: jshir700
 # REPO: https://github.com/jshir700/config
 # REFERENCE: https://github.com/GMOogway/shadowrocket-rules
-# UPDATED: 2026-06-29 17:07:25
+# UPDATED: 2026-06-30 16:02:07
 # DOMAIN: 741
-# DOMAIN-SUFFIX: 26116
+# DOMAIN-SUFFIX: 26117
 # DOMAIN-KEYWORD: 12
 # DOMAIN-REGEX: 151
 # IP-CIDR: 15
 # USER-AGENT: 1
-# TOTAL: 27036
+# TOTAL: 27037
 DOMAIN,1password.drift.click
 DOMAIN,3dns-1.adobe.com
 DOMAIN,3dns-2.adobe.com
@@ -9140,6 +9140,7 @@ DOMAIN-SUFFIX,exploreintel.com
 DOMAIN-SUFFIX,explorespanking.com
 DOMAIN-SUFFIX,exporntoons.net
 DOMAIN-SUFFIX,exposedlatinas.com
+DOMAIN-SUFFIX,expressnews.com
 DOMAIN-SUFFIX,expressvpn.com
 DOMAIN-SUFFIX,expresswifi.com
 DOMAIN-SUFFIX,exrates.me
