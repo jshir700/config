@@ -49,3 +49,8 @@ DOMAIN-SUFFIX,googleapis.cn
 PROCESS-NAME,AdsPower
 PROCESS-NAME,SunBrowser
 DOMAIN-SUFFIX,adspower.net
+# > 比特浏览器
+PROCESS-NAME,比特浏览器
+PROCESS-NAME,BitBrowser
+PROCESS-NAME,BitFox
+DOMAIN-SUFFIX,bitbrowser.net
