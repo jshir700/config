@@ -46,11 +46,11 @@ DOMAIN-SUFFIX,connectivitycheck.gstatic.com
 DOMAIN-SUFFIX,googlevideo.com
 DOMAIN-SUFFIX,googleapis.cn
 # > AdsPower
-PROCESS-NAME,AdsPower
-PROCESS-NAME,SunBrowser
+PROCESS-NAME-REGEX,.*AdsPower.*
+PROCESS-NAME-REGEX,.*SunBrowser.*
 DOMAIN-SUFFIX,adspower.net
 # > 比特浏览器
-PROCESS-NAME,比特浏览器
-PROCESS-NAME,BitBrowser
-PROCESS-NAME,BitFox
+PROCESS-NAME-REGEX,.*比特浏览器.*
+PROCESS-NAME-REGEX,.*BitBrowser.*
+PROCESS-NAME-REGEX,.*BitFox.*
 DOMAIN-SUFFIX,bitbrowser.net
