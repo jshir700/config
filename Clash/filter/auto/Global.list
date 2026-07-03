@@ -2,15 +2,15 @@
 # AUTHOR: jshir700
 # REPO: https://github.com/jshir700/config
 # REFERENCE: https://github.com/blackmatrix7/ios_rule_script, https://github.com/sve1r/Rules-For-Quantumult-X, https://github.com/ACL4SSR/ACL4SSR, https://github.com/Hackl0us/SS-Rule-Snippet, https://github.com/Loyalsoldier/surge-rules, https://github.com/GeQ1an/Rules, https://github.com/Loyalsoldier/clash-rules, https://github.com/dler-io/Rules
-# UPDATED: 2026-07-02 15:44:17
-# DOMAIN: 754
-# DOMAIN-SUFFIX: 35373
+# UPDATED: 2026-07-03 15:36:45
+# DOMAIN: 755
+# DOMAIN-SUFFIX: 35375
 # DOMAIN-KEYWORD: 39
 # IP-CIDR: 138
 # IP-CIDR6: 5
 # PROCESS-NAME: 1
 # USER-AGENT: 9
-# TOTAL: 36319
+# TOTAL: 36322
 DOMAIN,1password.drift.click
 DOMAIN,3dns-1.adobe.com
 DOMAIN,3dns-2.adobe.com
@@ -350,6 +350,7 @@ DOMAIN,onekey.zendesk.com
 DOMAIN,oneocsp.microsoft.com
 DOMAIN,ood.opsource.net
 DOMAIN,openaiapi-site.azureedge.net
+DOMAIN,openaiassets.blob.core.windows.net
 DOMAIN,openaicom-api-bdcpf8c6d2e9atf6.z01.azurefd.net
 DOMAIN,openaicom.imgix.net
 DOMAIN,openaicomproductionae4b.blob.core.windows.net
@@ -8412,6 +8413,7 @@ DOMAIN-SUFFIX,coova.com
 DOMAIN-SUFFIX,coova.net
 DOMAIN-SUFFIX,coova.org
 DOMAIN-SUFFIX,copac.ac.uk
+DOMAIN-SUFFIX,copilot.com
 DOMAIN-SUFFIX,copilot.microsoft.com
 DOMAIN-SUFFIX,copim.ac.uk
 DOMAIN-SUFFIX,copior.ac.uk
@@ -33759,6 +33761,7 @@ DOMAIN-SUFFIX,webrtc.org
 DOMAIN-SUFFIX,webrush.net
 DOMAIN-SUFFIX,webs-tv.net
 DOMAIN-SUFFIX,websdr.org
+DOMAIN-SUFFIX,webshare.io
 DOMAIN-SUFFIX,website.new
 DOMAIN-SUFFIX,websitepulse.com
 DOMAIN-SUFFIX,websnapr.com
