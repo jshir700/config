@@ -2,14 +2,14 @@
 # AUTHOR: jshir700
 # REPO: https://github.com/jshir700/config
 # REFERENCE: https://github.com/GMOogway/shadowrocket-rules
-# UPDATED: 2026-07-07 15:52:27
+# UPDATED: 2026-07-08 14:38:39
 # DOMAIN: 743
-# DOMAIN-SUFFIX: 26135
+# DOMAIN-SUFFIX: 26141
 # DOMAIN-KEYWORD: 12
 # DOMAIN-REGEX: 151
 # IP-CIDR: 15
 # USER-AGENT: 1
-# TOTAL: 27057
+# TOTAL: 27063
 DOMAIN,1password.drift.click
 DOMAIN,3dns-1.adobe.com
 DOMAIN,3dns-2.adobe.com
@@ -9943,6 +9943,8 @@ DOMAIN-SUFFIX,flowfront.net
 DOMAIN-SUFFIX,flowgpt.com
 DOMAIN-SUFFIX,flowhongkong.net
 DOMAIN-SUFFIX,flowtype.org
+DOMAIN-SUFFIX,flowwow-images.com
+DOMAIN-SUFFIX,flowwow.com
 DOMAIN-SUFFIX,fluffychat.im
 DOMAIN-SUFFIX,fluidfxapp.com
 DOMAIN-SUFFIX,fluidpreview.com
@@ -10444,6 +10446,8 @@ DOMAIN-SUFFIX,funimation.com
 DOMAIN-SUFFIX,funkyimg.com
 DOMAIN-SUFFIX,funnyfacebook.org
 DOMAIN-SUFFIX,funnyordie.com
+DOMAIN-SUFFIX,funpay.com
+DOMAIN-SUFFIX,funpay.ru
 DOMAIN-SUFFIX,funshemale.com
 DOMAIN-SUFFIX,fuq.com
 DOMAIN-SUFFIX,fuqqt.com
@@ -21298,6 +21302,7 @@ DOMAIN-SUFFIX,sfmcompile.club
 DOMAIN-SUFFIX,sforce.com
 DOMAIN-SUFFIX,sfshibao.com
 DOMAIN-SUFFIX,sftuk.org
+DOMAIN-SUFFIX,sfunpay.com
 DOMAIN-SUFFIX,sfx.ms
 DOMAIN-SUFFIX,sg120.me
 DOMAIN-SUFFIX,sg1lib.org
@@ -23237,6 +23242,7 @@ DOMAIN-SUFFIX,tilda.ru
 DOMAIN-SUFFIX,tilda.ws
 DOMAIN-SUFFIX,tildaapi.com
 DOMAIN-SUFFIX,tildacdn.com
+DOMAIN-SUFFIX,tildacdn.net
 DOMAIN-SUFFIX,tiltbrush.com
 DOMAIN-SUFFIX,timdir.com
 DOMAIN-SUFFIX,time-messenger.ru
