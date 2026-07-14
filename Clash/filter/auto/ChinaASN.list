@@ -2,9 +2,9 @@
 # AUTHOR: jshir700
 # REPO: https://github.com/jshir700/config
 # REFERENCE: https://github.com/missuo/ASN-China
-# UPDATED: 2026-07-13 15:38:58
-# IP-ASN: 5235
-# TOTAL: 5235
+# UPDATED: 2026-07-14 14:27:23
+# IP-ASN: 5236
+# TOTAL: 5236
 IP-ASN,24429,no-resolve
 IP-ASN,4134,no-resolve
 IP-ASN,132203,no-resolve
@@ -25,6 +25,7 @@ IP-ASN,4538,no-resolve
 IP-ASN,4812,no-resolve
 IP-ASN,24400,no-resolve
 IP-ASN,17621,no-resolve
+IP-ASN,208754,no-resolve
 IP-ASN,142111,no-resolve
 IP-ASN,56040,no-resolve
 IP-ASN,7497,no-resolve
@@ -38,9 +39,9 @@ IP-ASN,134578,no-resolve
 IP-ASN,146834,no-resolve
 IP-ASN,4842,no-resolve
 IP-ASN,140633,no-resolve
-IP-ASN,37963,no-resolve
 IP-ASN,213605,no-resolve
 IP-ASN,55990,no-resolve
+IP-ASN,37963,no-resolve
 IP-ASN,45090,no-resolve
 IP-ASN,23724,no-resolve
 IP-ASN,24490,no-resolve
@@ -71,7 +72,6 @@ IP-ASN,24489,no-resolve
 IP-ASN,24444,no-resolve
 IP-ASN,24409,no-resolve
 IP-ASN,24406,no-resolve
-IP-ASN,23911,no-resolve
 IP-ASN,212237,no-resolve
 IP-ASN,17623,no-resolve
 IP-ASN,17428,no-resolve
@@ -106,6 +106,7 @@ IP-ASN,45110,no-resolve
 IP-ASN,38019,no-resolve
 IP-ASN,37965,no-resolve
 IP-ASN,24424,no-resolve
+IP-ASN,23911,no-resolve
 IP-ASN,210352,no-resolve
 IP-ASN,201674,no-resolve
 IP-ASN,154648,no-resolve
@@ -159,7 +160,6 @@ IP-ASN,9939,no-resolve
 IP-ASN,9818,no-resolve
 IP-ASN,9811,no-resolve
 IP-ASN,9807,no-resolve
-IP-ASN,7721,no-resolve
 IP-ASN,7641,no-resolve
 IP-ASN,63701,no-resolve
 IP-ASN,63629,no-resolve
@@ -195,7 +195,6 @@ IP-ASN,23841,no-resolve
 IP-ASN,23771,no-resolve
 IP-ASN,214899,no-resolve
 IP-ASN,214848,no-resolve
-IP-ASN,214575,no-resolve
 IP-ASN,213625,no-resolve
 IP-ASN,211843,no-resolve
 IP-ASN,209306,no-resolve
@@ -241,6 +240,7 @@ IP-ASN,9803,no-resolve
 IP-ASN,9405,no-resolve
 IP-ASN,9389,no-resolve
 IP-ASN,9306,no-resolve
+IP-ASN,7721,no-resolve
 IP-ASN,7653,no-resolve
 IP-ASN,7609,no-resolve
 IP-ASN,63838,no-resolve
@@ -297,6 +297,7 @@ IP-ASN,24141,no-resolve
 IP-ASN,23842,no-resolve
 IP-ASN,216224,no-resolve
 IP-ASN,215786,no-resolve
+IP-ASN,214575,no-resolve
 IP-ASN,211265,no-resolve
 IP-ASN,210041,no-resolve
 IP-ASN,209300,no-resolve
@@ -315,6 +316,7 @@ IP-ASN,153033,no-resolve
 IP-ASN,152930,no-resolve
 IP-ASN,152920,no-resolve
 IP-ASN,152697,no-resolve
+IP-ASN,152598,no-resolve
 IP-ASN,152186,no-resolve
 IP-ASN,152092,no-resolve
 IP-ASN,151951,no-resolve
@@ -535,7 +537,6 @@ IP-ASN,154315,no-resolve
 IP-ASN,154010,no-resolve
 IP-ASN,153057,no-resolve
 IP-ASN,152922,no-resolve
-IP-ASN,152598,no-resolve
 IP-ASN,152120,no-resolve
 IP-ASN,151823,no-resolve
 IP-ASN,151673,no-resolve
@@ -739,6 +740,7 @@ IP-ASN,219397,no-resolve
 IP-ASN,219378,no-resolve
 IP-ASN,219332,no-resolve
 IP-ASN,219289,no-resolve
+IP-ASN,219283,no-resolve
 IP-ASN,216412,no-resolve
 IP-ASN,216299,no-resolve
 IP-ASN,216173,no-resolve
@@ -789,7 +791,6 @@ IP-ASN,209484,no-resolve
 IP-ASN,209481,no-resolve
 IP-ASN,209261,no-resolve
 IP-ASN,209218,no-resolve
-IP-ASN,208754,no-resolve
 IP-ASN,208679,no-resolve
 IP-ASN,208618,no-resolve
 IP-ASN,207615,no-resolve

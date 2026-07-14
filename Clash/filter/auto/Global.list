@@ -2,15 +2,15 @@
 # AUTHOR: jshir700
 # REPO: https://github.com/jshir700/config
 # REFERENCE: https://github.com/blackmatrix7/ios_rule_script, https://github.com/sve1r/Rules-For-Quantumult-X, https://github.com/ACL4SSR/ACL4SSR, https://github.com/Hackl0us/SS-Rule-Snippet, https://github.com/Loyalsoldier/surge-rules, https://github.com/GeQ1an/Rules, https://github.com/Loyalsoldier/clash-rules, https://github.com/dler-io/Rules
-# UPDATED: 2026-07-13 15:37:27
+# UPDATED: 2026-07-14 14:25:16
 # DOMAIN: 754
-# DOMAIN-SUFFIX: 35404
+# DOMAIN-SUFFIX: 35403
 # DOMAIN-KEYWORD: 39
 # IP-CIDR: 138
 # IP-CIDR6: 5
 # PROCESS-NAME: 1
 # USER-AGENT: 9
-# TOTAL: 36350
+# TOTAL: 36349
 DOMAIN,1password.drift.click
 DOMAIN,3dns-1.adobe.com
 DOMAIN,3dns-2.adobe.com
@@ -7465,6 +7465,7 @@ DOMAIN-SUFFIX,chat.openai.com
 DOMAIN-SUFFIX,chatango.com
 DOMAIN-SUFFIX,chatgpt.com
 DOMAIN-SUFFIX,chatgpt.livekit.cloud
+DOMAIN-SUFFIX,chatgpt.site
 DOMAIN-SUFFIX,chatgptvideo.xyz
 DOMAIN-SUFFIX,chatgptvideob.buzz
 DOMAIN-SUFFIX,chatnook.com
@@ -14132,7 +14133,6 @@ DOMAIN-SUFFIX,gongyichuangyi.net
 DOMAIN-SUFFIX,gonike.com
 DOMAIN-SUFFIX,gonzo-movies.com
 DOMAIN-SUFFIX,gonzo.com
-DOMAIN-SUFFIX,goo
 DOMAIN-SUFFIX,goo.gl
 DOMAIN-SUFFIX,goo.gle
 DOMAIN-SUFFIX,goo.ne.jp
@@ -17119,7 +17119,6 @@ DOMAIN-SUFFIX,intarch.ac.uk
 DOMAIN-SUFFIX,intc.com
 DOMAIN-SUFFIX,integral7.com
 DOMAIN-SUFFIX,integrativebiology.ac.uk
-DOMAIN-SUFFIX,intel
 DOMAIN-SUFFIX,intel-research.net
 DOMAIN-SUFFIX,intel-university-collaboration.net
 DOMAIN-SUFFIX,intel.ac
@@ -18617,6 +18616,7 @@ DOMAIN-SUFFIX,khotruyentranhx.com
 DOMAIN-SUFFIX,kiad.ac.uk
 DOMAIN-SUFFIX,kichiku-doujinko.com
 DOMAIN-SUFFIX,kichikuou.com
+DOMAIN-SUFFIX,kick.com
 DOMAIN-SUFFIX,kickporn.com
 DOMAIN-SUFFIX,kickshatchannel.com
 DOMAIN-SUFFIX,kicksnike1.com
@@ -18784,7 +18784,6 @@ DOMAIN-SUFFIX,kompozer.net
 DOMAIN-SUFFIX,konachan.com
 DOMAIN-SUFFIX,konachan.net
 DOMAIN-SUFFIX,konachan.wjcodes.com
-DOMAIN-SUFFIX,konami
 DOMAIN-SUFFIX,konami-igaming.online
 DOMAIN-SUFFIX,konami.co.jp
 DOMAIN-SUFFIX,konami.com
