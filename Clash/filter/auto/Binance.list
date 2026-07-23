@@ -2,11 +2,11 @@
 # AUTHOR: jshir700
 # REPO: https://github.com/jshir700/config
 # REFERENCE: https://github.com/blackmatrix7/ios_rule_script, https://github.com/ACL4SSR/ACL4SSR, https://github.com/StricklandF/Filter
-# UPDATED: 2026-07-22 14:42:21
+# UPDATED: 2026-07-23 14:40:06
 # DOMAIN: 54
-# DOMAIN-SUFFIX: 44
+# DOMAIN-SUFFIX: 45
 # IP-CIDR: 7
-# TOTAL: 105
+# TOTAL: 106
 DOMAIN,aad90d5c0e88c4b4285bd912f64d970d-1403944741.ap-northeast-1.elb.amazonaws.com
 DOMAIN,accounts.binance.com
 DOMAIN,accounts.binance.info
@@ -96,6 +96,7 @@ DOMAIN-SUFFIX,bnappzh.co
 DOMAIN-SUFFIX,bnbstatic.com
 DOMAIN-SUFFIX,bnbzh.ac
 DOMAIN-SUFFIX,bntrace.com
+DOMAIN-SUFFIX,bscdnweb.com
 DOMAIN-SUFFIX,saasexch.cc
 DOMAIN-SUFFIX,saasexch.co
 DOMAIN-SUFFIX,saasexch.com
