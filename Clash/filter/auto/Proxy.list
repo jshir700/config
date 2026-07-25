@@ -2,14 +2,14 @@
 # AUTHOR: jshir700
 # REPO: https://github.com/jshir700/config
 # REFERENCE: https://github.com/GMOogway/shadowrocket-rules
-# UPDATED: 2026-07-24 14:39:45
+# UPDATED: 2026-07-25 14:29:05
 # DOMAIN: 763
-# DOMAIN-SUFFIX: 26185
+# DOMAIN-SUFFIX: 26190
 # DOMAIN-KEYWORD: 12
 # DOMAIN-REGEX: 151
 # IP-CIDR: 15
 # USER-AGENT: 1
-# TOTAL: 27127
+# TOTAL: 27132
 DOMAIN,1password.drift.click
 DOMAIN,3dns-1.adobe.com
 DOMAIN,3dns-2.adobe.com
@@ -6513,6 +6513,7 @@ DOMAIN-SUFFIX,cinemax.com
 DOMAIN-SUFFIX,cinepornogratis.com
 DOMAIN-SUFFIX,cinny.in
 DOMAIN-SUFFIX,cios.org
+DOMAIN-SUFFIX,circle19.org
 DOMAIN-SUFFIX,cirosantilli.com
 DOMAIN-SUFFIX,cisco
 DOMAIN-SUFFIX,cisco-returns.com
@@ -8031,6 +8032,7 @@ DOMAIN-SUFFIX,doclercdn.com
 DOMAIN-SUFFIX,docs.com
 DOMAIN-SUFFIX,docs.new
 DOMAIN-SUFFIX,docs.rs
+DOMAIN-SUFFIX,docs.rw
 DOMAIN-SUFFIX,doctor-videos.com
 DOMAIN-SUFFIX,documentforce.com
 DOMAIN-SUFFIX,documentingreality.com
@@ -14480,6 +14482,7 @@ DOMAIN-SUFFIX,kaotic.com
 DOMAIN-SUFFIX,karabako-gmo.com
 DOMAIN-SUFFIX,karafarinbank.ir
 DOMAIN-SUFFIX,karayou.com
+DOMAIN-SUFFIX,kards.com
 DOMAIN-SUFFIX,karechat.ai
 DOMAIN-SUFFIX,karger.com
 DOMAIN-SUFFIX,karinahart.com
@@ -15156,6 +15159,7 @@ DOMAIN-SUFFIX,localizestatus.com
 DOMAIN-SUFFIX,localpresshk.com
 DOMAIN-SUFFIX,localxlist.org
 DOMAIN-SUFFIX,lockestek.com
+DOMAIN-SUFFIX,log.rw
 DOMAIN-SUFFIX,logi.com
 DOMAIN-SUFFIX,logicool.co.jp
 DOMAIN-SUFFIX,logicoolg.com
@@ -23613,6 +23617,7 @@ DOMAIN-SUFFIX,truyenhentai.xyz
 DOMAIN-SUFFIX,truyenkk1.com
 DOMAIN-SUFFIX,truyentranh86.com
 DOMAIN-SUFFIX,truyenwk.com
+DOMAIN-SUFFIX,try.rw
 DOMAIN-SUFFIX,tryalias.com
 DOMAIN-SUFFIX,tryboobs.com
 DOMAIN-SUFFIX,trycloudflare.com
