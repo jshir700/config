@@ -2,15 +2,15 @@
 # AUTHOR: jshir700
 # REPO: https://github.com/jshir700/config
 # REFERENCE: https://github.com/blackmatrix7/ios_rule_script, https://github.com/sve1r/Rules-For-Quantumult-X, https://github.com/ACL4SSR/ACL4SSR, https://github.com/Hackl0us/SS-Rule-Snippet, https://github.com/Loyalsoldier/surge-rules, https://github.com/GeQ1an/Rules, https://github.com/Loyalsoldier/clash-rules, https://github.com/dler-io/Rules
-# UPDATED: 2026-07-28 14:40:24
+# UPDATED: 2026-07-29 14:44:55
 # DOMAIN: 779
-# DOMAIN-SUFFIX: 35438
+# DOMAIN-SUFFIX: 35443
 # DOMAIN-KEYWORD: 39
 # IP-CIDR: 138
 # IP-CIDR6: 5
 # PROCESS-NAME: 1
 # USER-AGENT: 9
-# TOTAL: 36409
+# TOTAL: 36414
 DOMAIN,1password.drift.click
 DOMAIN,3dns-1.adobe.com
 DOMAIN,3dns-2.adobe.com
@@ -5624,6 +5624,7 @@ DOMAIN-SUFFIX,bluemix.net
 DOMAIN-SUFFIX,bluestacks.com
 DOMAIN-SUFFIX,bluestone.ac.uk
 DOMAIN-SUFFIX,bluffyporn.com
+DOMAIN-SUFFIX,blurams.app
 DOMAIN-SUFFIX,blurams.com
 DOMAIN-SUFFIX,blws.ac.uk
 DOMAIN-SUFFIX,blylq.buzz
@@ -7367,6 +7368,7 @@ DOMAIN-SUFFIX,cemp.ac.uk
 DOMAIN-SUFFIX,cencoastbmw.com
 DOMAIN-SUFFIX,cenews.eu
 DOMAIN-SUFFIX,cenkei.com
+DOMAIN-SUFFIX,ceno.app
 DOMAIN-SUFFIX,censorship.ai
 DOMAIN-SUFFIX,censorship.no
 DOMAIN-SUFFIX,census-registration.ac.uk
@@ -17778,6 +17780,7 @@ DOMAIN-SUFFIX,iutunes.com
 DOMAIN-SUFFIX,ivacy.com
 DOMAIN-SUFFIX,iverycd.com
 DOMAIN-SUFFIX,ivi.ru
+DOMAIN-SUFFIX,ivicdn.tv
 DOMAIN-SUFFIX,ivintageporn.com
 DOMAIN-SUFFIX,ivonblog.com
 DOMAIN-SUFFIX,ivpn.net
@@ -18711,6 +18714,7 @@ DOMAIN-SUFFIX,kindleren.com
 DOMAIN-SUFFIX,kindnudist.com
 DOMAIN-SUFFIX,kinds.ac.uk
 DOMAIN-SUFFIX,kindteenporn.com
+DOMAIN-SUFFIX,kinescopecdn.net
 DOMAIN-SUFFIX,king.ac.uk
 DOMAIN-SUFFIX,kingalfreds.ac.uk
 DOMAIN-SUFFIX,kingalfredsbasingstoke.ac.uk
@@ -27574,6 +27578,7 @@ DOMAIN-SUFFIX,sber.pro
 DOMAIN-SUFFIX,sber.ru
 DOMAIN-SUFFIX,sberauto.com
 DOMAIN-SUFFIX,sberbank-insurance.ru
+DOMAIN-SUFFIX,sberbank-tele.com
 DOMAIN-SUFFIX,sberbank.com
 DOMAIN-SUFFIX,sberbank.ru
 DOMAIN-SUFFIX,sberbankaktivno.ru
