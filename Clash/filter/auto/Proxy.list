@@ -2,14 +2,14 @@
 # AUTHOR: jshir700
 # REPO: https://github.com/jshir700/config
 # REFERENCE: https://github.com/GMOogway/shadowrocket-rules
-# UPDATED: 2026-08-09 13:18:08
+# UPDATED: 2026-08-10 13:44:00
 # DOMAIN: 767
-# DOMAIN-SUFFIX: 26282
+# DOMAIN-SUFFIX: 26284
 # DOMAIN-KEYWORD: 12
 # DOMAIN-REGEX: 151
 # IP-CIDR: 15
 # USER-AGENT: 1
-# TOTAL: 27228
+# TOTAL: 27230
 DOMAIN,1password.drift.click
 DOMAIN,3dns-1.adobe.com
 DOMAIN,3dns-2.adobe.com
@@ -2150,6 +2150,7 @@ DOMAIN-SUFFIX,ai7995.site
 DOMAIN-SUFFIX,ai91porn.cc
 DOMAIN-SUFFIX,aiaa.org
 DOMAIN-SUFFIX,aiasahi.jp
+DOMAIN-SUFFIX,aihub.top
 DOMAIN-SUFFIX,aimei133.com
 DOMAIN-SUFFIX,aimsciences.org
 DOMAIN-SUFFIX,aiosearch.com
@@ -9101,6 +9102,7 @@ DOMAIN-SUFFIX,esetsoftware.com
 DOMAIN-SUFFIX,esforce.com
 DOMAIN-SUFFIX,esforce.ru
 DOMAIN-SUFFIX,esg.t91y.com
+DOMAIN-SUFFIX,esim.redteago.com
 DOMAIN-SUFFIX,eskimotube.com
 DOMAIN-SUFFIX,eslite.com
 DOMAIN-SUFFIX,esm.run
