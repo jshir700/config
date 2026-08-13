@@ -2,15 +2,15 @@
 # AUTHOR: jshir700
 # REPO: https://github.com/jshir700/config
 # REFERENCE: https://github.com/blackmatrix7/ios_rule_script, https://github.com/sve1r/Rules-For-Quantumult-X, https://github.com/ACL4SSR/ACL4SSR, https://github.com/Hackl0us/SS-Rule-Snippet, https://github.com/Loyalsoldier/surge-rules, https://github.com/GeQ1an/Rules, https://github.com/Loyalsoldier/clash-rules, https://github.com/dler-io/Rules
-# UPDATED: 2026-08-12 13:46:07
-# DOMAIN: 784
-# DOMAIN-SUFFIX: 35561
+# UPDATED: 2026-08-13 13:48:44
+# DOMAIN: 785
+# DOMAIN-SUFFIX: 35572
 # DOMAIN-KEYWORD: 39
 # IP-CIDR: 138
 # IP-CIDR6: 5
 # PROCESS-NAME: 1
 # USER-AGENT: 9
-# TOTAL: 36537
+# TOTAL: 36549
 DOMAIN,1password.drift.click
 DOMAIN,3dns-1.adobe.com
 DOMAIN,3dns-2.adobe.com
@@ -333,6 +333,7 @@ DOMAIN,na1r.services.adobe.com
 DOMAIN,nationalaustraliaban.tt.omtrdc.net
 DOMAIN,nbbb1bb7.pmhcjk.com
 DOMAIN,netflix.com.edgesuite.net
+DOMAIN,nix-community.github.io
 DOMAIN,notary-submissions-prod.s3-accelerate.amazonaws.com
 DOMAIN,notary-submissions-prod.s3.us-west-2.amazonaws.com
 DOMAIN,notebooklm-pa.googleapis.com
@@ -6578,6 +6579,7 @@ DOMAIN-SUFFIX,buila.ac.uk
 DOMAIN-SUFFIX,building3dcontent.com
 DOMAIN-SUFFIX,builtenvsigns.ac.uk
 DOMAIN-SUFFIX,builtfromebay.com
+DOMAIN-SUFFIX,builtwithnix.org
 DOMAIN-SUFFIX,bukkake-jav.com
 DOMAIN-SUFFIX,bukkake.link
 DOMAIN-SUFFIX,bullguard.com
@@ -22224,6 +22226,7 @@ DOMAIN-SUFFIX,mynetav.net
 DOMAIN-SUFFIX,mynetav.org
 DOMAIN-SUFFIX,mynetname.net
 DOMAIN-SUFFIX,mynike.com
+DOMAIN-SUFFIX,mynixos.com
 DOMAIN-SUFFIX,mynumber.org
 DOMAIN-SUFFIX,myoctocat.com
 DOMAIN-SUFFIX,myparagliding.com
@@ -23254,7 +23257,15 @@ DOMAIN-SUFFIX,niusnews.com
 DOMAIN-SUFFIX,nivod.tv
 DOMAIN-SUFFIX,nivodi.tv
 DOMAIN-SUFFIX,nivodz.com
+DOMAIN-SUFFIX,nix-community.org
+DOMAIN-SUFFIX,nix.dev
+DOMAIN-SUFFIX,nix.store
+DOMAIN-SUFFIX,nixcon.org
+DOMAIN-SUFFIX,nixcon2017.org
+DOMAIN-SUFFIX,nixlang.com
 DOMAIN-SUFFIX,nixos.org
+DOMAIN-SUFFIX,nixos.wiki
+DOMAIN-SUFFIX,nixpkgs.org
 DOMAIN-SUFFIX,niziero.info
 DOMAIN-SUFFIX,njactb.org
 DOMAIN-SUFFIX,njav.tv
@@ -35577,6 +35588,7 @@ DOMAIN-SUFFIX,yandex.ee
 DOMAIN-SUFFIX,yandex.eu
 DOMAIN-SUFFIX,yandex.fi
 DOMAIN-SUFFIX,yandex.fr
+DOMAIN-SUFFIX,yandex.it
 DOMAIN-SUFFIX,yandex.jobs
 DOMAIN-SUFFIX,yandex.kg
 DOMAIN-SUFFIX,yandex.kz
