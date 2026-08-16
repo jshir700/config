@@ -2,14 +2,14 @@
 # AUTHOR: jshir700
 # REPO: https://github.com/jshir700/config
 # REFERENCE: https://github.com/GMOogway/shadowrocket-rules
-# UPDATED: 2026-08-15 12:47:03
+# UPDATED: 2026-08-16 12:50:08
 # DOMAIN: 768
-# DOMAIN-SUFFIX: 26328
+# DOMAIN-SUFFIX: 26329
 # DOMAIN-KEYWORD: 12
 # DOMAIN-REGEX: 151
 # IP-CIDR: 15
 # USER-AGENT: 1
-# TOTAL: 27275
+# TOTAL: 27276
 DOMAIN,1password.drift.click
 DOMAIN,3dns-1.adobe.com
 DOMAIN,3dns-2.adobe.com
@@ -20869,6 +20869,7 @@ DOMAIN-SUFFIX,rutracker.me
 DOMAIN-SUFFIX,rutracker.net
 DOMAIN-SUFFIX,rutracker.nl
 DOMAIN-SUFFIX,rutracker.org
+DOMAIN-SUFFIX,rutracker.wiki
 DOMAIN-SUFFIX,rutrk.org
 DOMAIN-SUFFIX,rutube.ru
 DOMAIN-SUFFIX,rutube.sport
