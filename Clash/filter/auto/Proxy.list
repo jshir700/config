@@ -2,14 +2,14 @@
 # AUTHOR: jshir700
 # REPO: https://github.com/jshir700/config
 # REFERENCE: https://github.com/GMOogway/shadowrocket-rules
-# UPDATED: 2026-08-22 12:49:35
+# UPDATED: 2026-08-23 12:51:52
 # DOMAIN: 768
-# DOMAIN-SUFFIX: 26343
+# DOMAIN-SUFFIX: 26346
 # DOMAIN-KEYWORD: 12
 # DOMAIN-REGEX: 151
 # IP-CIDR: 15
 # USER-AGENT: 1
-# TOTAL: 27290
+# TOTAL: 27293
 DOMAIN,1password.drift.click
 DOMAIN,3dns-1.adobe.com
 DOMAIN,3dns-2.adobe.com
@@ -12242,6 +12242,7 @@ DOMAIN-SUFFIX,hiporn.net
 DOMAIN-SUFFIX,hippyhillscomix.com
 DOMAIN-SUFFIX,hipzoom.net
 DOMAIN-SUFFIX,hiroshimabank.co.jp
+DOMAIN-SUFFIX,historylines.net
 DOMAIN-SUFFIX,historyofdota.com
 DOMAIN-SUFFIX,historyofdota.net
 DOMAIN-SUFFIX,historyofdota.org
@@ -14760,6 +14761,7 @@ DOMAIN-SUFFIX,kitakyushubank.co.jp
 DOMAIN-SUFFIX,kiwi.jp
 DOMAIN-SUFFIX,kiwi.kz
 DOMAIN-SUFFIX,kiwibrowser.com
+DOMAIN-SUFFIX,kiwix.org
 DOMAIN-SUFFIX,kiyobank.co.jp
 DOMAIN-SUFFIX,kk-whys.co.jp
 DOMAIN-SUFFIX,kk.stream
@@ -15881,6 +15883,7 @@ DOMAIN-SUFFIX,mcdonalds.se
 DOMAIN-SUFFIX,mcdonaldsapps.com
 DOMAIN-SUFFIX,mcdonaldsarabia.com
 DOMAIN-SUFFIX,mcdonaldsparties.co.nz
+DOMAIN-SUFFIX,mceindex.com
 DOMAIN-SUFFIX,mcisco.com
 DOMAIN-SUFFIX,mcpeaceofmind.com
 DOMAIN-SUFFIX,mcrouter.net
