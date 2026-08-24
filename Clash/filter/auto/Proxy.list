@@ -2,14 +2,14 @@
 # AUTHOR: jshir700
 # REPO: https://github.com/jshir700/config
 # REFERENCE: https://github.com/GMOogway/shadowrocket-rules
-# UPDATED: 2026-08-23 12:51:52
+# UPDATED: 2026-08-24 13:01:22
 # DOMAIN: 768
-# DOMAIN-SUFFIX: 26346
+# DOMAIN-SUFFIX: 26348
 # DOMAIN-KEYWORD: 12
 # DOMAIN-REGEX: 151
 # IP-CIDR: 15
 # USER-AGENT: 1
-# TOTAL: 27293
+# TOTAL: 27295
 DOMAIN,1password.drift.click
 DOMAIN,3dns-1.adobe.com
 DOMAIN,3dns-2.adobe.com
@@ -2920,6 +2920,7 @@ DOMAIN-SUFFIX,api.microsoftapp.net
 DOMAIN-SUFFIX,api.moomoobull.com
 DOMAIN-SUFFIX,api.news
 DOMAIN-SUFFIX,api.palworldgame.com
+DOMAIN-SUFFIX,api.shuaiapi.com
 DOMAIN-SUFFIX,api.statsig.com
 DOMAIN-SUFFIX,apiary.io
 DOMAIN-SUFFIX,apiauto.ru
@@ -26003,6 +26004,7 @@ DOMAIN-SUFFIX,x18r.com
 DOMAIN-SUFFIX,x3guide.com
 DOMAIN-SUFFIX,x3vid.com
 DOMAIN-SUFFIX,x6av.com
+DOMAIN-SUFFIX,x86.fr
 DOMAIN-SUFFIX,x99av.com
 DOMAIN-SUFFIX,xamarin.com
 DOMAIN-SUFFIX,xandr.com
