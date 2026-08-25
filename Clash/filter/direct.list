@@ -101,5 +101,6 @@ DOMAIN-SUFFIX,wise.com
 # > Symedia
 DOMAIN-SUFFIX,images.symedia.top
 DOMAIN-SUFFIX,img.gmnlee.com
-# > Assrt
+# > Assrt、迅雷
 DOMAIN-SUFFIX,api.assrt.net
+DOMAIN-SUFFIX,api-shoulei-ssl.xunlei.com
