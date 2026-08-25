@@ -210,7 +210,13 @@ dns:
      #- '*.lan'
      #- localhost.ptlogin2.qq.com
   # fake-ip-ttl: 1 # 配置fakeip查询返回的TTL，非必要情况下请勿修改
-  #nameserver-policy: # 指定域名查询的解析服务器，可使用 geosite, 优先于 nameserver/fallback 查询，键支持域名通配，值支持字符串/数组
+  nameserver-policy: # 指定域名查询的解析服务器，可使用 geosite, 优先于 nameserver/fallback 查询，键支持域名通配，值支持字符串/数组
+     'api.assrt.net':
+     - 223.5.5.5 # 阿里DNS
+     - 180.76.76.76 # 百度DNS
+     - 119.29.29.29 # 腾讯DNS
+     #- 117.50.11.11 # ONE DNS拦截版 恶意网站拦截、广告过滤
+     - 117.50.10.10 # ONE DNS纯净版 直接返回其真实的响应结果
      #'+.arpa': '10.0.0.1'
      #'rule-set:cn':
      #- https://doh.pub/dns-query
