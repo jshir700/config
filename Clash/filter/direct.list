@@ -101,3 +101,5 @@ DOMAIN-SUFFIX,wise.com
 # > Symedia
 DOMAIN-SUFFIX,images.symedia.top
 DOMAIN-SUFFIX,img.gmnlee.com
+# > Assrt
+DOMAIN-SUFFIX,api.assrt.net
