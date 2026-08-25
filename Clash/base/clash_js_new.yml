@@ -616,6 +616,8 @@ cfw-bypass-bak:
   - '*tsinghua.edu.cn*'
   - '*api.assrt.net*'
   - '*api.makedie.me*'
+  - 'api.assrt.net'
+  - 'api.makedie.me'
 # 系统代理跳过列表 起作用的
 cfw-bypass:
   # 直连列表
