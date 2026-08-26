@@ -52,5 +52,7 @@ DOMAIN-SUFFIX,adspower.net
 # > 比特浏览器
 PROCESS-NAME-REGEX,.*比特浏览器.*
 PROCESS-NAME-REGEX,.*BitBrowser.*
+# > iCloud
+DOMAIN-SUFFIX,gateway.icloud.com
 PROCESS-NAME-REGEX,.*BitFox.*
 DOMAIN-SUFFIX,bitbrowser.net
