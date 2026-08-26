@@ -55,7 +55,7 @@ PROCESS-NAME-REGEX,.*BitBrowser.*
 PROCESS-NAME-REGEX,.*BitFox.*
 DOMAIN-SUFFIX,bitbrowser.net
 # > iCloud
-DOMAIN-SUFFIX,setup.icloud.com
-DOMAIN-SUFFIX,ckdatabasews.icloud.com
-DOMAIN-SUFFIX,gateway.icloud.com
-DOMAIN-SUFFIX,www.apple.com
+#DOMAIN-SUFFIX,setup.icloud.com
+#DOMAIN-SUFFIX,ckdatabasews.icloud.com
+#DOMAIN-SUFFIX,gateway.icloud.com
+#DOMAIN-SUFFIX,www.apple.com
