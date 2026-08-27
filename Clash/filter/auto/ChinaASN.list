@@ -2,13 +2,13 @@
 # AUTHOR: jshir700
 # REPO: https://github.com/jshir700/config
 # REFERENCE: https://github.com/missuo/ASN-China
-# UPDATED: 2026-08-26 12:57:58
+# UPDATED: 2026-08-27 23:17:05
 # IP-ASN: 5228
 # TOTAL: 5228
 IP-ASN,24429,no-resolve
 IP-ASN,132203,no-resolve
-IP-ASN,4134,no-resolve
 IP-ASN,45102,no-resolve
+IP-ASN,4134,no-resolve
 IP-ASN,55967,no-resolve
 IP-ASN,146762,no-resolve
 IP-ASN,4837,no-resolve
@@ -25,8 +25,8 @@ IP-ASN,9808,no-resolve
 IP-ASN,4538,no-resolve
 IP-ASN,56048,no-resolve
 IP-ASN,4812,no-resolve
-IP-ASN,24400,no-resolve
 IP-ASN,17621,no-resolve
+IP-ASN,24400,no-resolve
 IP-ASN,142111,no-resolve
 IP-ASN,56040,no-resolve
 IP-ASN,7497,no-resolve
@@ -38,8 +38,8 @@ IP-ASN,137753,no-resolve
 IP-ASN,134578,no-resolve
 IP-ASN,58879,no-resolve
 IP-ASN,4842,no-resolve
-IP-ASN,146834,no-resolve
 IP-ASN,140633,no-resolve
+IP-ASN,146834,no-resolve
 IP-ASN,37963,no-resolve
 IP-ASN,23724,no-resolve
 IP-ASN,45090,no-resolve
@@ -52,8 +52,8 @@ IP-ASN,44421,no-resolve
 IP-ASN,137718,no-resolve
 IP-ASN,55996,no-resolve
 IP-ASN,58466,no-resolve
-IP-ASN,59045,no-resolve
 IP-ASN,56046,no-resolve
+IP-ASN,59045,no-resolve
 IP-ASN,38365,no-resolve
 IP-ASN,38283,no-resolve
 IP-ASN,24151,no-resolve
@@ -115,7 +115,6 @@ IP-ASN,139721,no-resolve
 IP-ASN,139148,no-resolve
 IP-ASN,138421,no-resolve
 IP-ASN,137801,no-resolve
-IP-ASN,137758,no-resolve
 IP-ASN,137746,no-resolve
 IP-ASN,137735,no-resolve
 IP-ASN,137702,no-resolve
@@ -153,6 +152,7 @@ IP-ASN,140292,no-resolve
 IP-ASN,140061,no-resolve
 IP-ASN,138950,no-resolve
 IP-ASN,138538,no-resolve
+IP-ASN,137758,no-resolve
 IP-ASN,137697,no-resolve
 IP-ASN,136250,no-resolve
 IP-ASN,135629,no-resolve
@@ -192,7 +192,6 @@ IP-ASN,45075,no-resolve
 IP-ASN,45071,no-resolve
 IP-ASN,45062,no-resolve
 IP-ASN,45061,no-resolve
-IP-ASN,42962,no-resolve
 IP-ASN,38358,no-resolve
 IP-ASN,38255,no-resolve
 IP-ASN,38057,no-resolve
@@ -287,6 +286,7 @@ IP-ASN,63603,no-resolve
 IP-ASN,63593,no-resolve
 IP-ASN,63581,no-resolve
 IP-ASN,63570,no-resolve
+IP-ASN,59077,no-resolve
 IP-ASN,59073,no-resolve
 IP-ASN,59068,no-resolve
 IP-ASN,59049,no-resolve
@@ -313,6 +313,7 @@ IP-ASN,45106,no-resolve
 IP-ASN,45101,no-resolve
 IP-ASN,45086,no-resolve
 IP-ASN,45083,no-resolve
+IP-ASN,42962,no-resolve
 IP-ASN,38834,no-resolve
 IP-ASN,38380,no-resolve
 IP-ASN,38378,no-resolve
@@ -334,7 +335,6 @@ IP-ASN,213625,no-resolve
 IP-ASN,211265,no-resolve
 IP-ASN,210041,no-resolve
 IP-ASN,209300,no-resolve
-IP-ASN,203309,no-resolve
 IP-ASN,201944,no-resolve
 IP-ASN,199392,no-resolve
 IP-ASN,18245,no-resolve
@@ -343,7 +343,6 @@ IP-ASN,17789,no-resolve
 IP-ASN,17739,no-resolve
 IP-ASN,17633,no-resolve
 IP-ASN,153911,no-resolve
-IP-ASN,153376,no-resolve
 IP-ASN,152711,no-resolve
 IP-ASN,152186,no-resolve
 IP-ASN,151823,no-resolve
@@ -484,7 +483,6 @@ IP-ASN,63538,no-resolve
 IP-ASN,59223,no-resolve
 IP-ASN,59089,no-resolve
 IP-ASN,59084,no-resolve
-IP-ASN,59077,no-resolve
 IP-ASN,59064,no-resolve
 IP-ASN,59034,no-resolve
 IP-ASN,59025,no-resolve
@@ -568,6 +566,7 @@ IP-ASN,205610,no-resolve
 IP-ASN,205152,no-resolve
 IP-ASN,204244,no-resolve
 IP-ASN,203991,no-resolve
+IP-ASN,203309,no-resolve
 IP-ASN,203236,no-resolve
 IP-ASN,201705,no-resolve
 IP-ASN,199310,no-resolve
@@ -583,6 +582,7 @@ IP-ASN,17442,no-resolve
 IP-ASN,17430,no-resolve
 IP-ASN,154315,no-resolve
 IP-ASN,154010,no-resolve
+IP-ASN,153376,no-resolve
 IP-ASN,153168,no-resolve
 IP-ASN,152920,no-resolve
 IP-ASN,152120,no-resolve
@@ -600,7 +600,6 @@ IP-ASN,151245,no-resolve
 IP-ASN,151229,no-resolve
 IP-ASN,150374,no-resolve
 IP-ASN,149511,no-resolve
-IP-ASN,149510,no-resolve
 IP-ASN,149464,no-resolve
 IP-ASN,149304,no-resolve
 IP-ASN,148982,no-resolve
@@ -914,6 +913,7 @@ IP-ASN,150370,no-resolve
 IP-ASN,150184,no-resolve
 IP-ASN,150173,no-resolve
 IP-ASN,150141,no-resolve
+IP-ASN,149510,no-resolve
 IP-ASN,146816,no-resolve
 IP-ASN,146745,no-resolve
 IP-ASN,146744,no-resolve

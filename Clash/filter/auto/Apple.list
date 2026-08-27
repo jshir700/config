@@ -2,16 +2,16 @@
 # AUTHOR: jshir700
 # REPO: https://github.com/jshir700/config
 # REFERENCE: https://github.com/blackmatrix7/ios_rule_script, https://github.com/Loyalsoldier/surge-rules, https://github.com/ACL4SSR/ACL4SSR, https://github.com/GeQ1an/Rules, https://github.com/sve1r/Rules-For-Quantumult-X, https://github.com/Hackl0us/SS-Rule-Snippet, https://github.com/Loyalsoldier/clash-rules, https://github.com/dler-io/Rules, https://github.com/LM-Firefly/Rules, https://github.com/zqzess/rule_for_quantumultX
-# UPDATED: 2026-08-26 12:55:52
+# UPDATED: 2026-08-27 23:15:21
 # DOMAIN: 272
-# DOMAIN-SUFFIX: 1753
+# DOMAIN-SUFFIX: 1754
 # DOMAIN-KEYWORD: 9
 # DOMAIN-WILDCARD: 15
 # IP-CIDR: 10
 # IP-CIDR6: 3
 # PROCESS-NAME: 14
 # USER-AGENT: 23
-# TOTAL: 2099
+# TOTAL: 2100
 DOMAIN,a1.mzstatic.com
 DOMAIN,a2.mzstatic.com
 DOMAIN,a3.mzstatic.com
@@ -1327,6 +1327,7 @@ DOMAIN-SUFFIX,gsp4-cn.ls.apple.com.edgekey.net
 DOMAIN-SUFFIX,gsp4-cn.ls.apple.com.edgekey.net.globalredir.akadns.net
 DOMAIN-SUFFIX,gsp5-cn.ls.apple.com
 DOMAIN-SUFFIX,gsp85-cn-ssl.ls.apple.com
+DOMAIN-SUFFIX,gspe11-2-cn-ssl.ls.apple.com
 DOMAIN-SUFFIX,gspe19-2-cn-ssl.ls-apple.com.akadns.net
 DOMAIN-SUFFIX,gspe19-2-cn-ssl.ls.apple.com
 DOMAIN-SUFFIX,gspe19-cn-ssl.ls.apple.com
