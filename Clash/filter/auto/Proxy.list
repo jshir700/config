@@ -2,14 +2,14 @@
 # AUTHOR: jshir700
 # REPO: https://github.com/jshir700/config
 # REFERENCE: https://github.com/GMOogway/shadowrocket-rules
-# UPDATED: 2026-08-27 23:15:22
+# UPDATED: 2026-08-29 00:39:16
 # DOMAIN: 768
-# DOMAIN-SUFFIX: 26354
+# DOMAIN-SUFFIX: 26356
 # DOMAIN-KEYWORD: 12
 # DOMAIN-REGEX: 151
 # IP-CIDR: 15
 # USER-AGENT: 1
-# TOTAL: 27301
+# TOTAL: 27303
 DOMAIN,1password.drift.click
 DOMAIN,3dns-1.adobe.com
 DOMAIN,3dns-2.adobe.com
@@ -20551,6 +20551,7 @@ DOMAIN-SUFFIX,reiporno.com
 DOMAIN-SUFFIX,relateiq.com
 DOMAIN-SUFFIX,religionnews.com
 DOMAIN-SUFFIX,remirepo.net
+DOMAIN-SUFFIX,remna.st
 DOMAIN-SUFFIX,rencapbank.ru
 DOMAIN-SUFFIX,renchead.com
 DOMAIN-SUFFIX,rencredit.ru
@@ -25896,6 +25897,7 @@ DOMAIN-SUFFIX,wpmailsmtp.com
 DOMAIN-SUFFIX,wpoforum.com
 DOMAIN-SUFFIX,wpvip.com
 DOMAIN-SUFFIX,wrenchead.com
+DOMAIN-SUFFIX,write.as
 DOMAIN-SUFFIX,writesonic.com
 DOMAIN-SUFFIX,ws-blau.com
 DOMAIN-SUFFIX,ws-tcg.com
