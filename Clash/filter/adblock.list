@@ -4,3 +4,4 @@ DOMAIN,cdn.cmgadx.com
 # Block Adobe Genuine validation popup (Adobe正版弹窗阻断)
 DOMAIN-SUFFIX,gcos.adobe.io
 DOMAIN-SUFFIX,na1e.services.adobe.com
+GEOSITE,adobe-activation
