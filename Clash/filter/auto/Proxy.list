@@ -2,14 +2,14 @@
 # AUTHOR: jshir700
 # REPO: https://github.com/jshir700/config
 # REFERENCE: https://github.com/GMOogway/shadowrocket-rules
-# UPDATED: 2026-09-06 16:40:15
-# DOMAIN: 768
+# UPDATED: 2026-09-07 17:21:27
+# DOMAIN: 769
 # DOMAIN-SUFFIX: 26371
 # DOMAIN-KEYWORD: 12
 # DOMAIN-REGEX: 151
 # IP-CIDR: 15
 # USER-AGENT: 1
-# TOTAL: 27318
+# TOTAL: 27319
 DOMAIN,1password.drift.click
 DOMAIN,3dns-1.adobe.com
 DOMAIN,3dns-2.adobe.com
@@ -283,6 +283,7 @@ DOMAIN,img-s-msn-com.akamaized.net
 DOMAIN,impala-media-production.s3.amazonaws.com
 DOMAIN,imperial.insendi.com
 DOMAIN,in.appcenter.ms
+DOMAIN,lastfm-img.freetls.fastly.net
 DOMAIN,lastfm.freetls.fastly.net
 DOMAIN,lazer.ppy.sh
 DOMAIN,lf16-effectcdn.byteeffecttos-g.com
