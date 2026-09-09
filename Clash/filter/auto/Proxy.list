@@ -2,14 +2,14 @@
 # AUTHOR: jshir700
 # REPO: https://github.com/jshir700/config
 # REFERENCE: https://github.com/GMOogway/shadowrocket-rules
-# UPDATED: 2026-09-08 16:52:18
+# UPDATED: 2026-09-09 16:58:26
 # DOMAIN: 769
-# DOMAIN-SUFFIX: 26371
+# DOMAIN-SUFFIX: 26372
 # DOMAIN-KEYWORD: 12
 # DOMAIN-REGEX: 151
 # IP-CIDR: 15
 # USER-AGENT: 1
-# TOTAL: 27319
+# TOTAL: 27320
 DOMAIN,1password.drift.click
 DOMAIN,3dns-1.adobe.com
 DOMAIN,3dns-2.adobe.com
@@ -17928,6 +17928,7 @@ DOMAIN-SUFFIX,nodejs.org
 DOMAIN-SUFFIX,nodequality.com
 DOMAIN-SUFFIX,nodereal.io
 DOMAIN-SUFFIX,nodeseek.com
+DOMAIN-SUFFIX,nodeseek.org
 DOMAIN-SUFFIX,nodesource.com
 DOMAIN-SUFFIX,noisullifb.com
 DOMAIN-SUFFIX,nokiantyres.com
