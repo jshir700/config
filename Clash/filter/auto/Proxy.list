@@ -2,14 +2,14 @@
 # AUTHOR: jshir700
 # REPO: https://github.com/jshir700/config
 # REFERENCE: https://github.com/GMOogway/shadowrocket-rules
-# UPDATED: 2026-09-11 16:55:23
+# UPDATED: 2026-09-12 16:38:25
 # DOMAIN: 769
-# DOMAIN-SUFFIX: 26372
+# DOMAIN-SUFFIX: 26373
 # DOMAIN-KEYWORD: 12
 # DOMAIN-REGEX: 151
 # IP-CIDR: 15
 # USER-AGENT: 1
-# TOTAL: 27320
+# TOTAL: 27321
 DOMAIN,1password.drift.click
 DOMAIN,3dns-1.adobe.com
 DOMAIN,3dns-2.adobe.com
@@ -20180,6 +20180,7 @@ DOMAIN-SUFFIX,qstatus.com
 DOMAIN-SUFFIX,qt-project.org
 DOMAIN-SUFFIX,qt.io
 DOMAIN-SUFFIX,qtrac.eu
+DOMAIN-SUFFIX,quakemachinex.com
 DOMAIN-SUFFIX,qualcomm-email.com
 DOMAIN-SUFFIX,qualcomm-inc.com
 DOMAIN-SUFFIX,qualcomm.co.id

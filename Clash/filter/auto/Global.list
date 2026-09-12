@@ -2,15 +2,15 @@
 # AUTHOR: jshir700
 # REPO: https://github.com/jshir700/config
 # REFERENCE: https://github.com/blackmatrix7/ios_rule_script, https://github.com/sve1r/Rules-For-Quantumult-X, https://github.com/ACL4SSR/ACL4SSR, https://github.com/Hackl0us/SS-Rule-Snippet, https://github.com/Loyalsoldier/surge-rules, https://github.com/GeQ1an/Rules, https://github.com/Loyalsoldier/clash-rules, https://github.com/dler-io/Rules
-# UPDATED: 2026-09-11 16:55:22
+# UPDATED: 2026-09-12 16:38:25
 # DOMAIN: 786
-# DOMAIN-SUFFIX: 35619
+# DOMAIN-SUFFIX: 35603
 # DOMAIN-KEYWORD: 39
 # IP-CIDR: 138
 # IP-CIDR6: 5
 # PROCESS-NAME: 1
 # USER-AGENT: 9
-# TOTAL: 36597
+# TOTAL: 36581
 DOMAIN,1password.drift.click
 DOMAIN,3dns-1.adobe.com
 DOMAIN,3dns-2.adobe.com
@@ -3089,13 +3089,10 @@ DOMAIN-SUFFIX,apexlegends.com
 DOMAIN-SUFFIX,apexprint.com.hk
 DOMAIN-SUFFIX,aphe.ac.uk
 DOMAIN-SUFFIX,api-extractor.com
-DOMAIN-SUFFIX,api-gl.lbkrs.com
 DOMAIN-SUFFIX,api-secure.recaptcha.net
 DOMAIN-SUFFIX,api-verify.recaptcha.net
 DOMAIN-SUFFIX,api.ai
 DOMAIN-SUFFIX,api.amplitude.com
-DOMAIN-SUFFIX,api.futunn.com
-DOMAIN-SUFFIX,api.lbkrs.com
 DOMAIN-SUFFIX,api.mixpanel.com
 DOMAIN-SUFFIX,api.moomoobull.com
 DOMAIN-SUFFIX,api.nebula-emby.com
@@ -3109,7 +3106,6 @@ DOMAIN-SUFFIX,api.steampowered.com
 DOMAIN-SUFFIX,api.termius.com
 DOMAIN-SUFFIX,api.tiktokv.com
 DOMAIN-SUFFIX,api.urbandictionary.com
-DOMAIN-SUFFIX,api5.futunn.com
 DOMAIN-SUFFIX,apiary.io
 DOMAIN-SUFFIX,apiauto.ru
 DOMAIN-SUFFIX,apibay.org
@@ -7325,7 +7321,6 @@ DOMAIN-SUFFIX,cdn-vk.ru
 DOMAIN-SUFFIX,cdn.ac.uk
 DOMAIN-SUFFIX,cdn.angruo.com
 DOMAIN-SUFFIX,cdn.arstechnica.net
-DOMAIN-SUFFIX,cdn.futustatic.com
 DOMAIN-SUFFIX,cdn.jwplayer.com
 DOMAIN-SUFFIX,cdn.printfriendly.com
 DOMAIN-SUFFIX,cdn.registerdisney.go.com
@@ -8184,7 +8179,6 @@ DOMAIN-SUFFIX,cn.fmnnow.com
 DOMAIN-SUFFIX,cn.sandscotaicentral.com
 DOMAIN-SUFFIX,cn.shafaqna.com
 DOMAIN-SUFFIX,cn.theaustralian.com.au
-DOMAIN-SUFFIX,cn.uptodown.com
 DOMAIN-SUFFIX,cn6.eu
 DOMAIN-SUFFIX,cna.com.tw
 DOMAIN-SUFFIX,cnabc.com
@@ -10181,7 +10175,6 @@ DOMAIN-SUFFIX,dowjones.io
 DOMAIN-SUFFIX,dowjoneson.com
 DOMAIN-SUFFIX,download.com
 DOMAIN-SUFFIX,download.dappcdn.com
-DOMAIN-SUFFIX,download.futunn.com
 DOMAIN-SUFFIX,download.qatp1.net
 DOMAIN-SUFFIX,download.qcpp1.net
 DOMAIN-SUFFIX,download.qpdp1.net
@@ -20016,7 +20009,6 @@ DOMAIN-SUFFIX,lzmtnews.org
 DOMAIN-SUFFIX,m-power.com
 DOMAIN-SUFFIX,m-rhex.ac.uk
 DOMAIN-SUFFIX,m-sport.co.uk
-DOMAIN-SUFFIX,m.hkgalden.com
 DOMAIN-SUFFIX,m.me
 DOMAIN-SUFFIX,m.moegirl.org
 DOMAIN-SUFFIX,m.plixi.com
@@ -24193,12 +24185,8 @@ DOMAIN-SUFFIX,openai.com
 DOMAIN-SUFFIX,openallweb.com
 DOMAIN-SUFFIX,openamt.com
 DOMAIN-SUFFIX,openapi-quote.longbridge.cn
-DOMAIN-SUFFIX,openapi-quote.longbridge.com
 DOMAIN-SUFFIX,openapi-trade.longbridge.cn
-DOMAIN-SUFFIX,openapi-trade.longbridge.com
-DOMAIN-SUFFIX,openapi.futunn.com
 DOMAIN-SUFFIX,openapi.longbridge.cn
-DOMAIN-SUFFIX,openapi.longbridge.com
 DOMAIN-SUFFIX,openapiplatform.com
 DOMAIN-SUFFIX,openapiservice.com
 DOMAIN-SUFFIX,openart.ai
@@ -26376,13 +26364,12 @@ DOMAIN-SUFFIX,qso.ac.uk
 DOMAIN-SUFFIX,qstatus.com
 DOMAIN-SUFFIX,qt-project.org
 DOMAIN-SUFFIX,qt.io
-DOMAIN-SUFFIX,qtcard.futunn.com
-DOMAIN-SUFFIX,qtcardfthk.futufin.com
 DOMAIN-SUFFIX,qtrac.eu
 DOMAIN-SUFFIX,qtweeter.com
 DOMAIN-SUFFIX,quadram.ac.uk
 DOMAIN-SUFFIX,quadraminstitute.ac.uk
 DOMAIN-SUFFIX,quadrat.ac.uk
+DOMAIN-SUFFIX,quakemachinex.com
 DOMAIN-SUFFIX,qualcomm-email.com
 DOMAIN-SUFFIX,qualcomm-inc.com
 DOMAIN-SUFFIX,qualcomm.co.id
@@ -30115,7 +30102,6 @@ DOMAIN-SUFFIX,suppig.net
 DOMAIN-SUFFIX,supply-chain.ac.uk
 DOMAIN-SUFFIX,supplybestjerseys.com
 DOMAIN-SUFFIX,support-uber.com
-DOMAIN-SUFFIX,support.futunn.com
 DOMAIN-SUFFIX,supportfacebook.com
 DOMAIN-SUFFIX,supr.cl
 DOMAIN-SUFFIX,supremacy.com
@@ -31518,8 +31504,6 @@ DOMAIN-SUFFIX,tracingnetworks.ac.uk
 DOMAIN-SUFFIX,tracker.gg
 DOMAIN-SUFFIX,tracker.network
 DOMAIN-SUFFIX,tracking-location.com
-DOMAIN-SUFFIX,trade.futunn.com
-DOMAIN-SUFFIX,trade.longportapp.com
 DOMAIN-SUFFIX,tradeup.com
 DOMAIN-SUFFIX,tradevip1.com
 DOMAIN-SUFFIX,tradingview.com
