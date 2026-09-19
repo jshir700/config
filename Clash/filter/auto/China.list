@@ -2,17 +2,17 @@
 # AUTHOR: jshir700
 # REPO: https://github.com/jshir700/config
 # REFERENCE: https://github.com/blackmatrix7/ios_rule_script, https://github.com/ACL4SSR/ACL4SSR, https://github.com/GMOogway/shadowrocket-rules, https://github.com/LM-Firefly/Rules, https://github.com/Hackl0us/SS-Rule-Snippet, https://github.com/GeQ1an/Rules, https://github.com/sve1r/Rules-For-Quantumult-X, https://github.com/Loyalsoldier/clash-rules, https://github.com/gaoyifan/china-operator-ip, https://github.com/dler-io/Rules, https://github.com/zqzess/rule_for_quantumultX, https://github.com/misakaio/chnroutes2
-# UPDATED: 2026-09-18 17:02:25
+# UPDATED: 2026-09-19 16:50:21
 # DOMAIN: 149
 # DOMAIN-SUFFIX: 112151
 # DOMAIN-KEYWORD: 24
 # DOMAIN-REGEX: 8
-# IP-CIDR: 26714
+# IP-CIDR: 26735
 # IP-CIDR6: 82
 # IP-ASN: 1
 # PROCESS-NAME: 5
 # USER-AGENT: 67
-# TOTAL: 139201
+# TOTAL: 139222
 DOMAIN,1-fss24-s0.streamhoster.com
 DOMAIN,14033.live.streamtheworld.com
 DOMAIN,156zy.suyunbo.tv
@@ -121938,6 +121938,7 @@ IP-CIDR,139.200.0.0/13,no-resolve
 IP-CIDR,139.208.0.0/13,no-resolve
 IP-CIDR,139.215.187.0/24,no-resolve
 IP-CIDR,139.217.0.0/16,no-resolve
+IP-CIDR,139.217.226.0/24,no-resolve
 IP-CIDR,139.219.0.0/16,no-resolve
 IP-CIDR,139.220.0.0/15,no-resolve
 IP-CIDR,139.220.128.0/18,no-resolve
@@ -126585,10 +126586,16 @@ IP-CIDR,211.144.12.0/22,no-resolve
 IP-CIDR,211.144.120.0/21,no-resolve
 IP-CIDR,211.144.128.0/20,no-resolve
 IP-CIDR,211.144.144.0/21,no-resolve
+IP-CIDR,211.144.144.0/23,no-resolve
+IP-CIDR,211.144.147.0/24,no-resolve
+IP-CIDR,211.144.149.0/24,no-resolve
+IP-CIDR,211.144.150.0/23,no-resolve
 IP-CIDR,211.144.152.0/22,no-resolve
+IP-CIDR,211.144.152.0/23,no-resolve
+IP-CIDR,211.144.155.0/24,no-resolve
+IP-CIDR,211.144.156.0/22,no-resolve
 IP-CIDR,211.144.156.0/23,no-resolve
 IP-CIDR,211.144.158.0/24,no-resolve
-IP-CIDR,211.144.159.0/24,no-resolve
 IP-CIDR,211.144.16.0/24,no-resolve
 IP-CIDR,211.144.18.0/23,no-resolve
 IP-CIDR,211.144.192.0/18,no-resolve
@@ -126890,6 +126897,13 @@ IP-CIDR,211.167.192.0/18,no-resolve
 IP-CIDR,211.167.224.0/19,no-resolve
 IP-CIDR,211.167.64.0/18,no-resolve
 IP-CIDR,211.167.64.0/19,no-resolve
+IP-CIDR,211.167.65.0/24,no-resolve
+IP-CIDR,211.167.69.0/24,no-resolve
+IP-CIDR,211.167.70.0/23,no-resolve
+IP-CIDR,211.167.80.0/23,no-resolve
+IP-CIDR,211.167.82.0/24,no-resolve
+IP-CIDR,211.167.84.0/22,no-resolve
+IP-CIDR,211.167.88.0/21,no-resolve
 IP-CIDR,211.167.96.0/19,no-resolve
 IP-CIDR,211.64.0.0/13,no-resolve
 IP-CIDR,211.64.0.0/14,no-resolve
@@ -127159,15 +127173,20 @@ IP-CIDR,218.245.8.0/21,no-resolve
 IP-CIDR,218.246.0.0/15,no-resolve
 IP-CIDR,218.246.0.0/16,no-resolve
 IP-CIDR,218.246.0.0/19,no-resolve
+IP-CIDR,218.246.0.0/20,no-resolve
 IP-CIDR,218.246.112.0/21,no-resolve
 IP-CIDR,218.246.120.0/22,no-resolve
 IP-CIDR,218.246.124.0/23,no-resolve
 IP-CIDR,218.246.126.0/24,no-resolve
 IP-CIDR,218.246.127.0/24,no-resolve
+IP-CIDR,218.246.16.0/22,no-resolve
 IP-CIDR,218.246.160.0/19,no-resolve
 IP-CIDR,218.246.192.0/19,no-resolve
+IP-CIDR,218.246.20.0/24,no-resolve
 IP-CIDR,218.246.21.0/24,no-resolve
 IP-CIDR,218.246.22.0/24,no-resolve
+IP-CIDR,218.246.23.0/24,no-resolve
+IP-CIDR,218.246.24.0/21,no-resolve
 IP-CIDR,218.246.32.0/22,no-resolve
 IP-CIDR,218.246.48.0/22,no-resolve
 IP-CIDR,218.246.96.0/19,no-resolve
@@ -134087,6 +134106,7 @@ IP-CIDR,2610:a1:3078::/46,no-resolve
 IP-CIDR,2620:171:32::/48,no-resolve
 IP-CIDR,2620:171:5a:f0::/64,no-resolve
 IP-CIDR,2620:171:fb::/48,no-resolve
+IP-CIDR,2620:57:4004::/47,no-resolve
 IP-CIDR,2620:57:4004::/48,no-resolve
 IP-CIDR,27.0.128.0/21,no-resolve
 IP-CIDR,27.0.128.0/22,no-resolve
@@ -135835,6 +135855,7 @@ IP-CIDR,38.181.40.0/21,no-resolve
 IP-CIDR,38.181.48.0/20,no-resolve
 IP-CIDR,38.196.176.0/24,no-resolve
 IP-CIDR,38.226.199.0/24,no-resolve
+IP-CIDR,38.247.24.0/22,no-resolve
 IP-CIDR,38.247.24.0/23,no-resolve
 IP-CIDR,38.247.27.0/24,no-resolve
 IP-CIDR,38.247.32.0/24,no-resolve
