@@ -2,17 +2,17 @@
 # AUTHOR: jshir700
 # REPO: https://github.com/jshir700/config
 # REFERENCE: https://github.com/blackmatrix7/ios_rule_script, https://github.com/ACL4SSR/ACL4SSR, https://github.com/GMOogway/shadowrocket-rules, https://github.com/LM-Firefly/Rules, https://github.com/Hackl0us/SS-Rule-Snippet, https://github.com/GeQ1an/Rules, https://github.com/sve1r/Rules-For-Quantumult-X, https://github.com/Loyalsoldier/clash-rules, https://github.com/gaoyifan/china-operator-ip, https://github.com/dler-io/Rules, https://github.com/zqzess/rule_for_quantumultX, https://github.com/misakaio/chnroutes2
-# UPDATED: 2026-09-26 17:22:53
+# UPDATED: 2026-09-27 18:02:40
 # DOMAIN: 149
-# DOMAIN-SUFFIX: 112398
+# DOMAIN-SUFFIX: 112405
 # DOMAIN-KEYWORD: 24
 # DOMAIN-REGEX: 8
-# IP-CIDR: 26723
+# IP-CIDR: 26736
 # IP-CIDR6: 82
 # IP-ASN: 1
 # PROCESS-NAME: 5
 # USER-AGENT: 67
-# TOTAL: 139457
+# TOTAL: 139477
 DOMAIN,1-fss24-s0.streamhoster.com
 DOMAIN,14033.live.streamtheworld.com
 DOMAIN,156zy.suyunbo.tv
@@ -29412,6 +29412,7 @@ DOMAIN-SUFFIX,djmillison.com
 DOMAIN-SUFFIX,djrhf0.com
 DOMAIN-SUFFIX,djserver.center
 DOMAIN-SUFFIX,djsh5.com
+DOMAIN-SUFFIX,djsnm.app
 DOMAIN-SUFFIX,djstechpc.com
 DOMAIN-SUFFIX,djstg.com
 DOMAIN-SUFFIX,djt.org.cn
@@ -66834,6 +66835,7 @@ DOMAIN-SUFFIX,monknow.com
 DOMAIN-SUFFIX,mono.work
 DOMAIN-SUFFIX,monolink.net
 DOMAIN-SUFFIX,monph.com
+DOMAIN-SUFFIX,monsterhunteroutlanders.com
 DOMAIN-SUFFIX,monsterlin.com
 DOMAIN-SUFFIX,montage-tech.com
 DOMAIN-SUFFIX,monternet.com
@@ -84437,6 +84439,7 @@ DOMAIN-SUFFIX,soukecheng.net
 DOMAIN-SUFFIX,soukuyou.com
 DOMAIN-SUFFIX,soulapp.me
 DOMAIN-SUFFIX,soulgame.mobi
+DOMAIN-SUFFIX,soulharbor.work
 DOMAIN-SUFFIX,soulsky.net
 DOMAIN-SUFFIX,soulteary.com
 DOMAIN-SUFFIX,soulu365.com
@@ -87981,6 +87984,7 @@ DOMAIN-SUFFIX,tcdnlp.com
 DOMAIN-SUFFIX,tcdnos.com
 DOMAIN-SUFFIX,tcdnos.net
 DOMAIN-SUFFIX,tcdns31.com
+DOMAIN-SUFFIX,tcdns74.com
 DOMAIN-SUFFIX,tcdnstc1.cn
 DOMAIN-SUFFIX,tcdnstc2.cn
 DOMAIN-SUFFIX,tcdnstc3.cn
@@ -91560,6 +91564,7 @@ DOMAIN-SUFFIX,tupu360.com
 DOMAIN-SUFFIX,tuputech.com
 DOMAIN-SUFFIX,tuqiangcn.com
 DOMAIN-SUFFIX,tuqou.com
+DOMAIN-SUFFIX,tuquge.com
 DOMAIN-SUFFIX,tuquu.com
 DOMAIN-SUFFIX,turangyq.com
 DOMAIN-SUFFIX,turboes.com
@@ -103845,6 +103850,7 @@ DOMAIN-SUFFIX,yget.me
 DOMAIN-SUFFIX,ygfengshui.com
 DOMAIN-SUFFIX,yggk.net
 DOMAIN-SUFFIX,yghsh.com
+DOMAIN-SUFFIX,yghy123.com
 DOMAIN-SUFFIX,ygibao.com
 DOMAIN-SUFFIX,yginsight.com
 DOMAIN-SUFFIX,ygjctech.com
@@ -108665,6 +108671,7 @@ DOMAIN-SUFFIX,zhang365.com
 DOMAIN-SUFFIX,zhangbj.com
 DOMAIN-SUFFIX,zhangchangfa.com
 DOMAIN-SUFFIX,zhangchi.art
+DOMAIN-SUFFIX,zhangdkl.asia
 DOMAIN-SUFFIX,zhangdongxuan.com
 DOMAIN-SUFFIX,zhangdu.com
 DOMAIN-SUFFIX,zhangdu520.com
@@ -114676,6 +114683,9 @@ IP-CIDR,103.21.102.0/23,no-resolve
 IP-CIDR,103.21.112.0/21,no-resolve
 IP-CIDR,103.21.112.0/22,no-resolve
 IP-CIDR,103.21.116.0/22,no-resolve
+IP-CIDR,103.21.116.0/23,no-resolve
+IP-CIDR,103.21.118.0/24,no-resolve
+IP-CIDR,103.21.119.0/24,no-resolve
 IP-CIDR,103.21.136.0/21,no-resolve
 IP-CIDR,103.21.136.0/22,no-resolve
 IP-CIDR,103.21.136.0/23,no-resolve
@@ -128129,6 +128139,7 @@ IP-CIDR,222.126.168.0/22,no-resolve
 IP-CIDR,222.126.170.0/23,no-resolve
 IP-CIDR,222.126.172.0/22,no-resolve
 IP-CIDR,222.126.172.0/23,no-resolve
+IP-CIDR,222.126.174.0/23,no-resolve
 IP-CIDR,222.126.174.144/28,no-resolve
 IP-CIDR,222.126.174.40/29,no-resolve
 IP-CIDR,222.126.174.76/30,no-resolve
@@ -132146,13 +132157,20 @@ IP-CIDR,2406:840:1804::/46,no-resolve
 IP-CIDR,2406:840:1808::/45,no-resolve
 IP-CIDR,2406:840:180::/41,no-resolve
 IP-CIDR,2406:840:1810::/44,no-resolve
+IP-CIDR,2406:840:181::/48,no-resolve
 IP-CIDR,2406:840:1820::/43,no-resolve
+IP-CIDR,2406:840:182::/47,no-resolve
 IP-CIDR,2406:840:1840::/42,no-resolve
+IP-CIDR,2406:840:184::/46,no-resolve
 IP-CIDR,2406:840:1880::/41,no-resolve
+IP-CIDR,2406:840:188::/45,no-resolve
 IP-CIDR,2406:840:18::/45,no-resolve
 IP-CIDR,2406:840:1900::/40,no-resolve
+IP-CIDR,2406:840:190::/44,no-resolve
 IP-CIDR,2406:840:1a00::/39,no-resolve
+IP-CIDR,2406:840:1a0::/43,no-resolve
 IP-CIDR,2406:840:1c00::/38,no-resolve
+IP-CIDR,2406:840:1c0::/42,no-resolve
 IP-CIDR,2406:840:1f:10::/64,no-resolve
 IP-CIDR,2406:840:1f:1::/64,no-resolve
 IP-CIDR,2406:840:2000::/37,no-resolve
@@ -137296,8 +137314,7 @@ IP-CIDR,43.248.128.0/23,no-resolve
 IP-CIDR,43.248.130.0/24,no-resolve
 IP-CIDR,43.248.131.0/24,no-resolve
 IP-CIDR,43.248.132.0/22,no-resolve
-IP-CIDR,43.248.132.0/24,no-resolve
-IP-CIDR,43.248.133.0/24,no-resolve
+IP-CIDR,43.248.132.0/23,no-resolve
 IP-CIDR,43.248.134.0/23,no-resolve
 IP-CIDR,43.248.136.0/22,no-resolve
 IP-CIDR,43.248.136.0/24,no-resolve
@@ -137507,6 +137524,9 @@ IP-CIDR,43.254.36.0/22,no-resolve
 IP-CIDR,43.254.4.0/22,no-resolve
 IP-CIDR,43.254.44.0/22,no-resolve
 IP-CIDR,43.254.52.0/22,no-resolve
+IP-CIDR,43.254.52.0/24,no-resolve
+IP-CIDR,43.254.53.0/24,no-resolve
+IP-CIDR,43.254.54.0/23,no-resolve
 IP-CIDR,43.254.64.0/22,no-resolve
 IP-CIDR,43.254.64.40/29,no-resolve
 IP-CIDR,43.254.64.48/29,no-resolve

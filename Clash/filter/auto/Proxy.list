@@ -2,14 +2,14 @@
 # AUTHOR: jshir700
 # REPO: https://github.com/jshir700/config
 # REFERENCE: https://github.com/GMOogway/shadowrocket-rules
-# UPDATED: 2026-09-26 17:21:28
+# UPDATED: 2026-09-27 18:00:39
 # DOMAIN: 771
-# DOMAIN-SUFFIX: 26383
+# DOMAIN-SUFFIX: 26385
 # DOMAIN-KEYWORD: 12
 # DOMAIN-REGEX: 151
 # IP-CIDR: 15
 # USER-AGENT: 1
-# TOTAL: 27333
+# TOTAL: 27335
 DOMAIN,1password.drift.click
 DOMAIN,3dns-1.adobe.com
 DOMAIN,3dns-2.adobe.com
@@ -5874,6 +5874,7 @@ DOMAIN-SUFFIX,c-ij.com
 DOMAIN-SUFFIX,c-msedge.net
 DOMAIN-SUFFIX,c-span.org
 DOMAIN-SUFFIX,c-spanvideo.org
+DOMAIN-SUFFIX,c.go-mpulse.net
 DOMAIN-SUFFIX,c.mi.com
 DOMAIN-SUFFIX,c0930.com
 DOMAIN-SUFFIX,c2cx.com
@@ -24442,6 +24443,7 @@ DOMAIN-SUFFIX,vaultify.com
 DOMAIN-SUFFIX,vaultify.info
 DOMAIN-SUFFIX,vaultify.net
 DOMAIN-SUFFIX,vaultproject.io
+DOMAIN-SUFFIX,vava8.com
 DOMAIN-SUFFIX,vbcdn.com
 DOMAIN-SUFFIX,vbcdn.net
 DOMAIN-SUFFIX,vbejeyv.shop
