@@ -2,9 +2,9 @@
 # AUTHOR: jshir700
 # REPO: https://github.com/jshir700/config
 # REFERENCE: https://github.com/missuo/ASN-China
-# UPDATED: 2026-09-30 18:31:41
-# IP-ASN: 5232
-# TOTAL: 5232
+# UPDATED: 2026-10-01 18:59:47
+# IP-ASN: 5231
+# TOTAL: 5231
 IP-ASN,24429,no-resolve
 IP-ASN,132203,no-resolve
 IP-ASN,4134,no-resolve
@@ -577,7 +577,6 @@ IP-ASN,203309,no-resolve
 IP-ASN,203236,no-resolve
 IP-ASN,199310,no-resolve
 IP-ASN,198588,no-resolve
-IP-ASN,197817,no-resolve
 IP-ASN,18257,no-resolve
 IP-ASN,18244,no-resolve
 IP-ASN,18242,no-resolve

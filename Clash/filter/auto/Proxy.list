@@ -2,14 +2,14 @@
 # AUTHOR: jshir700
 # REPO: https://github.com/jshir700/config
 # REFERENCE: https://github.com/GMOogway/shadowrocket-rules
-# UPDATED: 2026-09-30 18:29:45
+# UPDATED: 2026-10-01 18:57:33
 # DOMAIN: 773
-# DOMAIN-SUFFIX: 26389
+# DOMAIN-SUFFIX: 26390
 # DOMAIN-KEYWORD: 12
 # DOMAIN-REGEX: 151
 # IP-CIDR: 15
 # USER-AGENT: 1
-# TOTAL: 27341
+# TOTAL: 27342
 DOMAIN,1password.drift.click
 DOMAIN,3dns-1.adobe.com
 DOMAIN,3dns-2.adobe.com
@@ -10632,6 +10632,7 @@ DOMAIN-SUFFIX,futustatic.com
 DOMAIN-SUFFIX,fututrade.com
 DOMAIN-SUFFIX,fututrustee.com
 DOMAIN-SUFFIX,fuxporn.com
+DOMAIN-SUFFIX,fuyin116.com
 DOMAIN-SUFFIX,fuzokudx.com
 DOMAIN-SUFFIX,fw.cm
 DOMAIN-SUFFIX,fxcm-chinese.com
