@@ -2,17 +2,17 @@
 # AUTHOR: jshir700
 # REPO: https://github.com/jshir700/config
 # REFERENCE: https://github.com/blackmatrix7/ios_rule_script, https://github.com/ACL4SSR/ACL4SSR, https://github.com/GMOogway/shadowrocket-rules, https://github.com/LM-Firefly/Rules, https://github.com/Hackl0us/SS-Rule-Snippet, https://github.com/GeQ1an/Rules, https://github.com/sve1r/Rules-For-Quantumult-X, https://github.com/Loyalsoldier/clash-rules, https://github.com/gaoyifan/china-operator-ip, https://github.com/dler-io/Rules, https://github.com/zqzess/rule_for_quantumultX, https://github.com/misakaio/chnroutes2
-# UPDATED: 2026-10-03 17:54:29
+# UPDATED: 2026-10-04 18:37:11
 # DOMAIN: 149
 # DOMAIN-SUFFIX: 112339
 # DOMAIN-KEYWORD: 24
 # DOMAIN-REGEX: 8
-# IP-CIDR: 23024
+# IP-CIDR: 23029
 # IP-CIDR6: 79
 # IP-ASN: 1
 # PROCESS-NAME: 5
 # USER-AGENT: 67
-# TOTAL: 135696
+# TOTAL: 135701
 DOMAIN,1-fss24-s0.streamhoster.com
 DOMAIN,14033.live.streamtheworld.com
 DOMAIN,156zy.suyunbo.tv
@@ -116682,7 +116682,11 @@ IP-CIDR,110.172.200.0/21,no-resolve
 IP-CIDR,110.173.0.0/19,no-resolve
 IP-CIDR,110.173.16.0/20,no-resolve
 IP-CIDR,110.173.192.0/19,no-resolve
+IP-CIDR,110.173.192.0/22,no-resolve
 IP-CIDR,110.173.196.0/24,no-resolve
+IP-CIDR,110.173.197.0/24,no-resolve
+IP-CIDR,110.173.198.0/23,no-resolve
+IP-CIDR,110.173.200.0/21,no-resolve
 IP-CIDR,110.173.208.0/20,no-resolve
 IP-CIDR,110.173.32.0/20,no-resolve
 IP-CIDR,110.173.64.0/18,no-resolve
@@ -121804,6 +121808,7 @@ IP-CIDR,2001:dc7:cd00::/46,no-resolve
 IP-CIDR,2001:dc7:cd1a::/48,no-resolve
 IP-CIDR,2001:dc7:ffeb::/48,no-resolve
 IP-CIDR,2001:dc7:ffec::/48,no-resolve
+IP-CIDR,2001:dc7:fffb::/48,no-resolve
 IP-CIDR,2001:dcc:501::/48,no-resolve
 IP-CIDR,2001:dd8:1::/48,no-resolve
 IP-CIDR,2001:dd8:1a::/48,no-resolve
@@ -129698,7 +129703,6 @@ IP-CIDR,2406:840:890::/44,no-resolve
 IP-CIDR,2406:840:8::/45,no-resolve
 IP-CIDR,2406:840:8a0::/43,no-resolve
 IP-CIDR,2406:840:8c0::/42,no-resolve
-IP-CIDR,2406:840:9000::/37,no-resolve
 IP-CIDR,2406:840:9000::/38,no-resolve
 IP-CIDR,2406:840:900::/40,no-resolve
 IP-CIDR,2406:840:9010::/44,no-resolve
@@ -129751,6 +129755,7 @@ IP-CIDR,2406:840:9680:6668::/61,no-resolve
 IP-CIDR,2406:840:9680:6670::/60,no-resolve
 IP-CIDR,2406:840:9680:6680::/57,no-resolve
 IP-CIDR,2406:840:9680:6700::/56,no-resolve
+IP-CIDR,2406:840:9680:6800::/53,no-resolve
 IP-CIDR,2406:840:9680:6800::/57,no-resolve
 IP-CIDR,2406:840:9680:6880::/61,no-resolve
 IP-CIDR,2406:840:9680:6889::/64,no-resolve
@@ -129763,6 +129768,7 @@ IP-CIDR,2406:840:9680:6900::/56,no-resolve
 IP-CIDR,2406:840:9680:6a00::/55,no-resolve
 IP-CIDR,2406:840:9680:6c00::/54,no-resolve
 IP-CIDR,2406:840:9680:7000::/52,no-resolve
+IP-CIDR,2406:840:9680:8000::/49,no-resolve
 IP-CIDR,2406:840:9680:8000::/53,no-resolve
 IP-CIDR,2406:840:9680:8800::/57,no-resolve
 IP-CIDR,2406:840:9680:8880::/61,no-resolve
@@ -132968,7 +132974,6 @@ IP-CIDR,2a0a:d681:e100::/40,no-resolve
 IP-CIDR,2a0a:d681:e200::/39,no-resolve
 IP-CIDR,2a0a:d681:e400::/38,no-resolve
 IP-CIDR,2a0a:d681:e800::/37,no-resolve
-IP-CIDR,2a0a:d681:f000::/36,no-resolve
 IP-CIDR,2a0a:d681:f000::/37,no-resolve
 IP-CIDR,2a0a:d681:f800::/38,no-resolve
 IP-CIDR,2a0a:d681:fe00::/40,no-resolve
