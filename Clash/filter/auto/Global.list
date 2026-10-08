@@ -2,15 +2,15 @@
 # AUTHOR: jshir700
 # REPO: https://github.com/jshir700/config
 # REFERENCE: https://github.com/blackmatrix7/ios_rule_script, https://github.com/sve1r/Rules-For-Quantumult-X, https://github.com/ACL4SSR/ACL4SSR, https://github.com/Hackl0us/SS-Rule-Snippet, https://github.com/Loyalsoldier/surge-rules, https://github.com/GeQ1an/Rules, https://github.com/Loyalsoldier/clash-rules, https://github.com/dler-io/Rules
-# UPDATED: 2026-10-07 19:04:55
+# UPDATED: 2026-10-08 19:22:20
 # DOMAIN: 790
-# DOMAIN-SUFFIX: 35658
+# DOMAIN-SUFFIX: 35662
 # DOMAIN-KEYWORD: 39
 # IP-CIDR: 143
 # IP-CIDR6: 5
 # PROCESS-NAME: 1
 # USER-AGENT: 9
-# TOTAL: 36645
+# TOTAL: 36649
 DOMAIN,1password.drift.click
 DOMAIN,3dns-1.adobe.com
 DOMAIN,3dns-2.adobe.com
@@ -20744,6 +20744,7 @@ DOMAIN-SUFFIX,mefound.com
 DOMAIN-SUFFIX,mega.co.nz
 DOMAIN-SUFFIX,mega.io
 DOMAIN-SUFFIX,mega.nz
+DOMAIN-SUFFIX,megaad.nz
 DOMAIN-SUFFIX,megacamz.com
 DOMAIN-SUFFIX,megaeth.com
 DOMAIN-SUFFIX,megafilmporno.com
@@ -20755,12 +20756,14 @@ DOMAIN-SUFFIX,megalodon.jp
 DOMAIN-SUFFIX,megamarket.ru
 DOMAIN-SUFFIX,megamarket.tech
 DOMAIN-SUFFIX,megamon.co.kr
+DOMAIN-SUFFIX,megapay.nz
 DOMAIN-SUFFIX,megaphone.fm
 DOMAIN-SUFFIX,megapornfreehd.com
 DOMAIN-SUFFIX,megaporno.com.br
 DOMAIN-SUFFIX,megapornpics.com
 DOMAIN-SUFFIX,megaproxy.com
 DOMAIN-SUFFIX,megarotic.com
+DOMAIN-SUFFIX,megas4.com
 DOMAIN-SUFFIX,megasrv.de
 DOMAIN-SUFFIX,megatitsminka.com
 DOMAIN-SUFFIX,megaupload.com
@@ -31577,6 +31580,7 @@ DOMAIN-SUFFIX,transangels.com
 DOMAIN-SUFFIX,transarmuito.com
 DOMAIN-SUFFIX,transcamslive.com
 DOMAIN-SUFFIX,transcocon.ac.uk
+DOMAIN-SUFFIX,transfer.it
 DOMAIN-SUFFIX,transferwise.com
 DOMAIN-SUFFIX,transforming-musicology.ac.uk
 DOMAIN-SUFFIX,transformingmusicology.ac.uk
