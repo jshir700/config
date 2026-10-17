@@ -2,14 +2,14 @@
 # AUTHOR: jshir700
 # REPO: https://github.com/jshir700/config
 # REFERENCE: https://github.com/GMOogway/shadowrocket-rules
-# UPDATED: 2026-10-16 17:01:22
+# UPDATED: 2026-10-17 16:33:32
 # DOMAIN: 776
-# DOMAIN-SUFFIX: 26516
+# DOMAIN-SUFFIX: 26517
 # DOMAIN-KEYWORD: 12
 # DOMAIN-REGEX: 151
 # IP-CIDR: 15
 # USER-AGENT: 1
-# TOTAL: 27471
+# TOTAL: 27472
 DOMAIN,1password.drift.click
 DOMAIN,3dns-1.adobe.com
 DOMAIN,3dns-2.adobe.com
@@ -1590,6 +1590,7 @@ DOMAIN-SUFFIX,7mmtv.tv
 DOMAIN-SUFFIX,7tb.cc
 DOMAIN-SUFFIX,7tv.app
 DOMAIN-SUFFIX,7tv.io
+DOMAIN-SUFFIX,7x24hrs.com
 DOMAIN-SUFFIX,8-d.com
 DOMAIN-SUFFIX,8008206616.com
 DOMAIN-SUFFIX,8111y.top
