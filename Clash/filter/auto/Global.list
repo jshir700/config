@@ -2,15 +2,15 @@
 # AUTHOR: jshir700
 # REPO: https://github.com/jshir700/config
 # REFERENCE: https://github.com/blackmatrix7/ios_rule_script, https://github.com/sve1r/Rules-For-Quantumult-X, https://github.com/ACL4SSR/ACL4SSR, https://github.com/Hackl0us/SS-Rule-Snippet, https://github.com/Loyalsoldier/surge-rules, https://github.com/GeQ1an/Rules, https://github.com/Loyalsoldier/clash-rules, https://github.com/dler-io/Rules
-# UPDATED: 2026-10-19 17:54:31
-# DOMAIN: 795
-# DOMAIN-SUFFIX: 35771
+# UPDATED: 2026-10-20 17:25:28
+# DOMAIN: 797
+# DOMAIN-SUFFIX: 35772
 # DOMAIN-KEYWORD: 39
 # IP-CIDR: 143
 # IP-CIDR6: 5
 # PROCESS-NAME: 1
 # USER-AGENT: 9
-# TOTAL: 36763
+# TOTAL: 36766
 DOMAIN,1password.drift.click
 DOMAIN,3dns-1.adobe.com
 DOMAIN,3dns-2.adobe.com
@@ -305,6 +305,8 @@ DOMAIN,imperial.insendi.com
 DOMAIN,incoming-telemetry.thunderbird.net
 DOMAIN,incoming.telemetry.mozilla.org
 DOMAIN,itunes.apple.com
+DOMAIN,kp-config-smart-tv.akamaized.net
+DOMAIN,kp-configs-smart-tv.s3.eu-central-1.amazonaws.com
 DOMAIN,lastfm-img.freetls.fastly.net
 DOMAIN,lastfm.freetls.fastly.net
 DOMAIN,lazer.ppy.sh
@@ -3761,7 +3763,6 @@ DOMAIN-SUFFIX,asminternational.org
 DOMAIN-SUFFIX,asmr.gay
 DOMAIN-SUFFIX,asmrbuluo.com
 DOMAIN-SUFFIX,asn-online.org
-DOMAIN-SUFFIX,asobostudio.com
 DOMAIN-SUFFIX,asp-cc.com
 DOMAIN-SUFFIX,asp.net
 DOMAIN-SUFFIX,aspbjournals.org
@@ -12722,7 +12723,6 @@ DOMAIN-SUFFIX,flickr.com
 DOMAIN-SUFFIX,flickr.net
 DOMAIN-SUFFIX,flickrhivemind.net
 DOMAIN-SUFFIX,flickriver.com
-DOMAIN-SUFFIX,flightsimulator.com
 DOMAIN-SUFFIX,fling.com
 DOMAIN-SUFFIX,flipboard.com
 DOMAIN-SUFFIX,flipfap.com
@@ -20222,6 +20222,7 @@ DOMAIN-SUFFIX,magicalmirai.com
 DOMAIN-SUFFIX,magicmovies.com
 DOMAIN-SUFFIX,maglue.ac.uk
 DOMAIN-SUFFIX,magnacartacollege.ac.uk
+DOMAIN-SUFFIX,magnific.com
 DOMAIN-SUFFIX,mahabodhi.org
 DOMAIN-SUFFIX,mahajantech.com
 DOMAIN-SUFFIX,mahjongsoul.com
@@ -22058,6 +22059,7 @@ DOMAIN-SUFFIX,mtao.fun
 DOMAIN-SUFFIX,mtec.ac.uk
 DOMAIN-SUFFIX,mthruf.com
 DOMAIN-SUFFIX,mti.ac.uk
+DOMAIN-SUFFIX,mts-link.ru
 DOMAIN-SUFFIX,mts-ws.net
 DOMAIN-SUFFIX,mts.ru
 DOMAIN-SUFFIX,mtsbank.ru
@@ -25984,6 +25986,7 @@ DOMAIN-SUFFIX,postimages.org
 DOMAIN-SUFFIX,postimg.cc
 DOMAIN-SUFFIX,postimg.org
 DOMAIN-SUFFIX,postini.com
+DOMAIN-SUFFIX,postman.com
 DOMAIN-SUFFIX,posts.careerengine.us
 DOMAIN-SUFFIX,posty.kr
 DOMAIN-SUFFIX,postyourgirls.ws
