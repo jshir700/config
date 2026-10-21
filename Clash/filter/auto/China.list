@@ -2,17 +2,17 @@
 # AUTHOR: jshir700
 # REPO: https://github.com/jshir700/config
 # REFERENCE: https://github.com/blackmatrix7/ios_rule_script, https://github.com/ACL4SSR/ACL4SSR, https://github.com/GMOogway/shadowrocket-rules, https://github.com/LM-Firefly/Rules, https://github.com/Hackl0us/SS-Rule-Snippet, https://github.com/GeQ1an/Rules, https://github.com/sve1r/Rules-For-Quantumult-X, https://github.com/Loyalsoldier/clash-rules, https://github.com/gaoyifan/china-operator-ip, https://github.com/dler-io/Rules, https://github.com/zqzess/rule_for_quantumultX, https://github.com/misakaio/chnroutes2
-# UPDATED: 2026-10-20 17:27:03
+# UPDATED: 2026-10-21 17:23:54
 # DOMAIN: 149
-# DOMAIN-SUFFIX: 111551
+# DOMAIN-SUFFIX: 111553
 # DOMAIN-KEYWORD: 24
 # DOMAIN-REGEX: 8
-# IP-CIDR: 23187
+# IP-CIDR: 23201
 # IP-CIDR6: 79
 # IP-ASN: 1
 # PROCESS-NAME: 5
 # USER-AGENT: 67
-# TOTAL: 135071
+# TOTAL: 135087
 DOMAIN,1-fss24-s0.streamhoster.com
 DOMAIN,14033.live.streamtheworld.com
 DOMAIN,156zy.suyunbo.tv
@@ -86432,6 +86432,8 @@ DOMAIN-SUFFIX,sztxsz.com
 DOMAIN-SUFFIX,szty56.com
 DOMAIN-SUFFIX,sztz.org
 DOMAIN-SUFFIX,sztzzs.com
+DOMAIN-SUFFIX,szu.app
+DOMAIN-SUFFIX,szu.moe
 DOMAIN-SUFFIX,szuavia.org
 DOMAIN-SUFFIX,szudad.com
 DOMAIN-SUFFIX,szunionlab.com
@@ -120205,6 +120207,8 @@ IP-CIDR,170.33.129.0/24,no-resolve
 IP-CIDR,170.33.130.0/23,no-resolve
 IP-CIDR,170.33.136.0/23,no-resolve
 IP-CIDR,170.33.138.0/24,no-resolve
+IP-CIDR,170.33.15.0/24,no-resolve
+IP-CIDR,170.33.168.0/23,no-resolve
 IP-CIDR,170.33.169.0/24,no-resolve
 IP-CIDR,170.33.192.0/23,no-resolve
 IP-CIDR,170.33.20.0/22,no-resolve
@@ -120212,6 +120216,7 @@ IP-CIDR,170.33.24.0/24,no-resolve
 IP-CIDR,170.33.29.0/24,no-resolve
 IP-CIDR,170.33.30.0/23,no-resolve
 IP-CIDR,170.33.32.0/22,no-resolve
+IP-CIDR,170.33.41.0/24,no-resolve
 IP-CIDR,170.33.64.0/23,no-resolve
 IP-CIDR,170.33.66.0/24,no-resolve
 IP-CIDR,170.33.68.0/23,no-resolve
@@ -120319,6 +120324,7 @@ IP-CIDR,175.42.0.0/15,no-resolve
 IP-CIDR,175.44.0.0/16,no-resolve
 IP-CIDR,175.45.176.0/24,no-resolve
 IP-CIDR,175.45.178.0/23,no-resolve
+IP-CIDR,175.45.179.0/24,no-resolve
 IP-CIDR,175.46.0.0/15,no-resolve
 IP-CIDR,175.48.0.0/12,no-resolve
 IP-CIDR,175.64.0.0/11,no-resolve
@@ -124125,7 +124131,8 @@ IP-CIDR,219.232.32.0/19,no-resolve
 IP-CIDR,219.232.64.0/22,no-resolve
 IP-CIDR,219.232.68.0/24,no-resolve
 IP-CIDR,219.232.69.0/24,no-resolve
-IP-CIDR,219.232.70.0/23,no-resolve
+IP-CIDR,219.232.70.0/24,no-resolve
+IP-CIDR,219.232.71.0/24,no-resolve
 IP-CIDR,219.232.72.0/21,no-resolve
 IP-CIDR,219.232.80.0/21,no-resolve
 IP-CIDR,219.232.88.0/22,no-resolve
@@ -126637,9 +126644,6 @@ IP-CIDR,2401:bda0::/32,no-resolve
 IP-CIDR,2401:be00::/32,no-resolve
 IP-CIDR,2401:be00::/48,no-resolve
 IP-CIDR,2401:bf20::/32,no-resolve
-IP-CIDR,2401:c020:14::/48,no-resolve
-IP-CIDR,2401:c020:6::/48,no-resolve
-IP-CIDR,2401:c020:8::/47,no-resolve
 IP-CIDR,2401:c020::/32,no-resolve
 IP-CIDR,2401:c200::/32,no-resolve
 IP-CIDR,2401:c40::/32,no-resolve
@@ -128850,6 +128854,7 @@ IP-CIDR,2406:840:9900::/41,no-resolve
 IP-CIDR,2406:840:9900::/42,no-resolve
 IP-CIDR,2406:840:9940::/43,no-resolve
 IP-CIDR,2406:840:9960::/47,no-resolve
+IP-CIDR,2406:840:9963::/48,no-resolve
 IP-CIDR,2406:840:9965::/48,no-resolve
 IP-CIDR,2406:840:9968::/46,no-resolve
 IP-CIDR,2406:840:996d::/48,no-resolve
@@ -130337,8 +130342,18 @@ IP-CIDR,240a:2000:8000::/33,no-resolve
 IP-CIDR,240a:2000:800::/37,no-resolve
 IP-CIDR,240a:2000::/24,no-resolve
 IP-CIDR,240a:2000::/40,no-resolve
-IP-CIDR,240a:2001:1000::/37,no-resolve
+IP-CIDR,240a:2001:1000::/40,no-resolve
 IP-CIDR,240a:2001:100::/40,no-resolve
+IP-CIDR,240a:2001:1100::/44,no-resolve
+IP-CIDR,240a:2001:1110::/48,no-resolve
+IP-CIDR,240a:2001:1112::/47,no-resolve
+IP-CIDR,240a:2001:1114::/46,no-resolve
+IP-CIDR,240a:2001:1118::/45,no-resolve
+IP-CIDR,240a:2001:1120::/43,no-resolve
+IP-CIDR,240a:2001:1140::/42,no-resolve
+IP-CIDR,240a:2001:1180::/41,no-resolve
+IP-CIDR,240a:2001:1200::/39,no-resolve
+IP-CIDR,240a:2001:1400::/38,no-resolve
 IP-CIDR,240a:2001:1800::/44,no-resolve
 IP-CIDR,240a:2001:1810::/48,no-resolve
 IP-CIDR,240a:2001:1811::/48,no-resolve
@@ -133593,6 +133608,7 @@ IP-CIDR,45.119.104.0/22,no-resolve
 IP-CIDR,45.119.104.0/23,no-resolve
 IP-CIDR,45.119.116.0/22,no-resolve
 IP-CIDR,45.119.232.0/22,no-resolve
+IP-CIDR,45.119.42.0/23,no-resolve
 IP-CIDR,45.119.52.0/22,no-resolve
 IP-CIDR,45.119.60.0/22,no-resolve
 IP-CIDR,45.119.64.0/21,no-resolve
@@ -134385,7 +134401,6 @@ IP-CIDR,59.111.22.0/24,no-resolve
 IP-CIDR,59.111.24.0/22,no-resolve
 IP-CIDR,59.111.32.0/24,no-resolve
 IP-CIDR,59.111.35.0/24,no-resolve
-IP-CIDR,59.111.36.0/24,no-resolve
 IP-CIDR,59.111.40.0/21,no-resolve
 IP-CIDR,59.111.64.0/19,no-resolve
 IP-CIDR,59.111.96.0/21,no-resolve
@@ -134500,6 +134515,7 @@ IP-CIDR,60.200.0.0/24,no-resolve
 IP-CIDR,60.200.112.0/20,no-resolve
 IP-CIDR,60.200.128.0/17,no-resolve
 IP-CIDR,60.200.32.0/20,no-resolve
+IP-CIDR,60.200.35.0/24,no-resolve
 IP-CIDR,60.201.0.0/16,no-resolve
 IP-CIDR,60.202.0.0/15,no-resolve
 IP-CIDR,60.204.0.0/14,no-resolve
