@@ -2,17 +2,17 @@
 # AUTHOR: jshir700
 # REPO: https://github.com/jshir700/config
 # REFERENCE: https://github.com/blackmatrix7/ios_rule_script, https://github.com/ACL4SSR/ACL4SSR, https://github.com/GMOogway/shadowrocket-rules, https://github.com/LM-Firefly/Rules, https://github.com/Hackl0us/SS-Rule-Snippet, https://github.com/GeQ1an/Rules, https://github.com/sve1r/Rules-For-Quantumult-X, https://github.com/Loyalsoldier/clash-rules, https://github.com/gaoyifan/china-operator-ip, https://github.com/dler-io/Rules, https://github.com/zqzess/rule_for_quantumultX, https://github.com/misakaio/chnroutes2
-# UPDATED: 2026-10-24 16:54:48
-# DOMAIN: 149
-# DOMAIN-SUFFIX: 111577
+# UPDATED: 2026-10-25 17:11:26
+# DOMAIN: 151
+# DOMAIN-SUFFIX: 111582
 # DOMAIN-KEYWORD: 24
 # DOMAIN-REGEX: 8
-# IP-CIDR: 23222
+# IP-CIDR: 23213
 # IP-CIDR6: 79
 # IP-ASN: 1
 # PROCESS-NAME: 5
 # USER-AGENT: 67
-# TOTAL: 135132
+# TOTAL: 135130
 DOMAIN,1-fss24-s0.streamhoster.com
 DOMAIN,14033.live.streamtheworld.com
 DOMAIN,156zy.suyunbo.tv
@@ -26,6 +26,7 @@ DOMAIN,ai.zhaomi.cn
 DOMAIN,aljazeera-eng-hd-live.hls.adaptive.level3.net
 DOMAIN,antvlive.ab5c6921.cdnviet.com
 DOMAIN,api.blipsandchitz.me
+DOMAIN,app.moegirl.org.cn
 DOMAIN,astro1.rastream.com
 DOMAIN,auth.wosms.cn
 DOMAIN,bbstv.clouducs.com
@@ -122,6 +123,7 @@ DOMAIN,qqlivepull.seedata.top
 DOMAIN,seb.sason.top
 DOMAIN,sms.imagetasks.com
 DOMAIN,ss.bjmu.edu.cn
+DOMAIN,storage.moegirl.org.cn
 DOMAIN,stream.baoxinwen.com
 DOMAIN,stream.dybtv.com
 DOMAIN,stream.gsjqtv.com
@@ -19475,6 +19477,7 @@ DOMAIN-SUFFIX,cdqszz.com
 DOMAIN-SUFFIX,cdqz.net
 DOMAIN-SUFFIX,cdrbs.net
 DOMAIN-SUFFIX,cdrcb.com
+DOMAIN-SUFFIX,cdrcbank.com
 DOMAIN-SUFFIX,cdren.net
 DOMAIN-SUFFIX,cdrich.com
 DOMAIN-SUFFIX,cdrjob.com
@@ -25411,6 +25414,7 @@ DOMAIN-SUFFIX,cqyxzz.com
 DOMAIN-SUFFIX,cqyygz.com
 DOMAIN-SUFFIX,cqyyjc.com
 DOMAIN-SUFFIX,cqyysx.com
+DOMAIN-SUFFIX,cqyyxc.com
 DOMAIN-SUFFIX,cqyyzy.com
 DOMAIN-SUFFIX,cqyznews.com
 DOMAIN-SUFFIX,cqzbcg.com
@@ -49490,6 +49494,7 @@ DOMAIN-SUFFIX,ibaitiao.com
 DOMAIN-SUFFIX,ibaizhu.com
 DOMAIN-SUFFIX,ibanana.club
 DOMAIN-SUFFIX,ibanbu.com
+DOMAIN-SUFFIX,ibangbank.com
 DOMAIN-SUFFIX,ibanggo.com
 DOMAIN-SUFFIX,ibangkf.com
 DOMAIN-SUFFIX,ibangtiao.com
@@ -51625,6 +51630,7 @@ DOMAIN-SUFFIX,ishuw.com
 DOMAIN-SUFFIX,isi-gf.com
 DOMAIN-SUFFIX,isiabio.com
 DOMAIN-SUFFIX,isign.ren
+DOMAIN-SUFFIX,isigning.com
 DOMAIN-SUFFIX,isigu.com
 DOMAIN-SUFFIX,isilent.me
 DOMAIN-SUFFIX,isilicontech.com
@@ -67566,6 +67572,7 @@ DOMAIN-SUFFIX,nanningyouhua.com
 DOMAIN-SUFFIX,nannjlnk.com
 DOMAIN-SUFFIX,nanobody-biolab.com
 DOMAIN-SUFFIX,nanochrom.com
+DOMAIN-SUFFIX,nanocorechip.com
 DOMAIN-SUFFIX,nanoeast.net
 DOMAIN-SUFFIX,nanoer.net
 DOMAIN-SUFFIX,nanoinglobal.com
@@ -123704,10 +123711,6 @@ IP-CIDR,211.162.119.0/24,no-resolve
 IP-CIDR,211.162.120.0/21,no-resolve
 IP-CIDR,211.162.200.0/22,no-resolve
 IP-CIDR,211.162.64.0/20,no-resolve
-IP-CIDR,211.162.64.0/22,no-resolve
-IP-CIDR,211.162.68.0/24,no-resolve
-IP-CIDR,211.162.70.0/23,no-resolve
-IP-CIDR,211.162.72.0/21,no-resolve
 IP-CIDR,211.164.0.0/15,no-resolve
 IP-CIDR,211.165.0.0/16,no-resolve
 IP-CIDR,211.166.0.0/16,no-resolve
@@ -134453,11 +134456,6 @@ IP-CIDR,59.151.18.0/23,no-resolve
 IP-CIDR,59.151.20.0/22,no-resolve
 IP-CIDR,59.151.24.0/21,no-resolve
 IP-CIDR,59.151.32.0/19,no-resolve
-IP-CIDR,59.151.32.0/20,no-resolve
-IP-CIDR,59.151.48.0/23,no-resolve
-IP-CIDR,59.151.50.0/24,no-resolve
-IP-CIDR,59.151.52.0/22,no-resolve
-IP-CIDR,59.151.56.0/21,no-resolve
 IP-CIDR,59.151.64.0/18,no-resolve
 IP-CIDR,59.152.112.0/21,no-resolve
 IP-CIDR,59.152.16.0/20,no-resolve
