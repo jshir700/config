@@ -2,16 +2,16 @@
 # AUTHOR: jshir700
 # REPO: https://github.com/jshir700/config
 # REFERENCE: https://github.com/blackmatrix7/ios_rule_script, https://github.com/Loyalsoldier/surge-rules, https://github.com/ACL4SSR/ACL4SSR, https://github.com/GeQ1an/Rules, https://github.com/sve1r/Rules-For-Quantumult-X, https://github.com/Hackl0us/SS-Rule-Snippet, https://github.com/Loyalsoldier/clash-rules, https://github.com/dler-io/Rules, https://github.com/LM-Firefly/Rules, https://github.com/zqzess/rule_for_quantumultX
-# UPDATED: 2026-10-25 17:09:20
+# UPDATED: 2026-10-26 18:07:45
 # DOMAIN: 272
-# DOMAIN-SUFFIX: 1754
+# DOMAIN-SUFFIX: 1753
 # DOMAIN-KEYWORD: 9
 # DOMAIN-WILDCARD: 15
 # IP-CIDR: 10
 # IP-CIDR6: 3
 # PROCESS-NAME: 14
 # USER-AGENT: 23
-# TOTAL: 2100
+# TOTAL: 2099
 DOMAIN,a1.mzstatic.com
 DOMAIN,a2.mzstatic.com
 DOMAIN,a3.mzstatic.com
@@ -1388,7 +1388,6 @@ DOMAIN-SUFFIX,icloud-content.com.cn
 DOMAIN-SUFFIX,icloud-isupport.com
 DOMAIN-SUFFIX,icloud-sandbox.com
 DOMAIN-SUFFIX,icloud.ch
-DOMAIN-SUFFIX,icloud.cn
 DOMAIN-SUFFIX,icloud.com
 DOMAIN-SUFFIX,icloud.com.akadns.net
 DOMAIN-SUFFIX,icloud.com.cn
