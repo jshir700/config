@@ -2,13 +2,13 @@
 # AUTHOR: jshir700
 # REPO: https://github.com/jshir700/config
 # REFERENCE: https://github.com/blackmatrix7/ios_rule_script, https://github.com/ACL4SSR/ACL4SSR, https://github.com/LM-Firefly/Rules, https://github.com/Semporia/Quantumult-X
-# UPDATED: 2026-10-27 17:48:56
+# UPDATED: 2026-10-28 18:34:46
 # DOMAIN: 4
-# DOMAIN-SUFFIX: 28
+# DOMAIN-SUFFIX: 29
 # DOMAIN-KEYWORD: 4
 # PROCESS-NAME: 1
 # USER-AGENT: 1
-# TOTAL: 38
+# TOTAL: 39
 DOMAIN,lf16-effectcdn.byteeffecttos-g.com
 DOMAIN,lf16-pkgcdn.pitaya-clientai.com
 DOMAIN,p16-tiktokcdn-com.akamaized.net
@@ -24,6 +24,7 @@ DOMAIN-SUFFIX,byteoversea.com
 DOMAIN-SUFFIX,capcut.com
 DOMAIN-SUFFIX,capcutapi.com
 DOMAIN-SUFFIX,capcutapi.us
+DOMAIN-SUFFIX,capcutcdn-us.com
 DOMAIN-SUFFIX,capcutstatic.com
 DOMAIN-SUFFIX,ibytedtos.com
 DOMAIN-SUFFIX,ibyteimg.com

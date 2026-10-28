@@ -2,15 +2,15 @@
 # AUTHOR: jshir700
 # REPO: https://github.com/jshir700/config
 # REFERENCE: https://github.com/blackmatrix7/ios_rule_script, https://github.com/sve1r/Rules-For-Quantumult-X, https://github.com/ACL4SSR/ACL4SSR, https://github.com/Hackl0us/SS-Rule-Snippet, https://github.com/Loyalsoldier/surge-rules, https://github.com/GeQ1an/Rules, https://github.com/Loyalsoldier/clash-rules, https://github.com/dler-io/Rules
-# UPDATED: 2026-10-27 17:48:55
+# UPDATED: 2026-10-28 18:34:45
 # DOMAIN: 805
-# DOMAIN-SUFFIX: 35837
+# DOMAIN-SUFFIX: 35844
 # DOMAIN-KEYWORD: 39
 # IP-CIDR: 143
 # IP-CIDR6: 5
 # PROCESS-NAME: 1
 # USER-AGENT: 9
-# TOTAL: 36839
+# TOTAL: 36846
 DOMAIN,1password.drift.click
 DOMAIN,3dns-1.adobe.com
 DOMAIN,3dns-2.adobe.com
@@ -3660,6 +3660,7 @@ DOMAIN-SUFFIX,artel.watch
 DOMAIN-SUFFIX,arteldoc.com
 DOMAIN-SUFFIX,arteldoc.tv
 DOMAIN-SUFFIX,artifact.ac.uk
+DOMAIN-SUFFIX,artificialanalysis.ai
 DOMAIN-SUFFIX,artixlinux.org
 DOMAIN-SUFFIX,artnudegalleries.com
 DOMAIN-SUFFIX,artoferotica.info
@@ -8119,6 +8120,7 @@ DOMAIN-SUFFIX,climate-lab-book.ac.uk
 DOMAIN-SUFFIX,climate-server.com
 DOMAIN-SUFFIX,climatechangewales.ac.uk
 DOMAIN-SUFFIX,climb.ac.uk
+DOMAIN-SUFFIX,cline.bot
 DOMAIN-SUFFIX,cling.omy.sg
 DOMAIN-SUFFIX,clinica-tibet.ru
 DOMAIN-SUFFIX,clinical-videos.com
@@ -8468,6 +8470,7 @@ DOMAIN-SUFFIX,comm-coll-hackney.ac.uk
 DOMAIN-SUFFIX,comm-verse.com
 DOMAIN-SUFFIX,commandandconquer.com
 DOMAIN-SUFFIX,commandarms.com
+DOMAIN-SUFFIX,commandcode.ai
 DOMAIN-SUFFIX,comments.app
 DOMAIN-SUFFIX,commentshk.com
 DOMAIN-SUFFIX,commerceos.com
@@ -8550,6 +8553,7 @@ DOMAIN-SUFFIX,content.office.net
 DOMAIN-SUFFIX,contentful.com
 DOMAIN-SUFFIX,contest.com
 DOMAIN-SUFFIX,contests.twilio.com
+DOMAIN-SUFFIX,context7.com
 DOMAIN-SUFFIX,convio.net
 DOMAIN-SUFFIX,convrgencegame.com
 DOMAIN-SUFFIX,coobay.com
@@ -20960,6 +20964,7 @@ DOMAIN-SUFFIX,messytube.com
 DOMAIN-SUFFIX,met-nude.com
 DOMAIN-SUFFIX,meta.ai
 DOMAIN-SUFFIX,meta.com
+DOMAIN-SUFFIX,metaaiusercontent.com
 DOMAIN-SUFFIX,metaaivm.com
 DOMAIN-SUFFIX,metabolomics.ac.uk
 DOMAIN-SUFFIX,metabora.io
@@ -23608,6 +23613,7 @@ DOMAIN-SUFFIX,nottinghampost.com
 DOMAIN-SUFFIX,nottinghamtrentadfs.ac.uk
 DOMAIN-SUFFIX,nottm-coll.ac.uk
 DOMAIN-SUFFIX,nottsmaternity.ac.uk
+DOMAIN-SUFFIX,nousresearch.com
 DOMAIN-SUFFIX,novafile.com
 DOMAIN-SUFFIX,novelai.net
 DOMAIN-SUFFIX,novelasia.com
@@ -31226,6 +31232,7 @@ DOMAIN-SUFFIX,thinkhigher.ac.uk
 DOMAIN-SUFFIX,thinking3d.ac.uk
 DOMAIN-SUFFIX,thinkingtaiwan.com
 DOMAIN-SUFFIX,thinkofliving.com
+DOMAIN-SUFFIX,thinkorswim.com
 DOMAIN-SUFFIX,thinkquarterly.co.uk
 DOMAIN-SUFFIX,thinkquarterly.com
 DOMAIN-SUFFIX,thinkwales.ac.uk
