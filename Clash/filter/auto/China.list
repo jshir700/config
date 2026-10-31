@@ -2,9 +2,9 @@
 # AUTHOR: jshir700
 # REPO: https://github.com/jshir700/config
 # REFERENCE: https://github.com/blackmatrix7/ios_rule_script, https://github.com/ACL4SSR/ACL4SSR, https://github.com/GMOogway/shadowrocket-rules, https://github.com/LM-Firefly/Rules, https://github.com/Hackl0us/SS-Rule-Snippet, https://github.com/GeQ1an/Rules, https://github.com/sve1r/Rules-For-Quantumult-X, https://github.com/Loyalsoldier/clash-rules, https://github.com/gaoyifan/china-operator-ip, https://github.com/dler-io/Rules, https://github.com/zqzess/rule_for_quantumultX, https://github.com/misakaio/chnroutes2
-# UPDATED: 2026-10-30 18:54:09
+# UPDATED: 2026-10-31 18:25:13
 # DOMAIN: 152
-# DOMAIN-SUFFIX: 111589
+# DOMAIN-SUFFIX: 111592
 # DOMAIN-KEYWORD: 24
 # DOMAIN-REGEX: 8
 # IP-CIDR: 23277
@@ -12,7 +12,7 @@
 # IP-ASN: 1
 # PROCESS-NAME: 5
 # USER-AGENT: 67
-# TOTAL: 135202
+# TOTAL: 135205
 DOMAIN,1-fss24-s0.streamhoster.com
 DOMAIN,14033.live.streamtheworld.com
 DOMAIN,156zy.suyunbo.tv
@@ -8722,6 +8722,7 @@ DOMAIN-SUFFIX,92gyw.com
 DOMAIN-SUFFIX,92hidc.net
 DOMAIN-SUFFIX,92kaifa.com
 DOMAIN-SUFFIX,92kk.com
+DOMAIN-SUFFIX,92kun.com
 DOMAIN-SUFFIX,92le.com
 DOMAIN-SUFFIX,92lm.com
 DOMAIN-SUFFIX,92lucky.com
@@ -11594,7 +11595,6 @@ DOMAIN-SUFFIX,amishii.com
 DOMAIN-SUFFIX,amiyabot.com
 DOMAIN-SUFFIX,amo-solar.com
 DOMAIN-SUFFIX,amo9.com
-DOMAIN-SUFFIX,amobbs.com
 DOMAIN-SUFFIX,amoe.cc
 DOMAIN-SUFFIX,amonxu.com
 DOMAIN-SUFFIX,amoydxmed.com
@@ -18389,6 +18389,7 @@ DOMAIN-SUFFIX,capvision.com
 DOMAIN-SUFFIX,capwhale.com
 DOMAIN-SUFFIX,caqzlsgs.com
 DOMAIN-SUFFIX,car-metaverse.com
+DOMAIN-SUFFIX,car-vacation.com
 DOMAIN-SUFFIX,car0575.com
 DOMAIN-SUFFIX,car2sharechina.com
 DOMAIN-SUFFIX,car369.com
@@ -48475,6 +48476,7 @@ DOMAIN-SUFFIX,hxledu.com
 DOMAIN-SUFFIX,hxlhjt.com
 DOMAIN-SUFFIX,hxljjt.com
 DOMAIN-SUFFIX,hxlot.com
+DOMAIN-SUFFIX,hxlove22s.cc
 DOMAIN-SUFFIX,hxlsw.com
 DOMAIN-SUFFIX,hxltcj.com
 DOMAIN-SUFFIX,hxlxx.com
@@ -58495,6 +58497,7 @@ DOMAIN-SUFFIX,ktvsky.com
 DOMAIN-SUFFIX,ktwap.net
 DOMAIN-SUFFIX,ktxuexi.com
 DOMAIN-SUFFIX,ktyunlianjie.com
+DOMAIN-SUFFIX,ktzgame.com
 DOMAIN-SUFFIX,ku25.com
 DOMAIN-SUFFIX,ku33a.net
 DOMAIN-SUFFIX,ku6.cn
@@ -114177,7 +114180,6 @@ IP-CIDR,103.254.64.0/20,no-resolve
 IP-CIDR,103.254.64.0/21,no-resolve
 IP-CIDR,103.254.68.0/22,no-resolve
 IP-CIDR,103.254.76.0/22,no-resolve
-IP-CIDR,103.254.76.0/24,no-resolve
 IP-CIDR,103.254.77.0/24,no-resolve
 IP-CIDR,103.254.78.0/24,no-resolve
 IP-CIDR,103.254.79.0/24,no-resolve
@@ -117181,10 +117183,8 @@ IP-CIDR,116.89.240.0/22,no-resolve
 IP-CIDR,116.90.184.0/21,no-resolve
 IP-CIDR,116.90.192.0/20,no-resolve
 IP-CIDR,116.90.80.0/20,no-resolve
+IP-CIDR,116.90.80.0/21,no-resolve
 IP-CIDR,116.90.80.0/22,no-resolve
-IP-CIDR,116.90.80.0/24,no-resolve
-IP-CIDR,116.90.82.0/23,no-resolve
-IP-CIDR,116.90.84.0/22,no-resolve
 IP-CIDR,116.90.88.0/21,no-resolve
 IP-CIDR,116.95.0.0/16,no-resolve
 IP-CIDR,117.100.0.0/15,no-resolve
@@ -124732,6 +124732,7 @@ IP-CIDR,223.122.18.0/23,no-resolve
 IP-CIDR,223.122.20.0/22,no-resolve
 IP-CIDR,223.122.26.0/23,no-resolve
 IP-CIDR,223.122.28.0/23,no-resolve
+IP-CIDR,223.122.29.0/24,no-resolve
 IP-CIDR,223.122.5.0/24,no-resolve
 IP-CIDR,223.122.6.0/23,no-resolve
 IP-CIDR,223.123.128.0/17,no-resolve
@@ -127082,6 +127083,7 @@ IP-CIDR,2402:7d80::/48,no-resolve
 IP-CIDR,2402:7da0::/32,no-resolve
 IP-CIDR,2402:7e20::/32,no-resolve
 IP-CIDR,2402:7ee0::/32,no-resolve
+IP-CIDR,2402:8160::/32,no-resolve
 IP-CIDR,2402:8180::/32,no-resolve
 IP-CIDR,2402:8300::/32,no-resolve
 IP-CIDR,2402:8380::/32,no-resolve
@@ -129376,6 +129378,7 @@ IP-CIDR,2406:840:fe30::/44,no-resolve
 IP-CIDR,2406:840:fe40::/44,no-resolve
 IP-CIDR,2406:840:fe4c::/46,no-resolve
 IP-CIDR,2406:840:fe50::/44,no-resolve
+IP-CIDR,2406:840:fe51::/48,no-resolve
 IP-CIDR,2406:840:fe52::/47,no-resolve
 IP-CIDR,2406:840:fe54::/46,no-resolve
 IP-CIDR,2406:840:fe58::/45,no-resolve
