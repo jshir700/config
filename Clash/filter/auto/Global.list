@@ -2,15 +2,15 @@
 # AUTHOR: jshir700
 # REPO: https://github.com/jshir700/config
 # REFERENCE: https://github.com/blackmatrix7/ios_rule_script, https://github.com/sve1r/Rules-For-Quantumult-X, https://github.com/ACL4SSR/ACL4SSR, https://github.com/Hackl0us/SS-Rule-Snippet, https://github.com/Loyalsoldier/surge-rules, https://github.com/GeQ1an/Rules, https://github.com/Loyalsoldier/clash-rules, https://github.com/dler-io/Rules
-# UPDATED: 2026-11-01 19:16:10
+# UPDATED: 2026-11-02 20:24:21
 # DOMAIN: 805
-# DOMAIN-SUFFIX: 35857
+# DOMAIN-SUFFIX: 35866
 # DOMAIN-KEYWORD: 39
 # IP-CIDR: 143
 # IP-CIDR6: 5
 # PROCESS-NAME: 1
 # USER-AGENT: 9
-# TOTAL: 36859
+# TOTAL: 36868
 DOMAIN,1password.drift.click
 DOMAIN,3dns-1.adobe.com
 DOMAIN,3dns-2.adobe.com
@@ -5731,6 +5731,7 @@ DOMAIN-SUFFIX,bmi.ir
 DOMAIN-SUFFIX,bmia.org
 DOMAIN-SUFFIX,bmj.com
 DOMAIN-SUFFIX,bml.info
+DOMAIN-SUFFIX,bmonkeys.net
 DOMAIN-SUFFIX,bms.ac.uk
 DOMAIN-SUFFIX,bmth-poole-cad.ac.uk
 DOMAIN-SUFFIX,bmth.ac.uk
@@ -6168,6 +6169,7 @@ DOMAIN-SUFFIX,boj.or.jp
 DOMAIN-SUFFIX,bokep.net
 DOMAIN-SUFFIX,bokepseks.org
 DOMAIN-SUFFIX,bokepvidz.com
+DOMAIN-SUFFIX,boldgrid.com
 DOMAIN-SUFFIX,bolehvpn.net
 DOMAIN-SUFFIX,bollywoodlife.com
 DOMAIN-SUFFIX,bolt.ac.uk
@@ -8220,6 +8222,7 @@ DOMAIN-SUFFIX,cloudproxy.app
 DOMAIN-SUFFIX,cloudrobotics.com
 DOMAIN-SUFFIX,cloudvolumes.com
 DOMAIN-SUFFIX,cloudworks.ac.uk
+DOMAIN-SUFFIX,cloudwp.dev
 DOMAIN-SUFFIX,cloudyzgirl.com
 DOMAIN-SUFFIX,cloupia.com
 DOMAIN-SUFFIX,cloupia.net
@@ -29988,6 +29991,7 @@ DOMAIN-SUFFIX,steaminventoryhelper.com
 DOMAIN-SUFFIX,steamladder.com
 DOMAIN-SUFFIX,steamofporn.com
 DOMAIN-SUFFIX,steamos.cloud
+DOMAIN-SUFFIX,steampeek.hu
 DOMAIN-SUFFIX,steampowered.com
 DOMAIN-SUFFIX,steamserver.net
 DOMAIN-SUFFIX,steamstat.us
@@ -33687,6 +33691,7 @@ DOMAIN-SUFFIX,vodafone.com.tr
 DOMAIN-SUFFIX,vodafone.de
 DOMAIN-SUFFIX,vodafone.it
 DOMAIN-SUFFIX,vodafone.nl
+DOMAIN-SUFFIX,vodafoneziggo.nl
 DOMAIN-SUFFIX,voicettank.org
 DOMAIN-SUFFIX,voila.ac.uk
 DOMAIN-SUFFIX,vokevr.com
@@ -34244,7 +34249,9 @@ DOMAIN-SUFFIX,webex.com.mx
 DOMAIN-SUFFIX,webex.de
 DOMAIN-SUFFIX,webex.es
 DOMAIN-SUFFIX,webex.fr
+DOMAIN-SUFFIX,webflow-ext.com
 DOMAIN-SUFFIX,webflow.com
+DOMAIN-SUFFIX,webflow.io
 DOMAIN-SUFFIX,webfreer.com
 DOMAIN-SUFFIX,webgata.net
 DOMAIN-SUFFIX,webgirlsonline.net
@@ -34274,6 +34281,7 @@ DOMAIN-SUFFIX,webrush.net
 DOMAIN-SUFFIX,webs-tv.net
 DOMAIN-SUFFIX,websdr.org
 DOMAIN-SUFFIX,webshare.io
+DOMAIN-SUFFIX,website-files.com
 DOMAIN-SUFFIX,website.new
 DOMAIN-SUFFIX,websitepulse.com
 DOMAIN-SUFFIX,websnapr.com
@@ -36573,6 +36581,7 @@ DOMAIN-SUFFIX,zi.media
 DOMAIN-SUFFIX,zi5.me
 DOMAIN-SUFFIX,zibacity.com
 DOMAIN-SUFFIX,ziddu.com
+DOMAIN-SUFFIX,ziggo.nl
 DOMAIN-SUFFIX,ziglang.org
 DOMAIN-SUFFIX,zigzag.kr
 DOMAIN-SUFFIX,zillionk.com
