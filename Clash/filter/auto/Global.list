@@ -2,15 +2,15 @@
 # AUTHOR: jshir700
 # REPO: https://github.com/jshir700/config
 # REFERENCE: https://github.com/blackmatrix7/ios_rule_script, https://github.com/sve1r/Rules-For-Quantumult-X, https://github.com/ACL4SSR/ACL4SSR, https://github.com/Hackl0us/SS-Rule-Snippet, https://github.com/Loyalsoldier/surge-rules, https://github.com/GeQ1an/Rules, https://github.com/Loyalsoldier/clash-rules, https://github.com/dler-io/Rules
-# UPDATED: 2026-11-03 19:55:58
+# UPDATED: 2026-11-04 20:08:15
 # DOMAIN: 805
-# DOMAIN-SUFFIX: 35866
+# DOMAIN-SUFFIX: 35868
 # DOMAIN-KEYWORD: 39
 # IP-CIDR: 143
 # IP-CIDR6: 5
 # PROCESS-NAME: 1
 # USER-AGENT: 9
-# TOTAL: 36868
+# TOTAL: 36870
 DOMAIN,1password.drift.click
 DOMAIN,3dns-1.adobe.com
 DOMAIN,3dns-2.adobe.com
@@ -4964,6 +4964,7 @@ DOMAIN-SUFFIX,beget.app
 DOMAIN-SUFFIX,beget.cloud
 DOMAIN-SUFFIX,beget.com
 DOMAIN-SUFFIX,beget.de
+DOMAIN-SUFFIX,beget.email
 DOMAIN-SUFFIX,beget.hosting
 DOMAIN-SUFFIX,beget.pro
 DOMAIN-SUFFIX,beget.ru
@@ -5276,6 +5277,7 @@ DOMAIN-SUFFIX,bileta.ac.uk
 DOMAIN-SUFFIX,bili2.cc
 DOMAIN-SUFFIX,bili888.com
 DOMAIN-SUFFIX,bili999.com
+DOMAIN-SUFFIX,bilibili.tv
 DOMAIN-SUFFIX,bilinovel.com
 DOMAIN-SUFFIX,biliplus.com
 DOMAIN-SUFFIX,biliworld.com
