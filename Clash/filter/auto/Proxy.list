@@ -2,14 +2,14 @@
 # AUTHOR: jshir700
 # REPO: https://github.com/jshir700/config
 # REFERENCE: https://github.com/GMOogway/shadowrocket-rules
-# UPDATED: 2026-11-04 20:08:15
+# UPDATED: 2026-11-05 20:21:07
 # DOMAIN: 788
-# DOMAIN-SUFFIX: 26603
+# DOMAIN-SUFFIX: 26608
 # DOMAIN-KEYWORD: 12
 # DOMAIN-REGEX: 151
 # IP-CIDR: 15
 # USER-AGENT: 1
-# TOTAL: 27570
+# TOTAL: 27575
 DOMAIN,1password.drift.click
 DOMAIN,3dns-1.adobe.com
 DOMAIN,3dns-2.adobe.com
@@ -15282,6 +15282,9 @@ DOMAIN-SUFFIX,lilaoshibushinilaoshi.com
 DOMAIN-SUFFIX,lilhumpers.com
 DOMAIN-SUFFIX,liliav.com
 DOMAIN-SUFFIX,lilith-soft.com
+DOMAIN-SUFFIX,limbuscompany.global
+DOMAIN-SUFFIX,limbuscompanyapi.com
+DOMAIN-SUFFIX,limbuscompanycdn.org
 DOMAIN-SUFFIX,limedia.tw
 DOMAIN-SUFFIX,limelight.com
 DOMAIN-SUFFIX,limer.tw
@@ -20182,6 +20185,7 @@ DOMAIN-SUFFIX,projectbaseline.com
 DOMAIN-SUFFIX,projectcircuitbreaker.com
 DOMAIN-SUFFIX,projecteuclid.org
 DOMAIN-SUFFIX,projectjav.com
+DOMAIN-SUFFIX,projectmoon.studio
 DOMAIN-SUFFIX,projectmurphy.net
 DOMAIN-SUFFIX,projectpoint.com
 DOMAIN-SUFFIX,projectpoint.net
@@ -22036,6 +22040,7 @@ DOMAIN-SUFFIX,skills.sh
 DOMAIN-SUFFIX,skillshare.com
 DOMAIN-SUFFIX,skimtube.com
 DOMAIN-SUFFIX,skinstrip.net
+DOMAIN-SUFFIX,skinswap.com
 DOMAIN-SUFFIX,skokka.com
 DOMAIN-SUFFIX,sksarab.top
 DOMAIN-SUFFIX,skunkgirl.cc

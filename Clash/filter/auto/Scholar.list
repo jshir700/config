@@ -2,10 +2,10 @@
 # AUTHOR: jshir700
 # REPO: https://github.com/jshir700/config
 # REFERENCE: https://github.com/ACL4SSR/ACL4SSR, https://github.com/LM-Firefly/Rules, https://github.com/dler-io/Rules, https://github.com/ke1ewang/Profiles, https://github.com/blackmatrix7/ios_rule_script
-# UPDATED: 2026-11-04 20:08:16
+# UPDATED: 2026-11-05 20:21:08
 # DOMAIN: 1
-# DOMAIN-SUFFIX: 230
-# TOTAL: 231
+# DOMAIN-SUFFIX: 249
+# TOTAL: 250
 DOMAIN,scholar.google.com
 DOMAIN-SUFFIX,1lib.cloud
 DOMAIN-SUFFIX,1lib.domains
@@ -131,6 +131,19 @@ DOMAIN-SUFFIX,liebertpub.com
 DOMAIN-SUFFIX,literatumonline.com
 DOMAIN-SUFFIX,ma1lib.org
 DOMAIN-SUFFIX,madsrevolution.net
+DOMAIN-SUFFIX,mathematica.com
+DOMAIN-SUFFIX,mathworks.cn
+DOMAIN-SUFFIX,mathworks.co.jp
+DOMAIN-SUFFIX,mathworks.co.kr
+DOMAIN-SUFFIX,mathworks.co.uk
+DOMAIN-SUFFIX,mathworks.com
+DOMAIN-SUFFIX,mathworks.com.au
+DOMAIN-SUFFIX,mathworks.de
+DOMAIN-SUFFIX,mathworks.fr
+DOMAIN-SUFFIX,mathworks.in
+DOMAIN-SUFFIX,mathworks.nl
+DOMAIN-SUFFIX,mathworks.se
+DOMAIN-SUFFIX,matlab.com
 DOMAIN-SUFFIX,mdpi.com
 DOMAIN-SUFFIX,mit
 DOMAIN-SUFFIX,mit.edu
@@ -229,6 +242,12 @@ DOMAIN-SUFFIX,westlaw.com
 DOMAIN-SUFFIX,westlawchina.com
 DOMAIN-SUFFIX,wiley.com
 DOMAIN-SUFFIX,wkap.nl
+DOMAIN-SUFFIX,wolfram.co.uk
+DOMAIN-SUFFIX,wolfram.com
+DOMAIN-SUFFIX,wolframalpha.com
+DOMAIN-SUFFIX,wolframalpha.net
+DOMAIN-SUFFIX,wolframcdn.com
+DOMAIN-SUFFIX,wolframcloud.com
 DOMAIN-SUFFIX,worldbank.org
 DOMAIN-SUFFIX,worldscientific.com
 DOMAIN-SUFFIX,yale.edu
