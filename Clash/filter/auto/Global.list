@@ -2,15 +2,15 @@
 # AUTHOR: jshir700
 # REPO: https://github.com/jshir700/config
 # REFERENCE: https://github.com/blackmatrix7/ios_rule_script, https://github.com/sve1r/Rules-For-Quantumult-X, https://github.com/ACL4SSR/ACL4SSR, https://github.com/Hackl0us/SS-Rule-Snippet, https://github.com/Loyalsoldier/surge-rules, https://github.com/GeQ1an/Rules, https://github.com/Loyalsoldier/clash-rules, https://github.com/dler-io/Rules
-# UPDATED: 2026-11-05 20:21:07
+# UPDATED: 2026-11-06 20:06:19
 # DOMAIN: 805
-# DOMAIN-SUFFIX: 35873
+# DOMAIN-SUFFIX: 35872
 # DOMAIN-KEYWORD: 39
 # IP-CIDR: 143
 # IP-CIDR6: 5
 # PROCESS-NAME: 1
 # USER-AGENT: 9
-# TOTAL: 36875
+# TOTAL: 36874
 DOMAIN,1password.drift.click
 DOMAIN,3dns-1.adobe.com
 DOMAIN,3dns-2.adobe.com
@@ -20701,7 +20701,6 @@ DOMAIN-SUFFIX,maturewifeporn.cc
 DOMAIN-SUFFIX,maturewomenanal.com
 DOMAIN-SUFFIX,maturexxxvideos.cc
 DOMAIN-SUFFIX,mau.ac.uk
-DOMAIN-SUFFIX,maven.neoforged.net
 DOMAIN-SUFFIX,maven.org
 DOMAIN-SUFFIX,max-tcs.ru
 DOMAIN-SUFFIX,max.com
