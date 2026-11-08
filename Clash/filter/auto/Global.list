@@ -2,15 +2,15 @@
 # AUTHOR: jshir700
 # REPO: https://github.com/jshir700/config
 # REFERENCE: https://github.com/blackmatrix7/ios_rule_script, https://github.com/sve1r/Rules-For-Quantumult-X, https://github.com/ACL4SSR/ACL4SSR, https://github.com/Hackl0us/SS-Rule-Snippet, https://github.com/Loyalsoldier/surge-rules, https://github.com/GeQ1an/Rules, https://github.com/Loyalsoldier/clash-rules, https://github.com/dler-io/Rules
-# UPDATED: 2026-11-07 19:03:38
-# DOMAIN: 805
-# DOMAIN-SUFFIX: 35874
+# UPDATED: 2026-11-08 19:17:05
+# DOMAIN: 808
+# DOMAIN-SUFFIX: 35875
 # DOMAIN-KEYWORD: 39
 # IP-CIDR: 143
 # IP-CIDR6: 5
 # PROCESS-NAME: 1
 # USER-AGENT: 9
-# TOTAL: 36876
+# TOTAL: 36880
 DOMAIN,1password.drift.click
 DOMAIN,3dns-1.adobe.com
 DOMAIN,3dns-2.adobe.com
@@ -300,6 +300,7 @@ DOMAIN,holoxx.f5.si
 DOMAIN,homebrew.bintray.com
 DOMAIN,hpefonts.s3.amazonaws.com
 DOMAIN,hpstore.corpmerchandise.com
+DOMAIN,http-intake.logs.us5.datadoghq.com
 DOMAIN,hub.slarker.me
 DOMAIN,hulu.playback.edge.bamgrid.com
 DOMAIN,i.jeded.com
@@ -389,6 +390,7 @@ DOMAIN,ntppool2.time.nl
 DOMAIN,nurofensk-prod-env.eu-west-1.elasticbeanstalk.com
 DOMAIN,nvidia.custhelp.com
 DOMAIN,nvidia.tt.omtrdc.net
+DOMAIN,o1158394.ingest.us.sentry.io
 DOMAIN,ocsp.microsoft.com
 DOMAIN,officecdn-microsoft-com.akamaized.net
 DOMAIN,onekey.zendesk.com
@@ -421,6 +423,7 @@ DOMAIN,practivate.adobe.ntp
 DOMAIN,prd-priconne-redive.akamaized.net
 DOMAIN,preprod-publicca.googleapis.com
 DOMAIN,prodforza.blob.core.windows.net
+DOMAIN,production-copilot-host-westus.webpubsub.azure.com
 DOMAIN,production-openaicom-storage.azureedge.net
 DOMAIN,productionresultssa0.blob.core.windows.net
 DOMAIN,productionresultssa1.blob.core.windows.net
@@ -14912,6 +14915,7 @@ DOMAIN-SUFFIX,grimsby.ac.uk
 DOMAIN-SUFFIX,grimsbytec.ac.uk
 DOMAIN-SUFFIX,grindr.com
 DOMAIN-SUFFIX,grok.com
+DOMAIN-SUFFIX,grokbot.com
 DOMAIN-SUFFIX,grokipedia.com
 DOMAIN-SUFFIX,grooby.com
 DOMAIN-SUFFIX,groq.com
